@@ -7,6 +7,8 @@
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
+*.log
+*.tmp
 
 # Ignore everything in the root except the "wp-content" directory
 /*
@@ -19,3 +21,7 @@ wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
 !wp-content/mu-plugins
+
+# theme stuff ignores
+node_modules
+wp-content/themes/connectIN/bundle.*

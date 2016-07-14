@@ -9,13 +9,14 @@
   </head>
   <body <?php body_class(); ?>>
     <header>
-
+      header
     </header>
 
     <!-- THE MEAT -->
+    middle
 
     <footer>
-
+      footer
     </footer>
   </body>
   <?php wp_footer(); ?>
