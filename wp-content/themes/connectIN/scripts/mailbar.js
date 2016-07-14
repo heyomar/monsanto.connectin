@@ -1,7 +1,24 @@
+const mailbar = `<div class="mailbar-header">
+  <span id="mailbar-activate">
+    Sign up for email updates
+    <svg class="icon down"><use xlink:href="#icon-down"></use></svg>
+  </span>
+  <span id="mailbar-dismiss" class="dismiss">
+    <svg class="icon"><use xlink:href="#icon-circle-cross"></use></svg>
+  </span>
+</div>
+<div id="mailbar-body" class="mailbar-body">
+  <!-- form  -->
+  FORM GOES HERE
+</div>`
+
+// TODO: check for cookie before running this
+$('#mailbar').html(mailbar)
+
 // click title or down arrow
 $('#mailbar-activate').on('click touchend', function () {
   const $body = $('#mailbar-body')
-  const vh = $(window).height() - 60
+  const vh = $(window).height() - $('#mailbar').height()
   const arrowDown = '<use xlink:href="#icon-down"></use>'
   const arrowUp = '<use xlink:href="#icon-up"></use>'
 
