@@ -1,3 +1,7 @@
-@import "vars.css";
-@import "symbols.css";
-@import "type.css";
+@import "normalize.css";
+@import "sanitize.css";
+
+@import "./vars.css";
+@import "./symbols.css";
+@import "./type.css";
+@import "./navigation.css";

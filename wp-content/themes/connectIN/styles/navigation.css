@@ -1,0 +1,9 @@
+.main-nav-header {
+  background-color: var(--color-ltblue);
+  color: white;
+  padding: 10px 0px 10px 20px;
+
+  & svg {
+    font-size: 40px;
+  }
+}

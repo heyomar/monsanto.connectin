@@ -8,16 +8,44 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header>
-      header
+    <?php include_once('components/symbol-defs.php'); ?>
+    <header class="site-header">
+
+      <section class="mailbar">
+        <div class="mailbar-header">
+
+        </div>
+        <div class="mailbar-body">
+          <!-- form  -->
+        </div>
+      </section>
+
+      <section class="main-nav">
+        <div class="main-nav-header">
+          <svg class="icon icon-connectin"><use xlink:href="#icon-connectin"></use></svg>
+        </div>
+        <?php
+        $headargs = array(
+          'theme_location' => 'main-navigation'
+        );
+        wp_nav_menu( $headargs ); ?>
+      </section>
+
     </header>
 
     <!-- THE MEAT -->
-    middle
 
-    <footer>
-      footer
+    <footer class="site-footer">
+
+      <?php
+      $footargs = array(
+        'theme_location' => 'footer-navigation'
+      );
+      wp_nav_menu( $footargs ); ?>
+
     </footer>
   </body>
+
   <?php wp_footer(); ?>
+
 </html>
