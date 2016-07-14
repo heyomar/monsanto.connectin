@@ -1,0 +1,32 @@
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+========================================== */
+
+.icon-connectin {
+    width: 4.2109375em;
+}
+
+.icon-westbred {
+    width: 3.107421875em;
+}
+
+.icon-monsanto {
+    width: 3.1533203125em;
+}
+
+.icon-connectin-color {
+    width: 4.248046875em;
+}
