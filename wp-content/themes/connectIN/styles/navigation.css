@@ -81,7 +81,8 @@ body.mailbar-active {
 
 .menu-header-menu-container {
   height: 0;
-  overflow: hidden;
+  overflow: scroll;
+  position: fixed;
 
   background-color: var(--color-offwhite);
 

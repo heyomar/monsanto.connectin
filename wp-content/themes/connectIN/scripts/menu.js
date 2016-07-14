@@ -9,10 +9,13 @@ $('#menu-activate').on('click touchend', function () {
   const cross = '<use xlink:href="#icon-cross"></use>'
 
   if ($('#menu-header-menu-container').height() === 0) {
-    $('#menu-header-menu-container').animate({height: vh })
+    window.scroll(0, 0)
+    $('#menu-header-menu-container').animate({ height: vh })
     $(this).children('svg').html(cross)
   } else {
     $('#menu-header-menu-container').animate({ height: 0 })
     $(this).children('svg').html(menu)
   }
+
+  $('body').toggleClass('mailbar-active')
 })
