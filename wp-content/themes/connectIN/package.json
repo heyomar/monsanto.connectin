@@ -4,17 +4,17 @@
   "description": "WP theme for ConnectIN Wheat Insight Systems",
   "main": "index.php",
   "scripts": {
-    "build:dev": "npm-run-all js:compile styles:compile",
-    "build:prod": "npm-run-all js:compile js:min styles:compile styles:min",
+    "build:dev": "run-s js:compile styles:compile",
+    "build:prod": "run-s js:compile js:min styles:compile styles:min",
     "js:babel": "babel bundle.js --out-file bundle.es5.js --source-maps inline",
-    "js:compile": "npm-run-all js:concat js:babel",
-    "js:concat": "concat-cli -f scripts/menu.js -o bundle.js",
+    "js:compile": "run-s js:concat js:babel",
+    "js:concat": "concat-cli --files scripts/mailbar.js scripts/menu.js --output bundle.js",
     "js:lint": "standard --verbose snazzy",
     "js:min": "uglifyjs bundle.es5.js --compress --mangle --output bundle.es5.min.js",
     "styles:compile": "postcss --use postcss-import --use postcss-pxtorem --use postcss-cssnext --use postcss-em-media-query --map --output bundle.css styles/entry.css",
     "styles:lint": "stylelint styles/**/*.css",
     "styles:min": "postcss --use cssnano --output bundle.min.css bundle.css",
-    "serve": "browser-sync start --proxy 'connectin.dev:8888' --files '**/*.php' 'bundle.css' 'bundle.js' --no-open --no-notify",
+    "serve": "browser-sync start --proxy 'connectin.dev:8888' --files '**/*.php' 'bundle.css' 'bundle.es5.js' --no-open --no-notify",
     "watch": "parallelshell 'npm run watch:js' 'npm run watch:styles' 'npm run serve'",
     "watch:js": "nodemon --watch scripts --ext js --exec 'npm run js:compile'",
     "watch:styles": "nodemon --watch styles --ext css --exec 'npm run styles:compile'",
@@ -27,9 +27,8 @@
   "author": "Paul Graham <pgraham@hlkagency.com>",
   "license": "UNLICENSED",
   "devDependencies": {
-    "animate.css": "^3.5.1",
     "babel-cli": "~6",
-    "babel-eslint": "^6.1.2",
+    "babel-eslint": "latest",
     "babel-preset-es2015": "~6",
     "browser-sync": "latest",
     "concat-cli": "latest",
@@ -55,11 +54,13 @@
     "ignore": [
       "bundle.js",
       "bundle.min.js",
-      "node_modules"
+      "node_modules",
+      "scripts/vendor/*"
     ],
     "parser": "babel-eslint",
     "globals": [
-      "$"
+      "$",
+      "jQuery"
     ],
     "stylelint": {
       "extends": "stylelint-config-standard",

@@ -1,3 +1,8 @@
+/* scroll locker class */
+body.mailbar-active {
+  overflow: hidden;
+}
+
 .mailbar-header {
   background-color: var(--color-gray);
   color: var(--color-white);
@@ -29,6 +34,23 @@
     padding: 15px 20px;
     color: var(--color-ltgray);
   }
+}
+
+.mailbar-body {
+  height: 0;
+
+  background-color: var(--color-dkgray);
+  color: var(--color-white);
+
+  &.active {
+    height: calc(100vh - 60px);
+  }
+}
+
+#mailbar-activate,
+#mailbar-dismiss,
+#menu-activate {
+  cursor: pointer;
 }
 
 .main-nav-header {

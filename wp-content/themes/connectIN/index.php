@@ -11,23 +11,26 @@
     <?php include_once('components/symbol-defs.php'); ?>
     <header class="site-header">
 
-      <section class="mailbar">
+      <section id="mailbar" class="mailbar">
         <div class="mailbar-header">
-          Sign up for email updates
-          <svg class="icon down"><use xlink:href="#icon-down"></use></svg>
-          <span class="dismiss">
+          <span id="mailbar-activate">
+            Sign up for email updates
+            <svg class="icon down"><use xlink:href="#icon-down"></use></svg>
+          </span>
+          <span id="mailbar-dismiss" class="dismiss">
             <svg class="icon"><use xlink:href="#icon-circle-cross"></use></svg>
           </span>
         </div>
-        <div class="mailbar-body">
+        <div id="mailbar-body" class="mailbar-body">
           <!-- form  -->
+          FORM GOES HERE
         </div>
       </section>
 
       <section class="main-nav">
         <div class="main-nav-header">
           <svg class="icon icon-connectin"><use xlink:href="#icon-connectin"></use></svg>
-          <span class="main-nav-header-menu-button">
+          <span id="menu-activate" class="main-nav-header-menu-button">
             <svg class="icon"><use xlink:href="#icon-menu"></use></svg>
           </span>
         </div>
@@ -42,7 +45,7 @@
 
     <!-- THE MEAT -->
 
-    <footer class="site-footer">
+    <!-- <footer class="site-footer">
 
       <?php
       $footargs = array(
@@ -50,9 +53,11 @@
       );
       wp_nav_menu( $footargs ); ?>
 
-    </footer>
+    </footer> -->
   </body>
 
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/vendor/jquery.min.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/bundle.es5.js" charset="utf-8" defer></script>
   <?php wp_footer(); ?>
 
 </html>
