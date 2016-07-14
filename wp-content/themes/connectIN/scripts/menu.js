@@ -17,5 +17,5 @@ $('#menu-activate').on('click touchend', function () {
     $(this).children('svg').html(menu)
   }
 
-  $('body').toggleClass('mailbar-active')
+  $('body').toggleClass('menu-active')
 })

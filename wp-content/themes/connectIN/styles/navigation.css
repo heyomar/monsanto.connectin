@@ -1,5 +1,6 @@
 /* scroll locker class */
-body.mailbar-active {
+body.mailbar-active,
+body.menu-active {
   overflow: hidden;
 }
 
@@ -81,8 +82,10 @@ body.mailbar-active {
 
 .menu-header-menu-container {
   height: 0;
+  width: 100vw;
   overflow: scroll;
   position: fixed;
+  z-index: 1;
 
   background-color: var(--color-offwhite);
 
@@ -105,7 +108,7 @@ body.mailbar-active {
       border-bottom: 1px solid var(--color-beige);
       padding: 20px 0;
 
-      & a {
+      & :any-link {
         display: inline-block;
         width: 70%;
       }
