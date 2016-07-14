@@ -13,7 +13,11 @@
 
       <section class="mailbar">
         <div class="mailbar-header">
-
+          Sign up for email updates
+          <svg class="icon down"><use xlink:href="#icon-down"></use></svg>
+          <span class="dismiss">
+            <svg class="icon"><use xlink:href="#icon-circle-cross"></use></svg>
+          </span>
         </div>
         <div class="mailbar-body">
           <!-- form  -->
@@ -23,6 +27,9 @@
       <section class="main-nav">
         <div class="main-nav-header">
           <svg class="icon icon-connectin"><use xlink:href="#icon-connectin"></use></svg>
+          <span class="main-nav-header-menu-button">
+            <svg class="icon"><use xlink:href="#icon-menu"></use></svg>
+          </span>
         </div>
         <?php
         $headargs = array(

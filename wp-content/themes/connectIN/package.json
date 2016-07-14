@@ -27,6 +27,7 @@
   "author": "Paul Graham <pgraham@hlkagency.com>",
   "license": "UNLICENSED",
   "devDependencies": {
+    "animate.css": "^3.5.1",
     "babel-cli": "~6",
     "babel-eslint": "^6.1.2",
     "babel-preset-es2015": "~6",

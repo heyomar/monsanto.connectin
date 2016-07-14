@@ -1,9 +1,58 @@
+.mailbar-header {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+
+  position: relative;
+  height: 60px;
+  padding: 22.5px 20px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  & .down {
+    margin-left: 15px;
+    font-size: 20px;
+    position: relative;
+    top: -3px;
+  }
+
+  & .dismiss {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    display: block;
+    height: 60px;
+    width: 60px;
+
+    font-size: 20px;
+    padding: 15px 20px;
+    color: var(--color-ltgray);
+  }
+}
+
 .main-nav-header {
   background-color: var(--color-ltblue);
-  color: white;
-  padding: 10px 0px 10px 20px;
+  color: var(--color-white);
+
+  position: relative;
+  height: 70px;
+  padding: 15px 0px 15px 20px;
 
   & svg {
     font-size: 40px;
   }
+}
+
+.main-nav-header-menu-button {
+  background-color: var(--color-dkblue);
+  padding: 15px;
+
+  display: block;
+  height: 70px;
+  width: 70px;
+
+  position: absolute;
+  right: 0;
+  top: 0;
 }
