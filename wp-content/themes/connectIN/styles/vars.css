@@ -11,7 +11,7 @@
 
   /* font-mixins */
   --base-font-definition {
-    font-family: Gotham, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Gotham, "Gotham SSm A", "Gotham SSm B", system, -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 300;
   }
 }

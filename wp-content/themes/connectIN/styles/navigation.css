@@ -82,4 +82,32 @@ body.mailbar-active {
 .menu-header-menu-container {
   height: 0;
   overflow: hidden;
+
+  background-color: var(--color-offwhite);
+
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  & :any-link {
+    text-decoration: none;
+    color: var(--color-ltblue);
+  }
+
+  & .menu {
+    margin: 0;
+    padding: 0;
+
+    & li {
+      list-style: none;
+      border-bottom: 1px solid var(--color-beige);
+      padding: 20px 0;
+
+      & a {
+        display: inline-block;
+        width: 70%;
+      }
+    }
+  }
 }

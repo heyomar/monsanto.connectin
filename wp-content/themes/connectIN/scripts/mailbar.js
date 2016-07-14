@@ -23,6 +23,7 @@ $('#mailbar-activate').on('click touchend', function () {
   const arrowUp = '<use xlink:href="#icon-up"></use>'
 
   if ($body.height() === 0) {
+    window.scroll(0, 0)
     $body.animate({ height: vh })
     $(this).children('svg').html(arrowUp)
   } else {

@@ -15,7 +15,7 @@
         <!-- NOTE: mailbar code inserted here if no cookie -->
       </section>
 
-      <section id="menu" class="main-nav">
+      <nav id="menu" class="main-nav" role="navigation">
         <div id="menu-header" class="main-nav-header">
           <a href="/"><svg class="icon icon-connectin"><use xlink:href="#icon-connectin"></use></svg></a>
           <span id="menu-activate" class="main-nav-header-menu-button">
@@ -28,6 +28,6 @@
           'container_id' => 'menu-header-menu-container'
         );
         wp_nav_menu( $headargs ); ?>
-      </section>
+      </nav>
 
     </header>
