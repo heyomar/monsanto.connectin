@@ -41,10 +41,6 @@ body.mailbar-active {
 
   background-color: var(--color-dkgray);
   color: var(--color-white);
-
-  &.active {
-    height: calc(100vh - 60px);
-  }
 }
 
 #mailbar-activate,
@@ -64,6 +60,10 @@ body.mailbar-active {
   & svg {
     font-size: 40px;
   }
+
+  & :any-link {
+    color: white;
+  }
 }
 
 .main-nav-header-menu-button {
@@ -77,4 +77,9 @@ body.mailbar-active {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.menu-header-menu-container {
+  height: 0;
+  overflow: hidden;
 }
