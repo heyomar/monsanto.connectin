@@ -38,6 +38,7 @@
     padding: 18px 0;
 
     color: var(--color-white);
+    /* TODO: wrong nexa font, need bold instead */
     font-family: Nexabook;
     font-size: 14px;
     line-height: 1;
