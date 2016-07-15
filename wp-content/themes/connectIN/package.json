@@ -53,9 +53,10 @@
   "standard": {
     "ignore": [
       "bundle.js",
-      "bundle.min.js",
+      "bundle.es5.js",
+      "bundle.es5.min.js",
       "node_modules",
-      "scripts/vendor/*"
+      "scripts/vendor/jquery.min.js"
     ],
     "parser": "babel-eslint",
     "globals": [
