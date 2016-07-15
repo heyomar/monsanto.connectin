@@ -19,3 +19,6 @@ $('#menu-activate').on('click touchend', function () {
 
   $('body').toggleClass('menu-active')
 })
+
+// TODO: recalc menu height on resize if in mobile widths
+$(window).resize()
