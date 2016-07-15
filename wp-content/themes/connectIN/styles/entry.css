@@ -4,10 +4,14 @@
 
 /* CSS LIBRARIES */
 @import "./nexabook.css";
-
-/* OUR STYLESHEETS */
-@import "./vars.css";
 @import "./symbols.css";
+
+/* UNIVERSAL STYLESHEETS */
+@import "./vars.css";
 @import "./type.css";
-@import "./navigation.css";
-@import "./footer.css";
+@import "./global.css";
+
+/* COMPONENTS */
+@import "./components/navigation.css";
+@import "./components/footer.css";
+@import "./components/inner-hero.css";

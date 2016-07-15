@@ -11,7 +11,37 @@
 
   /* font-mixins */
   --base-font-definition {
-    font-family: Gotham, "Gotham SSm A", "Gotham SSm B", system, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 400;
+    font-family: "Gotham SSm A", "Gotham SSm B", Gotham, system, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 300;
+
+    color: var(--color-gray);
+  }
+
+  --h1 {
+    color: var(--color-dkblue);
+
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.143;
+  }
+
+  /* configurable modules */
+  --container {
+    padding: 45px 20px;
+  }
+
+  --button {
+    background-color: var(--color-ltblue);
+
+    display: block;
+    padding: 18px 0;
+
+    color: var(--color-white);
+    font-family: Nexabook;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 }

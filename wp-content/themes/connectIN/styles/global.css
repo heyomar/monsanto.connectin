@@ -1,0 +1,5 @@
+.button,
+[type=submit],
+[role=button] {
+  @apply --button;
+}

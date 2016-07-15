@@ -1,0 +1,28 @@
+.inner-hero {
+  @apply --container;
+
+  text-align: center;
+
+  background-color: var(--color-beige);
+  background-image: url('assets/images/bg-machine.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+.inner-hero-headline {
+  @apply --h1;
+
+  margin: 0;
+}
+
+.inner-hero-copy {
+}
+
+.seed-supplier-cta {
+  @apply --container;
+
+  background-color: var(--color-offwhite);
+
+  text-align: center;
+}

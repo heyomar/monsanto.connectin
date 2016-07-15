@@ -1,11 +1,12 @@
 .site-footer {
+  @apply --container;
   background-color: var(--color-dkgray);
 }
 
 .menu-footer-menu-container {
   & .menu {
     margin: 0;
-    padding: 30px 20px 20px;
+    padding: 0 0 15px;
 
     text-align: center;
 
@@ -33,7 +34,7 @@
 
   border-top: 1px solid var(--color-gray);
   margin: 20px;
-  padding-top: 15px;
+  padding-top: 20px;
   font-size: 35px;
 
   & .seperator {
@@ -51,5 +52,5 @@
 .disclaimers {
   color: var(--color-gray);
   font-size: 10px;
-  padding: 20px 20px 30px;
+  padding-top: 20px;
 }
