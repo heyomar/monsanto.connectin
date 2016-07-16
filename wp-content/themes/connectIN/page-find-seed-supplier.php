@@ -1,3 +1,6 @@
-<?php get_header(); ?>
-  <?php get_template_part( 'components/inner-hero' ); ?>
-<?php get_footer(); ?>
+<?php
+get_header();
+get_template_part('components/inner-hero');
+get_template_part('components/seed-supplier-cta');
+get_footer();
+?>
