@@ -6,11 +6,8 @@
 <?php if (is_page('optimal-seeding-rate')) : ?>
   <div class="embed-container">
     <!-- TODO: Place production video here in page admin -->
+    <!-- NOTE: remember to set JSAPI and other configurations -->
 	   <?php the_field('hero_video'); ?>
   </div>
 <?php endif; ?>
-</div>
-
-<div class="risks">
-  <h2><?php the_field('risks_headline'); ?></h2>
 </div>

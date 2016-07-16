@@ -10,13 +10,6 @@
   background-position: 50% 0%;
 }
 
-.inner-hero-headline {
-  margin: 0;
-}
-
-.inner-hero-copy {
-}
-
 .seed-supplier-cta {
   @apply --container;
 

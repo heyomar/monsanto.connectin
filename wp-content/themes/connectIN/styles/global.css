@@ -8,3 +8,16 @@
     padding-left: 10px;
   }
 }
+
+img {
+  max-width: 100%;
+}
+
+/* non-component containers */
+.risks {
+  @apply --container;
+}
+
+.risks-seeding {
+  text-align: center;
+}

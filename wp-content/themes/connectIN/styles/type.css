@@ -4,8 +4,12 @@ html {
 
 h1 {
   @apply --h1;
+
+  margin: 0;
 }
 
 h2 {
   @apply --h2;
+
+  margin: 0;
 }
