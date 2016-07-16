@@ -11,8 +11,6 @@
 }
 
 .inner-hero-headline {
-  @apply --h1;
-
   margin: 0;
 }
 
