@@ -2,4 +2,9 @@
 [type=submit],
 [role=button] {
   @apply --button;
+
+  &::after {
+    content: "→";
+    padding-left: 10px;
+  }
 }

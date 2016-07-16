@@ -1,0 +1,33 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3251667, 2016-07-15T16:56:01-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: NexaBold by Fontfabric
+ * URL: http://www.myfonts.com/fonts/font-fabric/nexa/bold/
+ * Copyright: Copyright (c) 2012 by Fontfabric LLC. All rights reserved.
+ * Licensed pageviews: 200,000
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3251667
+ *
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+
+@import url("//hello.myfonts.net/count/319dd3");
+@font-face {
+  font-family: 'NexaBold';
+  src: url('assets/webfonts/319DD3_0_0.eot');
+  src: url('assets/webfonts/319DD3_0_0.eot?#iefix') format('embedded-opentype'),
+       url('assets/webfonts/319DD3_0_0.woff2') format('woff2'),
+       url('assets/webfonts/319DD3_0_0.woff') format('woff'),
+       url('assets/webfonts/319DD3_0_0.ttf') format('truetype');
+}
