@@ -81,7 +81,7 @@ body.menu-active {
   top: 0;
 }
 
-.menu-header-menu-container {
+#menu-header-menu-container {
   height: 0;
   width: 100vw;
   overflow: scroll;
