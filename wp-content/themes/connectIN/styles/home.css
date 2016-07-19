@@ -1,0 +1,55 @@
+.hero__ctn{
+  background-image: url('../connectin/assets/images/home__hero-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: auto;
+  text-align: center;
+  padding: 70px 15px;
+
+}
+
+.hero__inner-ctn{
+  max-width: 850px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero__title {
+  font-size: 35px;
+  color: var(--color-gray);
+  text-transform: initial;
+  text-align: center;
+}
+
+.hero__title p::after{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 15px;
+  width: 200px;
+  border-bottom: 2px solid var(--color-gray);
+
+}
+
+.hero__subtitle{
+  color: var(--color-ltblue)
+}
+
+.hero__button{
+  width: 220px;
+  text-align: center;
+}
+.supply__ctn{
+  background-image: url('../connectin/assets/images/home__grains-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.calc__ctn{
+  background-color: var(--color-gray);
+
+  & p {
+  color: #ffffff;
+  }
+}
