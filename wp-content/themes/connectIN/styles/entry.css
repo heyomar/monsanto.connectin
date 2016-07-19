@@ -15,3 +15,7 @@
 @import "./components/navigation.css";
 @import "./components/footer.css";
 @import "./components/inner-hero.css";
+@import "./components/user-interface.css";
+
+/* PAGE STYLES */
+@import "./home.css";
