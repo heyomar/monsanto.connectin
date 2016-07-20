@@ -1,0 +1,24 @@
+.room{
+  padding: 40px;
+}
+
+.headline{
+  color: var(--color-ltblue);
+  text-transform: uppercase;
+}
+
+.button__plain  {
+  @apply --button;
+  display: initial;
+  padding: 18px 15px;
+  margin-top: 15px;
+}
+
+.button__plain:after{
+  content: "→";
+  padding-left: 10px;
+}
+
+.button__plain:hover{
+  background-color: hsla(195, 33%, 50%, 1.00);
+}
