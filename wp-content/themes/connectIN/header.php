@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php wp_title(); ?></title>
     <!-- TODO: temporary fonts tag, replace with production assets -->
     <link rel="stylesheet" href="https://cloud.typography.com/7547052/7841152/css/fonts.css">
