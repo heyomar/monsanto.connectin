@@ -11,7 +11,7 @@
   </div>
 
   <div class="seed__ctn row">
-    <div class="col-sm-8">
+    <div class=" col-md-7">
       <div class="box room">
         <h3 class="seed__headline headline"><?php the_field('seed_headline'); ?></h3>
         <?php the_field('seed_copy'); ?>
@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div class="col-sm-4">
+    <div class="center col-md-5">
       <div class="box room">
         <img class="seed__image" src="<?php the_field('seed_image'); ?>" alt="" />
       </div>
