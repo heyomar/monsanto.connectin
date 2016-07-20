@@ -5,7 +5,6 @@
   height: auto;
   text-align: center;
   padding: 70px 15px;
-
 }
 
 .hero__inner-ctn{
@@ -24,12 +23,11 @@
 
 .hero__title p::after{
   content: "";
-  position: absolute;
   display: block;
   height: 15px;
   width: 200px;
   border-bottom: 2px solid var(--color-gray);
-
+  margin: 0 auto;
 }
 
 .hero__subtitle{
@@ -39,17 +37,27 @@
 .hero__button{
   width: 220px;
   text-align: center;
+  margin: 20px auto;
+  display: block;
 }
+
+.seed__image{
+  padding: 30px 20px;
+  text-align: center;
+}
+
 .supply__ctn{
   background-image: url('../connectin/assets/images/home__grains-bg.jpg');
   background-size: cover;
   background-position: center center;
+  min-height: 350px;
 }
 
 .calc__ctn{
   background-color: var(--color-gray);
+  min-height: 350px;
 
   & p {
-  color: #ffffff;
+  color: var(--color-white);
   }
 }
