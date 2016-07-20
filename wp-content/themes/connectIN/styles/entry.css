@@ -1,6 +1,7 @@
 /* RESET */
 @import "normalize.css";
 @import "sanitize.css";
+@import "flexboxgrid";
 
 /* CSS LIBRARIES */
 @import "./nexa.css";
@@ -15,7 +16,8 @@
 @import "./components/navigation.css";
 @import "./components/footer.css";
 @import "./components/inner-hero.css";
-@import "./components/user-interface.css";
+@import "./components/help-and-ui.css";
 
 /* PAGE STYLES */
 @import "./home.css";
+@import "./about-the-system.css";
