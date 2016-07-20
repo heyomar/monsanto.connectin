@@ -41,9 +41,12 @@
   display: block;
 }
 
+.seed__ctn{
+  padding-bottom: 50px;
+}
+
 .seed__image{
-  padding: 30px 20px;
-  text-align: center;
+  padding-top: 25px;
 }
 
 .supply__ctn{
@@ -60,4 +63,8 @@
   & p {
   color: var(--color-white);
   }
+}
+
+.home .box p {
+  padding-bottom: 20px;
 }
