@@ -11,14 +11,13 @@
   line-height: 2;
 }
 
-.risks .box{
-  max-width: 800px;
-}
-
-.risks-seeding{
-  max-width: 960px;
+.benefits__op-ctn{
   margin: 0 auto;
+  background-image: url('assets/images/home__grains-bg.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 
-.risks-seeding .box {
+.benefits__op-ctn li {
+  line-height: 2;
 }

@@ -1,0 +1,11 @@
+.find-seed-supplier .inner-hero-copy{
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+.seed-supplier-cta a{
+  width: 200px;
+  margin: 0 auto;
+}

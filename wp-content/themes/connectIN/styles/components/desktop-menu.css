@@ -1,0 +1,34 @@
+.menu__ctn{
+}
+
+.menu__ctn svg {
+  font-size: 2.5rem;
+}
+
+.main-nav-header :link {
+    color: white;
+}
+
+
+.menu__contact-bar {
+  padding: 8px 10px;
+  text-align: right;
+  background-color: var(--color-dkblue);
+  width: 100%;
+}
+
+.menu__contact-bar span{
+  display: inline-block;
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+.menu__find-seed{
+
+}
+
+.menu__contact-us{
+
+}

@@ -16,3 +16,8 @@ img {
 .risks-seeding {
   text-align: center;
 }
+
+
+b, strong {
+  font-weight: 700;
+}
