@@ -1,5 +1,5 @@
 .hero__ctn{
-  background-image: url('../connectin/assets/images/home__hero-bg.jpg');
+  background-image: url('../connectIN/assets/images/home__hero-bg.jpg');
   background-size: cover;
   background-position: center;
   height: auto;
@@ -50,7 +50,7 @@
 }
 
 .supply__ctn{
-  background-image: url('../connectin/assets/images/home__grains-bg.jpg');
+  background-image: url('../connectIN/assets/images/home__grains-bg.jpg');
   background-size: cover;
   background-position: center center;
   min-height: 350px;
