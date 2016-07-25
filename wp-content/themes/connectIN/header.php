@@ -7,6 +7,7 @@
     <!-- TODO: temporary fonts tag, replace with production assets -->
     <link rel="stylesheet" href="https://cloud.typography.com/7547052/7841152/css/fonts.css">
     <?php wp_head(); ?>
+
   </head>
   <body <?php body_class(); ?>>
     <?php include_once('components/symbol-defs.php'); ?>
@@ -14,6 +15,7 @@
 
       <section id="mailbar" class="mailbar">
         <!-- NOTE: mailbar code inserted here if no cookie -->
+        
       </section>
 
       <nav id="menu" class="main-nav" role="navigation">
