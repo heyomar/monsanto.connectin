@@ -28,7 +28,7 @@
         <?php while ( have_rows('benefit_section') ) : the_row(); ?>
             <div class="col-sm-12 benefits__title-ctn ">
               <div class="box">
-                <h3 class="make__headline"><?php the_sub_field('benefits_sets_title'); ?></h3>
+                <h3 class="benefits__section-title"><?php the_sub_field('benefits_sets_title'); ?></h3>
               </div>
             </div>
             <?php if( have_rows('benefit_sets') ): ?>

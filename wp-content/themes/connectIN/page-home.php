@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="menu__ctn">
+<!-- <div class="menu__ctn">
   <div class="row">
     <div class="menu__logo box">
       <a href="/"><svg class="icon icon-connectin"><use xlink:href="#icon-connectin"></use></svg></a>
@@ -22,7 +22,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 
@@ -56,7 +56,7 @@
 
   <div class="">
     <div class="make__wide row">
-      <div class="col-sm-6">
+      <div class="supply__ctn col-sm-6">
         <div class="box give__room">
           <h3 class="supply__headline make__headline"><?php the_field('supply_headline'); ?></h3>
           <?php the_field('supply_copy'); ?>
