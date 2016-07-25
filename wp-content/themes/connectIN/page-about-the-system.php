@@ -22,7 +22,30 @@
   </div>
 
 
-      
+  <div class="give__room benefits__table">
+    <?php if( have_rows('benefit_section') ): ?>
+    <div class="row center__text benefit__section-ctn">
+        <?php while ( have_rows('benefit_section') ) : the_row(); ?>
+            <div class="col-sm-12 benefits__title-ctn ">
+              <div class="box">
+                <h3 class="make__headline"><?php the_sub_field('benefits_sets_title'); ?></h3>
+              </div>
+            </div>
+            <?php if( have_rows('benefit_sets') ): ?>
+              <div class="benefit__ctn row">
+                <?php while ( have_rows('benefit_sets')) : the_row(); ?>
+                    <div class="col-sm-4">
+                        <div class="box benefit__box">
+                          <?php the_sub_field('benefit'); ?>
+                        </div>
+                    </div>
+                <?php endwhile;?>
+              </div>
+            <?php endif; ?>
+        <?php endwhile; ?>
+    </div>
+    <?php endif; ?>
+  </div>
 
 
 
