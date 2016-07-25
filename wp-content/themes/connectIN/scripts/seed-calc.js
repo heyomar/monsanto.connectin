@@ -1,8 +1,5 @@
 'use strict'
 
-import $ from 'jquery'
-import smoothScroll from 'smoothscroll'
-
 $(document).ready(function () {
 	// Main app startup
 	var Utility = (function () {
@@ -310,7 +307,7 @@ $(document).ready(function () {
 					headerBarFixed = window.getComputedStyle(headerBar).position === 'fixed',
 					offset = headerBarFixed ? -headerBar.clientHeight : 0,
 					top = Utility.getTop(document.querySelector('.calc-section')) + offset
-				smoothScroll(top)
+				// smoothScroll(top)
 			}, 50)
 
 			// Re-render the graphs
