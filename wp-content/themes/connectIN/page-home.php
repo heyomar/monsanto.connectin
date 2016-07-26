@@ -1,31 +1,5 @@
 <?php get_header(); ?>
 
-<!-- <div class="menu__ctn">
-  <div class="row">
-    <div class="menu__logo box">
-      <a href="/"><svg class="icon icon-connectin"><use xlink:href="#icon-connectin"></use></svg></a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="box">
-        <div class="menu__contact-bar">
-          <span class="menu__find-seed">
-            <img src="/assets/images/menu__mappin-icon.svg" alt="" />
-            <a href="/">Find a Seed Supplier</a>
-          </span>
-          <span class="menu__contact-us">
-            <img src="/assets/images/menu__mail-icon.svg" alt="" />
-            <a href="/">Contact Us</a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
-
   <!-- THE MEAT -->
   <div class="hero__ctn">
     <div class="hero__inner-ctn">

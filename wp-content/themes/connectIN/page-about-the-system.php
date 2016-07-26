@@ -21,31 +21,30 @@
     </div>
   </div>
 
-
-  <div class="give__room benefits__table">
+<div class="benifits__o-list-ctn make__wide">
     <?php if( have_rows('benefit_section') ): ?>
-    <div class="row center__text benefit__section-ctn">
+
         <?php while ( have_rows('benefit_section') ) : the_row(); ?>
-            <div class="col-sm-12 benefits__title-ctn ">
-              <div class="box">
-                <h3 class="benefits__section-title"><?php the_sub_field('benefits_sets_title'); ?></h3>
-              </div>
-            </div>
+
+          <div class="benefits__i-list-ctn">
+            <h3 class="benefits__headline"><?php the_sub_field('benefits_sets_title'); ?> <svg class="icon"><use xlink:href="#icon-up"></use></svg></h3>
+
             <?php if( have_rows('benefit_sets') ): ?>
-              <div class="benefit__ctn row">
-                <?php while ( have_rows('benefit_sets')) : the_row(); ?>
-                    <div class="col-sm-4">
-                        <div class="box benefit__box">
-                          <?php the_sub_field('benefit'); ?>
-                        </div>
-                    </div>
-                <?php endwhile;?>
-              </div>
+              <ul class="benefits__list-ul">
+              <?php while ( have_rows('benefit_sets')) : the_row(); ?>
+
+                <li><?php the_sub_field('benefit');?></li>
+
+              <?php endwhile; ?>
+              </ul>
             <?php endif; ?>
-        <?php endwhile; ?>
-    </div>
-    <?php endif; ?>
-  </div>
+          </div>
+
+        <?php endwhile;?>
+
+    <?php endif ?>
+</div>
+
 
 
 
@@ -81,9 +80,9 @@
         </div>
       </div>
     </div>
-    <div class="make__wide row give__room">
-      <div class="col-sm-4">
-        <div class="how__logo-ctn box">
+    <div class="how__product-ctn make__wide row give__room">
+      <div class="how__logo-ctn col-sm-4">
+        <div class=" box">
           <a href="/"><svg class="icon icon-connectin"><use xlink:href="#icon-connectin-color"></use></svg></a>
         </div>
       </div>

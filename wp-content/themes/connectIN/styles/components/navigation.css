@@ -116,3 +116,9 @@ body.menu-active {
     }
   }
 }
+
+@media screen and (min-width:768px) {
+  .main-nav{
+    display: none;
+  }
+}

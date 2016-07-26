@@ -9,7 +9,8 @@ const mailbar = `<div class="mailbar-header">
 </div>
 <div id="mailbar-body" class="mailbar-body">
   <!-- form  -->
-  FORM GOES HERE
+  <!-- FORM: BODY SECTION -->
+  
 </div>`
 
 // TODO: check for cookie before running this insertion

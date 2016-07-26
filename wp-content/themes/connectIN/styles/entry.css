@@ -18,6 +18,7 @@
 @import "./components/footer.css";
 @import "./components/inner-hero.css";
 @import "./components/help-and-ui.css";
+@import "./components/mailbar.css";
 
 /* PAGE STYLES */
 @import "./home.css";

@@ -8,7 +8,7 @@
     "build:prod": "run-s js:compile js:min styles:compile styles:min",
     "js:babel": "babel bundle.js --out-file bundle.es5.js --source-maps inline",
     "js:compile": "run-s js:concat js:babel",
-    "js:concat": "concat-cli --files scripts/vendor/cookie.js scripts/vendor/fitvids.js scripts/mailbar.js scripts/menu.js scripts/seed-calc.js --output bundle.js",
+    "js:concat": "concat-cli --files scripts/vendor/cookie.js scripts/vendor/fitvids.js scripts/mailbar.js scripts/menu.js scripts/seed-calc.js scripts/about-collapser.js --output bundle.js",
     "js:lint": "standard --verbose snazzy",
     "js:min": "uglifyjs bundle.es5.js --compress --mangle --output bundle.es5.min.js",
     "styles:compile": "postcss --use postcss-import --use postcss-pxtorem --use postcss-cssnext --use postcss-em-media-query --map --output bundle.css styles/entry.css",

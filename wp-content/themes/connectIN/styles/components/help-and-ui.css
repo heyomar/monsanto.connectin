@@ -16,10 +16,19 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+
 .make__headline{
   color: var(--color-ltblue);
   text-transform: uppercase;
 }
+
+@media screen and (max-width:1150px) {
+  .make__break{
+    display: block;
+  }
+}
+
+
 
 .make__number{
   border: 2px solid var(--color-ltblue);
