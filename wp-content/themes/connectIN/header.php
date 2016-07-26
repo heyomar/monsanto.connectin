@@ -55,12 +55,7 @@
 
 
 
-      <?php
-      $headargs = array(
-        'theme_location' => 'desktop-navigation',
-        'container_id' => 'desktopmenu__ctnr'
-      );
-      wp_nav_menu( $headargs ); ?>
+
 
       <div class="menu__ctn">
           <div class="menu__items-ctn row">
@@ -73,17 +68,17 @@
                       </a>
                   </div>
               </div>
-              <div class="col-sm-2">
+              <div class="col-sm-9">
+                <div class="box">
+                  <?php $headargs = array(
+                        'theme_location' => 'desktop-navigation',
+                        'container_id' => 'desktopmenu__ctn'
+                        );
+                        wp_nav_menu( $headargs ); ?>
+                </div>
               </div>
-              <div class="menu__item col-sm-2">
-                  <div class="box"><a href="/about-the-system">About <span class="make__break">The System</span></a></div>
-              </div>
-              <div class="menu__item col-sm-2">
-                  <div class="box"><a href="/about-the-system">Optimal <span class="make__break">Seeding Rate</span></a></div>
-              </div>
-              <div class="menu__item col-sm-3">
-                  <div class="box"><a href="/wheat-profitability-calculator">Wheat <span class="make__break">Profitability Calculator</span></a></div>
-              </div>
+
+
               <div class="menu__contact-bar">
                   <span class="menu__find-seed">
                     <a href="/find-seed-supplier"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu__mappin-icon.png" alt="" />Find a Seed Supplier</a>

@@ -32,7 +32,7 @@
 
 
   .menu__contact-bar {
-    padding: 8px 30px 8px 0;
+    padding: 8px 15px 8px 0;
     text-align: right;
     background-color: var(--color-dkblue);
     width: 100%;
@@ -95,5 +95,29 @@
 }
 
 
-.menu__ctn .col-sm-3{
+.menu-desktop-menu-container{
+  position: relative;
+
+    & a{
+      text-decoration: none;
+      color: var(--color-white);
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    & ul {
+      list-style: none;
+      padding-top: 10px;
+      position: absolute;
+      right: 10px;
+      width: 100%;
+      text-align: right;
+    }
+
+    & ul li {
+      display: inline-block;
+      padding-left: 50px;
+      width: auto;
+
+    }
 }
