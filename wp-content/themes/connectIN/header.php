@@ -36,7 +36,6 @@
 
       <section id="mailbar" class="mailbar">
         <!-- NOTE: mailbar code inserted here if no cookie -->
-
       </section>
 
       <nav id="menu" class="main-nav" role="navigation">
@@ -55,9 +54,7 @@
       </nav>
 
       <div class="menu__ctn">
-
           <div class="menu__items-ctn row">
-
               <div class="menu__item-logo col-sm-3">
                   <div class="menu__logo box">
                       <a href="/">
@@ -68,38 +65,28 @@
                   </div>
               </div>
               <div class="col-sm-2">
-
               </div>
               <div class="menu__item col-sm-2">
                   <div class="box"><a href="/about-the-system">About <span class="make__break">The System</span></a></div>
               </div>
-
               <div class="menu__item col-sm-2">
                   <div class="box"><a href="/about-the-system">Optimal <span class="make__break">Seeding Rate</span></a></div>
               </div>
-
-
               <div class="menu__item col-sm-3">
                   <div class="box"><a href="/wheat-profitability-calculator">Wheat <span class="make__break">Profitability Calculator</span></a></div>
               </div>
-
               <div class="menu__contact-bar">
-
                   <span class="menu__find-seed">
                     <a href="/find-seed-supplier"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu__mappin-icon.png" alt="" />Find a Seed Supplier</a>
                   </span>
-
                   <span class="menu__contact-us">
                     <a href="mailto:email@example.com?Subject=Hello%20again"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu__mail-icon.png" alt="" />Contact Us</a>
                   </span>
-
               </div>
           </div>
           <div class="row">
-
               <div class="col-sm-12">
                   <div class="box">
-
                   </div>
               </div>
           </div>

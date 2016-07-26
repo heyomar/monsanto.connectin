@@ -1,5 +1,52 @@
     </main>
-    <footer class="site-footer">
+    <footer class="site-footer give__room">
+    <!-- <div class="deskfooter__ctn make__wide">
+      <div class="deskfooter__logos-ctn">
+
+          <div class="deskfooter__logos">
+            <svg class="icon icon-westbred"><use xlink:href="#icon-westbred"></use></svg>
+            <span class="seperator"></span>
+            <svg class="icon icon-monsanto"><use xlink:href="#icon-monsanto"></use></svg>
+          </div>
+
+      </div>
+      <div class="row">
+
+        <div class="col-sm-2 ">
+          <div class="box">
+            <a href="/about-the-system">About The&nbsp;System</a> <br>
+            <a href="/contact-us">Contact US</a>
+          </div>
+        </div>
+
+        <div class="col-sm-3 ">
+          <div class="box">
+            <a href="/wheat-profitability-calculator">Wheat Profitability&nbsp;Calculator</a> <br>
+            <a href="">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="col-sm-2 ">
+          <div class="box">
+            <a href="/optimal-seeding-rate">Optimal Seeding&nbsp;Rate</a> <br>
+            <a href="">Subscribe</a>
+          </div>
+        </div>
+
+        <div class="col-sm-2 ">
+          <div class="box">
+            <a href="/find-seed-supplier">Find Seed&nbsp;Supplier</a> <br>
+            <a href="">Legal Notice</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+ -->
+
 
       <?php
       $footargs = array(
