@@ -53,6 +53,15 @@
         wp_nav_menu( $headargs ); ?>
       </nav>
 
+
+
+      <?php
+      $headargs = array(
+        'theme_location' => 'desktop-navigation',
+        'container_id' => 'desktopmenu__ctnr'
+      );
+      wp_nav_menu( $headargs ); ?>
+
       <div class="menu__ctn">
           <div class="menu__items-ctn row">
               <div class="menu__item-logo col-sm-3">

@@ -22,6 +22,14 @@
   text-transform: uppercase;
 }
 
+--make__clear{
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 @media screen and (max-width:1150px) {
   .make__break{
     display: block;

@@ -1,54 +1,11 @@
     </main>
-    <footer class="site-footer give__room">
-    <!-- <div class="deskfooter__ctn make__wide">
-      <div class="deskfooter__logos-ctn">
-
-          <div class="deskfooter__logos">
-            <svg class="icon icon-westbred"><use xlink:href="#icon-westbred"></use></svg>
-            <span class="seperator"></span>
-            <svg class="icon icon-monsanto"><use xlink:href="#icon-monsanto"></use></svg>
-          </div>
-
-      </div>
-      <div class="row">
-
-        <div class="col-sm-2 ">
-          <div class="box">
-            <a href="/about-the-system">About The&nbsp;System</a> <br>
-            <a href="/contact-us">Contact US</a>
-          </div>
-        </div>
-
-        <div class="col-sm-3 ">
-          <div class="box">
-            <a href="/wheat-profitability-calculator">Wheat Profitability&nbsp;Calculator</a> <br>
-            <a href="">Privacy Policy</a>
-          </div>
-        </div>
-
-        <div class="col-sm-2 ">
-          <div class="box">
-            <a href="/optimal-seeding-rate">Optimal Seeding&nbsp;Rate</a> <br>
-            <a href="">Subscribe</a>
-          </div>
-        </div>
-
-        <div class="col-sm-2 ">
-          <div class="box">
-            <a href="/find-seed-supplier">Find Seed&nbsp;Supplier</a> <br>
-            <a href="">Legal Notice</a>
-          </div>
-        </div>
-      </div>
+    <footer class="site-footer">
 
 
 
-    </div>
-
- -->
 
 
-      <?php
+  <div class="make__wide">    <?php
       $footargs = array(
         'theme_location' => 'footer-navigation'
       );
@@ -65,7 +22,7 @@
         <p>This information is for educational purposes only and is not an offer to sell Roundup Xtend™ with VaporGrip™ Technology, XtendiMax™ with VaporGrip™ Technology, SmartStax® PRO, Trecepta™. These products are not yet registered or approved for sale or use anywhere in the United States.</p>
         <p>Commercialization is dependent on multiple factors, including successful conclusion of the regulatory process. The information presented herein is provided for educational purposes only, and is not and shall not be construed as an offer to sell, or a recommendation to use, any unregistered pesticide for any purpose whatsoever. It is a violation of federal law to promote or offer to sell an unregistered pesticide.</p>
         <p>At this time, Vistive® Gold soybeans have received full approval for planting in the United States but have not yet received import approval in certain export markets. While certain export approvals are pending, Vistive® Gold soybeans will be available in limited geographies only to growers who have signed a 2016 Vistive Gold Soybean Grain Production Grower Agreement and agree to follow the stewardship requirements. Upon receipt of appropriate approvals, Monsanto will inform growers and determine whether the stewardship requirements will need to remain in place.</p>
-      </div>
+      </div></div>
 
     </footer>
   </body>
