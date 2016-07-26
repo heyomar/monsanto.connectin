@@ -53,10 +53,6 @@
         wp_nav_menu( $headargs ); ?>
       </nav>
 
-
-
-
-
       <div class="menu__ctn">
           <div class="menu__items-ctn row">
               <div class="menu__item-logo col-sm-3">

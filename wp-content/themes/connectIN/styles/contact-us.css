@@ -16,8 +16,8 @@
   padding: 10px !important;
 }
 
-.wForm{
-  padding: 30px !important;
+#mailbar-body .wForm{
+
 }
 
 .wForm label{
@@ -31,7 +31,7 @@
 }
 
 .actions input{
-  padding: 10px 20px !important;
+  padding: 10px 20px ;
 }
 
 .supportInfo{
@@ -46,5 +46,38 @@
   .actions input{
     width: 100%;
     padding: 20px 0 !important;
+  }
+}
+
+
+@media screen and (min-width:1280px){
+  .wFormContainer {
+    position: absolute;
+    right: 80px;
+    top: -10px;
+    max-width: 870px;
+  }
+
+  .oneField {
+    display: inline-block;
+  }
+
+  .actions {
+    display: inline-block;
+  }
+
+  .inputWrapper {
+    height: 30px;
+
+    & input {
+      padding: 2px;
+    }
+
+    .wForm{
+      padding: 0;
+    }
+  }
+  #tfa_0-WRPR {
+    padding: 0;
   }
 }
