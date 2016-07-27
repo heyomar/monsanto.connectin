@@ -35,6 +35,14 @@
     line-height: 1.143;
   }
 
+  --make__clear{
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
   /* configurable modules */
   --container {
     padding: 45px 20px;

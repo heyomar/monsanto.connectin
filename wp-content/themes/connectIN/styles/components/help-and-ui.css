@@ -22,14 +22,6 @@
   text-transform: uppercase;
 }
 
---make__clear{
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
 @media screen and (max-width:1150px) {
   .make__break{
     display: block;
@@ -63,5 +55,5 @@
 }
 
 .button__plain:hover{
-  background-color: hsla(195, 33%, 50%, 1.00);
+  background-color: hsl(195, 33%, 50%);
 }
