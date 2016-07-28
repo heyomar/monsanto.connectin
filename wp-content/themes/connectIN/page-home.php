@@ -35,7 +35,7 @@
         <div class="box give__room">
           <h3 class="supply__headline make__headline"><?php the_field('supply_headline'); ?></h3>
           <?php the_field('supply_copy'); ?>
-          <a href="<?php the_field('supplo_button_link'); ?>" class="supply__button button__plain"><?php the_field('supply_button_copy'); ?></a>
+          <a href="<?php the_field('supply_button_link'); ?>" class="supply__button button__plain"><?php the_field('supply_button_copy'); ?></a>
         </div>
       </div>
 
