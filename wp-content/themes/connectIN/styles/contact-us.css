@@ -51,29 +51,29 @@
 
 
 @media screen and (min-width:1280px){
-  .wFormContainer {
+  .mailbar-body .wFormContainer {
     position: absolute;
     right: 80px;
     top: -10px;
     max-width: 870px;
   }
 
-  .oneField {
+  .mailbar-body .oneField {
     display: inline-block;
   }
 
-  .actions {
+  .mailbar-body .actions {
     display: inline-block;
   }
 
-  .inputWrapper {
+  .mailbar-body .inputWrapper {
     height: 30px;
 
     & input {
       padding: 2px;
     }
 
-    .wForm{
+    .mailbar-body .wForm{
       padding: 0;
     }
   }
