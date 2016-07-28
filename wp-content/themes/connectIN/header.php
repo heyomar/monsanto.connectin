@@ -91,7 +91,7 @@
                     <a href="/find-seed-supplier"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu__mappin-icon.png" alt="" />Find a Seed Supplier</a>
                   </span>
                   <span class="menu__contact-us">
-                    <a href="mailto:email@example.com?Subject=Hello%20again"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu__mail-icon.png" alt="" />Contact Us</a>
+                    <a href="/contact-us"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu__mail-icon.png" alt="" />Contact Us</a>
                   </span>
               </div>
           </div>
