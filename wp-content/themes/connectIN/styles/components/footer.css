@@ -37,6 +37,10 @@
   padding-top: 20px;
   font-size: 35px;
 
+  & a {
+    color: #fff;
+  }
+  
   & .seperator {
     display: inline-block;
     position: relative;
