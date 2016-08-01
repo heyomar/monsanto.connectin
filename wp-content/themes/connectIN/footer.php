@@ -12,9 +12,9 @@
       wp_nav_menu( $footargs ); ?>
 
       <div class="footer-logos">
-        <a href="http://www.westbred.com"><svg class="icon icon-westbred"><use xlink:href="#icon-westbred"></use></svg></a>
+        <a target="_blank" href="http://www.westbred.com"><svg class="icon icon-westbred"><use xlink:href="#icon-westbred"></use></svg></a>
         <span class="seperator"></span>
-        <a href="http://www.monsanto.com"><svg class="icon icon-monsanto"><use xlink:href="#icon-monsanto"></use></svg></a>
+        <a target="_blank" href="http://www.monsanto.com"><svg class="icon icon-monsanto"><use xlink:href="#icon-monsanto"></use></svg></a>
       </div>
 
       <div class="disclaimers">
