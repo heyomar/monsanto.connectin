@@ -8,6 +8,7 @@
   --color-dkgray: hsla(60, 2%, 22%, 1.00);
   --color-ltblue: hsla(196, 43%, 62%, 1.00);
   --color-dkblue: hsla(195, 33%, 50%, 1.00);
+  --color-tan: hsla(17,4%,78%, 1.00);
 
   /* font-mixins */
   --base-font-definition {

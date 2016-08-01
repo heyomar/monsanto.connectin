@@ -4,13 +4,6 @@
   margin: 0 auto;
 }
 
-.inner-hero-copy{
-  max-width: 800px;
-  text-align: center;
-  margin: 0 auto;
-  line-height: 2;
-}
-
 .benefits__op-ctn{
   margin: 0 auto;
   background-image: url('assets/images/home__grains-bg.jpg');
