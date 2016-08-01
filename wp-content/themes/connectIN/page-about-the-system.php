@@ -27,7 +27,7 @@
         <?php while ( have_rows('benefit_section') ) : the_row(); ?>
 
           <div class="benefits__i-list-ctn">
-            <h3 class="benefits__headline"><?php the_sub_field('benefits_sets_title'); ?> <svg class="icon"><use xlink:href="#icon-up"></use></svg></h3>
+            <h3 class="benefits__headline"><?php the_sub_field('benefits_sets_title'); ?> <svg class="icon"><use xlink:href="#icon-down"></use></svg></h3>
 
             <?php if( have_rows('benefit_sets') ): ?>
               <ul class="benefits__list-ul">

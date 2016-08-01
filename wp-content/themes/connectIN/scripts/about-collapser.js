@@ -7,9 +7,9 @@ $('.benefits__headline').on('click touchend', function () {
     $body.slideToggle()
 
     if ($(this).hasClass('active')) {
-      $(this).children('svg').html(arrowUp)
-    } else {
       $(this).children('svg').html(arrowDown)
+    } else {
+      $(this).children('svg').html(arrowUp)
     }
 
     $(this).toggleClass('active')
