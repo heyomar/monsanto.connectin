@@ -1,10 +1,10 @@
 .hero__ctn{
   background-image: url('../connectIN/assets/images/home__hero-bg.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   height: auto;
   text-align: center;
-  padding: 70px 15px;
+  padding: 70px 15px 105px;
 }
 
 .hero__inner-ctn{
