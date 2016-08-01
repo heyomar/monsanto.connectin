@@ -2,7 +2,6 @@
   max-width: 800px;
   text-align: center;
   margin: 0 auto;
-  line-height: 2;
 }
 
 .why__ctn{
@@ -50,7 +49,7 @@
 }
 
 .benefits__i-list-ctn{
-  border-bottom: 2px dotted var(--color-ltgray);
+  border-bottom: 2px dotted var(--color-tan);
 }
 
 .benefits__i-list-ctn ul {
@@ -65,6 +64,7 @@
   padding: 5px 10px;
   position: relative;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .benefits__list-ul {
@@ -74,6 +74,8 @@
 .benefits__headline svg{
   position: absolute;
   right: 0;
+  bottom: 8px;
+  color: var(--color-ltblue);
 }
 
 @media screen and (min-width:768px)  {
@@ -104,7 +106,7 @@
     width: 100%;
     flex-basis: 33.333%;
     max-width: 33.333%;
-    border: 2px dotted var(--color-ltgray);
+    border: 2px dotted var(--color-tan);
 
     &:nth-child(1n + 4) {
       border-top: 0;
