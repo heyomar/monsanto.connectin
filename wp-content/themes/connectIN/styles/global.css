@@ -21,3 +21,12 @@ img {
 b, strong {
   font-weight: 700;
 }
+
+
+.inner-hero-copy{
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 18px;
+}
