@@ -81,3 +81,18 @@
     padding: 0;
   }
 }
+
+.contact-us {
+  & .wForm .primaryAction {
+    padding: 18px 31px;
+  }
+
+  .actions input:after{
+    content: "→";
+    padding-left: 10px;
+  }
+
+  & .wFormContainer {
+    padding: 80px 0;
+  }
+}
