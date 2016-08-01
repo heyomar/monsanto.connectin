@@ -32,7 +32,7 @@
 
 
   .menu__contact-bar {
-    padding: 8px 15px 8px 0;
+    padding: 8px 48px 8px 0;
     text-align: right;
     background-color: var(--color-dkblue);
     width: 100%;
@@ -40,6 +40,7 @@
     left: 0;
     bottom: 0;
     z-index: 0;
+    font-size: 16px;
   }
 
   .menu__contact-bar span{
@@ -63,11 +64,6 @@
     bottom: 2px;
   }
 
-
-  .menu__contact-us{
-
-  }
-
   .menu__items-ctn  {
     height: 100%;
     position: relative;
@@ -78,7 +74,6 @@
     text-align: center;
     align-self: center;
     padding-bottom: 35px;
-
 
   & a{
       text-decoration: none;
@@ -103,13 +98,18 @@
       color: var(--color-white);
       font-weight: bold;
       text-transform: uppercase;
+      font-size: 18px;
+
+      &:hover{
+        color:#646560;
+      }
     }
 
     & ul {
       list-style: none;
       padding-top: 10px;
       position: absolute;
-      right: 10px;
+      right: 50px;
       width: 100%;
       text-align: right;
     }
