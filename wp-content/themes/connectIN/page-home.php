@@ -6,7 +6,7 @@
       <h1 class="hero__title"><?php the_field('hero_title'); ?></h1>
       <h3 class="hero__subtitle"><?php the_field('hero_subtitle'); ?></h3>
       <?php the_field('hero_copy'); ?>
-      
+
       <a href="<?php the_field('hero_button_link'); ?>" class="hero__button button__plain"><?php the_field('hero_button_copy'); ?></a>
     </div>
   </div>
@@ -29,23 +29,30 @@
     </div>
   </div>
 
-  <div class="">
-    <div class="make__wide row">
-      <div class="supply__ctn col-sm-6">
+  <div class="supply__ctn">
+    <div class="row make__wide">
+      <div class=" col-md-6">
         <div class="box give__room">
           <h3 class="supply__headline make__headline"><?php the_field('supply_headline'); ?></h3>
           <?php the_field('supply_copy'); ?>
           <a href="<?php the_field('supply_button_link'); ?>" class="supply__button button__plain"><?php the_field('supply_button_copy'); ?></a>
+
         </div>
       </div>
 
-    <div class="calc__ctn col-sm-6">
+      <div class="col-md-6 product__ctn give__room">
+        <div class="box">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/about__unit.png" alt="" />
+        </div>
+      </div>
+
+    <!-- <div class="calc__ctn col-sm-6">
       <div class="box give__room">
         <h3 class="calc__headline make__headline"><?php the_field('calc_headline'); ?></h3>
         <?php the_field('calc_copy'); ?>
         <a href="<?php the_field('calc_button_link'); ?>" class="calc__button button__plain"><?php the_field('calc_button_copy'); ?></a>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 

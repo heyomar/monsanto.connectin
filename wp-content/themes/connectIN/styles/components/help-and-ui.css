@@ -26,6 +26,9 @@
   padding-top: 0;
 }
 
+.add__bottom-pad{
+  padding-bottom: 75px;
+}
 @media screen and (max-width:1150px) {
   .make__break{
     display: block;
