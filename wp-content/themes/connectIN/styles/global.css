@@ -30,3 +30,7 @@ b, strong {
   line-height: 1.7;
   font-size: 18px;
 }
+
+.seed-supplier-cta a{
+  cursor: pointer;
+}
