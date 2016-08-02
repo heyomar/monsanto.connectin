@@ -1,4 +1,4 @@
-$('.benefits__headline').on('click touchend', function () {
+$('.benefits__headline').on('click', function () {
   if ($(window).width() <= 768) {
     const $body = $(this).next()
     const arrowDown = '<use xlink:href="#icon-down"></use>'
