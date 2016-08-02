@@ -24,7 +24,7 @@
 .hero__title p::after{
   content: "";
   display: block;
-  height: 15px;
+  height: 30px;
   width: 200px;
   border-bottom: 2px solid var(--color-gray);
   margin: 0 auto;

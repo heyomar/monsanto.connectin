@@ -77,8 +77,17 @@
       padding: 0;
     }
   }
+
   #tfa_0-WRPR {
     padding: 0;
+  }
+
+  #mailbar-activate {
+    cursor: default;
+
+    & svg {
+      display: none;
+    }
   }
 }
 

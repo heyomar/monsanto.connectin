@@ -11,7 +11,7 @@ get_template_part('components/inner-hero'); ?>
   </div>
 </div>
 
-<div class="center__grid align center__text give__room row">
+<div class="center__grid align center__text give__room row remove__top-pad">
   <div class="col-sm-6">
     <div class="box">
       <div class="risks-underseed">
