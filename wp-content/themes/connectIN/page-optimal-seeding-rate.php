@@ -11,9 +11,9 @@ get_template_part('components/inner-hero'); ?>
   </div>
 </div>
 
-<div class="center__grid align center__text give__room row remove__top-pad">
+<div class="make__wide align center__text give__room row remove__top-pad">
   <div class="col-sm-6">
-    <div class="box">
+    <div class="box underseed__box">
       <div class="risks-underseed">
         <img src="<?php the_field('underseed_image'); ?>">
         <div class="risks-underseed-copy"><?php the_field('underseed_copy'); ?></div>
@@ -22,7 +22,7 @@ get_template_part('components/inner-hero'); ?>
   </div>
 
   <div class="col-sm-6">
-    <div class="box">
+    <div class="box overseed__box">
       <img src="<?php the_field('overseed_image'); ?>">
       <div class="risks-underseed-copy"><?php the_field('overseed_copy'); ?></div>
     </div>
@@ -46,7 +46,7 @@ get_template_part('components/inner-hero'); ?>
   </div>
 </div>
 
-<div class="row center__grid give__room">
+<div class="add__bottom-pad row center__grid give__room">
   <div class="col-sm-12">
     <div class="box center__text">
       <h3>Growers, maximize the potential of your seed investment. Ask for your<br> Optimal Seeding Rate recommendation today.</h3><br>
