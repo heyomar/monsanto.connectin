@@ -94,6 +94,8 @@
 .contact-us {
   & .wForm .primaryAction {
     padding: 18px 31px;
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .actions input:after{
