@@ -14,3 +14,18 @@
 .benefits__op-ctn li {
   line-height: 2;
 }
+
+.underseed__box{
+  padding-bottom: 40px;
+}
+
+
+@media screen and (min-width:768px) {
+  .underseed__box{
+    padding: 0 40px;
+  }
+
+  .overseed__box{
+    padding: 0 40px;
+  }
+}
