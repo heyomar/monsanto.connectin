@@ -30,7 +30,6 @@
       color: white;
   }
 
-
   .menu__contact-bar {
     padding: 8px 48px 8px 0;
     text-align: right;
@@ -55,7 +54,7 @@
       color: var(--color-white);
 
       &:hover{
-        color:#646560;
+        color:#373836;
       }
     }
 
@@ -94,7 +93,6 @@
 
 }
 
-
 .menu-desktop-menu-container{
   position: relative;
 
@@ -126,7 +124,6 @@
 
     }
 }
-
 
 .about-the-system #menu-item-145 a {
   color:#646560;

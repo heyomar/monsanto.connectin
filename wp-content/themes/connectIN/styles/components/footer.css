@@ -11,6 +11,9 @@
     text-align: center;
 
     & li {
+      & a:hover {
+        color: #949489;
+      }
       list-style: none;
 
       & :any-link {
