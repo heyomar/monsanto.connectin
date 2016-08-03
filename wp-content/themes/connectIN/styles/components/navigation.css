@@ -9,7 +9,7 @@ body.menu-active {
   color: var(--color-white);
 
   position: relative;
-  height: 80px;
+  height: 60px;
   padding: 22.5px 20px;
 
   font-size: 15px;

@@ -16,6 +16,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="https://www.tfaforms.com/form-builder/4.3.0/css/wforms-layout.css" rel="stylesheet" type="text/css" />
+
     <!--[if IE 8]>
         <link href="https://www.tfaforms.com/form-builder/4.3.0/css/wforms-layout-ie8.css" rel="stylesheet" type="text/css" />
         <![endif]-->
@@ -29,13 +30,10 @@
     <link href="https://www.tfaforms.com/themes/get/17258" rel="stylesheet" type="text/css" />
     <link href="https://www.tfaforms.com/form-builder/4.3.0/css/wforms-jsonly.css" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
     <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.10/js/wforms.js"></script>
-    <script type="text/javascript">
-        wFORMS.behaviors.prefill.skip = false;
-    </script>
+    <script type="text/javascript">wFORMS.behaviors.prefill.skip = false;</script>
     <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.10/js/localization-en_US.js"></script>
 
     <?php wp_head(); ?>
-
   </head>
   <body <?php body_class(); ?>>
 

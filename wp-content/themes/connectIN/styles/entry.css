@@ -19,11 +19,12 @@
 @import "./components/inner-hero.css";
 @import "./components/help-and-ui.css";
 @import "./components/mailbar.css";
+@import "./components/form.css";
 
 /* PAGE STYLES */
 @import "./home.css";
 @import "./about-the-system.css";
 @import "./optimal-seeding-rate.css";
 @import "./find-seed-supplier.css";
-@import "./calc.css";
+@import "./wheat-calc.css";
 @import "./contact-us.css";

@@ -1,0 +1,39 @@
+.wFormContainer {
+  & .inputWrapper{
+    background-color: var(--color-beige);
+    border: 1px solid var(--color-ltgray);
+    width: 100%;
+
+    & input {
+      padding: 8px;
+      width: 100%;
+    }
+
+    & textarea {
+      padding: 8px;
+      width: 100%;
+    }
+  }
+
+  & label {
+    font-weight: bold;
+  }
+
+  & .wFormTitle {
+    display: none;
+  }
+
+  & .actions {
+    & input {
+      padding: 18px 20px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .actions input{
+    width: 100%;
+    padding: 20px 0;
+  }
+}
