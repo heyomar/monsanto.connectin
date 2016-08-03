@@ -97,7 +97,7 @@
 
   <div class="row center__grid give__room">
     <div class="col-sm-12">
-      <div class="box center__text">
+      <div class="box center__text add__bottom-pad-35">
         <h3>Growers, maximize the potential of your seed investment. Ask for your<br> Optimal Seeding Rate recommendation today.</h3><br>
         <a class="button__plain" href="/find-seed-supplier">Find a Seed Supplier</a>
       </div>

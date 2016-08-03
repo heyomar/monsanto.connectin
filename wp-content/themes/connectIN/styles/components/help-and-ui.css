@@ -29,6 +29,11 @@
 .add__bottom-pad{
   padding-bottom: 75px;
 }
+
+.add__bottom-pad-35{
+  padding-bottom: 35px;
+}
+
 @media screen and (max-width:1150px) {
   .make__break{
     display: block;

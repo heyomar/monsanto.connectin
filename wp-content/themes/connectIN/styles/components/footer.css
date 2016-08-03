@@ -40,7 +40,7 @@
   & a {
     color: #fff;
   }
-  
+
   & .seperator {
     display: inline-block;
     position: relative;
@@ -99,7 +99,7 @@
     & ul li {
       vertical-align: top;
       display: inline-block;
-      width: 24%;
+      width: 30%;
     }
   }
 
