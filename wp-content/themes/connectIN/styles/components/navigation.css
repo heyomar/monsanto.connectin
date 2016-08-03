@@ -1,7 +1,13 @@
 /* scroll locker class */
-body.mailbar-active,
-body.menu-active {
-  overflow: hidden;
+html,
+body {
+  &.mailbar-active,
+  &.menu-active {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .mailbar-header {

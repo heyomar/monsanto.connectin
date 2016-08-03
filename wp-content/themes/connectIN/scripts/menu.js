@@ -1,4 +1,4 @@
-$('#menu-activate').on('click touchend', function () {
+$('#menu-activate').on('click', function () {
   let mailbar = 0
   if ($('#mailbar-body').length) {
     mailbar = $('#mailbar').height()
@@ -18,6 +18,7 @@ $('#menu-activate').on('click touchend', function () {
   }
 
   $('body').toggleClass('menu-active')
+  $('html').toggleClass('menu-active')
 })
 
 // TODO: recalc menu height on resize if in mobile widths

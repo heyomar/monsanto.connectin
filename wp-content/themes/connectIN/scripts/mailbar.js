@@ -38,13 +38,14 @@ $('#mailbar-activate').on('click touchend', function () {
   }
 
   $('body').toggleClass('mailbar-active')
+  $('html').toggleClass('mailbar-active')
 })
 
 // TODO: submit mailbar form
 // run dismissMailbar() after thank you - a dismiss button that replaces the form submit perhaps?
 
 // click dismiss
-$('#mailbar-dismiss').on('click touchend', dismissMailbar)
+$('#mailbar-dismiss').on('click', dismissMailbar)
 
 function dismissMailbar () {
   // if the menu is active and you dismiss, recalculate menu height
