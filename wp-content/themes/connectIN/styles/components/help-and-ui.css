@@ -40,8 +40,6 @@
   }
 }
 
-
-
 .make__number{
   border: 2px solid var(--color-ltblue);
   border-radius: 50px;
@@ -67,5 +65,5 @@
 }
 
 .button__plain:hover{
-  background-color: hsl(195, 33%, 50%);
+  background-color: var(--color-dkblue);
 }

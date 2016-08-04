@@ -16,6 +16,8 @@ body.menu-active {
   font-weight: 700;
   line-height: 1;
 
+  text-align: center;
+
   & .down {
     margin-left: 15px;
     font-size: 20px;
@@ -49,6 +51,10 @@ body.menu-active {
 #mailbar-dismiss,
 #menu-activate {
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+
 }
 
 .main-nav-header {
