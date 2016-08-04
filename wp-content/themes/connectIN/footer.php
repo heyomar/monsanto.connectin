@@ -28,7 +28,6 @@
   </body>
 
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/vendor/jquery.min.js"></script>
-  <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/vendor/cookie.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/bundle.es5.js" charset="utf-8" defer></script>
   <?php wp_footer(); ?>
 
