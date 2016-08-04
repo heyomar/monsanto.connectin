@@ -2,6 +2,7 @@
   & .inputWrapper {
     background-color: transparent;
     border: 0;
+    color: #333;
   }
   & input {
     width: auto;
@@ -48,11 +49,14 @@
       display: inline-block;
       width: 48%;
     }
-
     & .actions {
       & input {
         margin: 0 auto;
       }
+    }
+    & .errMsg {
+      font-size: 12px;
+      position: relative;
     }
   }
 }

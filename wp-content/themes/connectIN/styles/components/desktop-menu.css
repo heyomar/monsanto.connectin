@@ -54,7 +54,7 @@
       color: var(--color-white);
 
       &:hover{
-        color:#373836;
+        color:#646560;
       }
     }
 
@@ -127,8 +127,10 @@
 
 .about-the-system #menu-item-145 a {
   color:#646560;
-}
-
-.optimal-seeding-rate #menu-item-146 a {
+}.optimal-seeding-rate #menu-item-146 a {
+  color:#646560;
+}.find-seed-supplier .menu__find-seed a {
+  color:#646560;
+}.contact-us .menu__contact-us a {
   color:#646560;
 }

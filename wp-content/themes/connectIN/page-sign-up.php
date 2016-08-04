@@ -31,9 +31,15 @@ get_template_part('components/inner-hero'); ?>
                     </div>
                 </div>
                 <div id="checkbox__ctn" class="oneField field-container-D     ">
-                    <label id="tfa_4-L" for="tfa_4" class="label preField ">I am a:</label>
+                    <label id="tfa_4-L" for="tfa_4" class="label preField reqMark">I am a:</label>
                     <br>
-                    <div class="inputWrapper"><span id="tfa_4" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_5" class="" id="tfa_5" name="tfa_5"><label class="label postField" id="tfa_5-L" for="tfa_5">Seed Supplier</label></span><span class="oneChoice"><input type="checkbox" value="tfa_6" class="" id="tfa_6" name="tfa_6"><label class="label postField" id="tfa_6-L" for="tfa_6">Grower</label></span></span>
+                    <div class="inputWrapper"><span id="tfa_4" class="choices vertical required"><span class="oneChoice"><input type="checkbox" value="tfa_6" class="" checked id="tfa_6" name="tfa_6"><label class="label postField" id="tfa_6-L" for="tfa_6">Grower</label></span>
+                        <span
+                            class="oneChoice">
+                            <input type="checkbox" value="tfa_5" class="" id="tfa_5" name="tfa_5">
+                            <label class="label postField" id="tfa_5-L" for="tfa_5">Seed Supplier</label>
+                            </span>
+                            </span>
                     </div>
                 </div>
                 <div class="actions" id="tfa_0-A">

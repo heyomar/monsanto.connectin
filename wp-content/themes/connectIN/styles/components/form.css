@@ -1,4 +1,8 @@
 .wFormContainer {
+  & .oneField {
+    padding-bottom: 5px;
+  }
+
   & .inputWrapper{
     background-color: var(--color-beige);
     border: 1px solid var(--color-ltgray);
@@ -7,6 +11,7 @@
     & input {
       padding: 8px;
       width: 100%;
+      color: var(--color-dkgray);
     }
 
     & textarea {
@@ -29,6 +34,12 @@
       font-weight: 500;
     }
   }
+
+  & .errMsg {
+    font-size: 12px;
+    position: absolute;
+  }
+
 }
 
 @media screen and (max-width:768px) {
