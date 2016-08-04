@@ -29,6 +29,8 @@ body {
   font-weight: 700;
   line-height: 1;
 
+  text-align: center;
+
   & .down {
     margin-left: 15px;
     font-size: 20px;
@@ -62,6 +64,10 @@ body {
 #mailbar-dismiss,
 #menu-activate {
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+
 }
 
 .main-nav-header {

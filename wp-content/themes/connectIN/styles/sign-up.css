@@ -1,0 +1,58 @@
+#tfa_4-D {
+  & .inputWrapper {
+    background-color: transparent;
+    border: 0;
+  }
+  & input {
+    width: auto;
+  }
+  & .oneChoice {
+    display: inline-block;
+
+    & label {
+      font-weight: 300;
+      color: var(--color-white);
+    }
+  }
+}
+
+#checkbox__ctn {
+  & .oneChoice {
+    & label {
+      color: var(--color-ltgray);
+    }
+  }
+  & .inputWrapper {
+    background-color: transparent;
+    border: 0;
+  }
+  & input {
+    width: auto;
+  }
+  & .oneChoice {
+    display: inline-block;
+
+    & label {
+      font-weight: 300;
+      color: var(--color-ltgray);
+    }
+  }
+}
+
+@media screen and (min-width:768px) {
+  #signupform__ctn {
+    max-width: 960px;
+    padding: 50px 20px;
+
+    & .oneField {
+      display: inline-block;
+      width: 48%;
+    }
+
+    & .actions {
+      & input {
+        margin: 0 auto;
+      }
+    }
+  }
+}
