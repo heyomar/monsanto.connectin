@@ -72,20 +72,15 @@ const mailbar = `
 </div>
 `
 
-// SET COOKIE HERE
-$('#tfa_0-A input').on('click', function (event) {
-  event.preventDefault()
-  console.log('IT works!')
-  // set cookie
-  Cookies.set('subscribed', 'true', { expires: 1500 })
-  // $('#tfa_0').submit()
-})
-
-if (!$('body').hasClass('sign-up') || false) {
+if ( ($('body').hasClass('sign-up') === true) || (document.cookie.replace(/(?:(?:^|.*;\s*)subscribed\s*\=\s*([^;]*).*$)|^.*$/, '$1') !== 'true') ) {
   $('#mailbar').html(mailbar)
 }
 
-
+$('#tfa_0 input[type=submit]').click(function(e) {
+  e.preventDefault()
+  document.cookie = 'subscribed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT'
+  $('#tfa_0').submit()
+})
 
 // click title or down arrow
 $('#mailbar-activate').on('click touchend', function () {
@@ -113,9 +108,6 @@ $('#mailbar-activate').on('click touchend', function () {
   $('html').toggleClass('mailbar-active')
 })
 
-// TODO: submit mailbar form
-// run dismissMailbar() after thank you - a dismiss button that replaces the form submit perhaps?
-
 // click dismiss
 $('#mailbar-dismiss').on('click', dismissMailbar)
 
@@ -131,5 +123,6 @@ function dismissMailbar () {
     $(this).remove()
     $('body').removeClass('mailbar-active')
   })
-  Cookies.set('subscribed', 'true')
+  
+  document.cookie = 'subscribed=true'
 }
