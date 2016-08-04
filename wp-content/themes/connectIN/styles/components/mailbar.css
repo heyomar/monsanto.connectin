@@ -10,4 +10,8 @@
   .show__768up {
     display: inline;
   }
+
+  .hide__768down {
+    display: none;
+  }
 }

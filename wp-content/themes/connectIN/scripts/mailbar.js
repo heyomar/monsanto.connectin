@@ -73,8 +73,19 @@ const mailbar = `
 `
 
 // SET COOKIE HERE
-// TODO: check for cookie before running this insertion
-$('#mailbar').html(mailbar)
+$('#tfa_0-A input').on('click', function (event) {
+  event.preventDefault()
+  console.log('IT works!')
+  // set cookie
+  Cookies.set('subscribed', 'true', { expires: 1500 })
+  // $('#tfa_0').submit()
+})
+
+if (!$('body').hasClass('sign-up') || false) {
+  $('#mailbar').html(mailbar)
+}
+
+
 
 // click title or down arrow
 $('#mailbar-activate').on('click touchend', function () {
@@ -120,5 +131,5 @@ function dismissMailbar () {
     $(this).remove()
     $('body').removeClass('mailbar-active')
   })
-  // TODO: set a cookie here (after testing that is) to keep window dismissed for TBD time
+  Cookies.set('subscribed', 'true')
 }
