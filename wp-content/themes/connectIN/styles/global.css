@@ -20,3 +20,12 @@ img {
 b, strong {
   font-weight: 700;
 }
+
+body, html {
+  background-color: var(--color-dkgray);
+  min-height: 100vh;
+}
+
+main {
+  background-color: #fff;
+}
