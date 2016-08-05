@@ -72,6 +72,7 @@
     height: 100%;
     position: relative;
     background-color: var(--color-ltblue);
+    margin-right: 0;
   }
 
   .menu__item{

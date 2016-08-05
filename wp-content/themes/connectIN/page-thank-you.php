@@ -7,9 +7,4 @@ get_template_part('components/inner-hero');?>
     <a target="_blank" class="button" href="http://www.westbred.com/associates/pages/locateassociates.aspx">Find a Seed Supplier</a>
   </p>
 </div>
-
-
-
-
-
 <?php get_footer();?>
