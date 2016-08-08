@@ -72,14 +72,13 @@ const mailbar = `
 </div>
 `
 
+if(window.location.href === "http://connectin.hlkbeta.com/thank-you/") {
+    document.cookie = 'subscribed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT'
+    alert("Cookie Set!")
+}
 
 if ( ($('body').hasClass('sign-up') === true) || (document.cookie.replace(/(?:(?:^|.*;\s*)subscribed\s*\=\s*([^;]*).*$)|^.*$/, '$1') !== 'true') ) {
   $('#mailbar').html(mailbar)
-}else {
-  if(window.location.href === "http://connectin.hlkbeta.com/thank-you/") {
-      document.cookie = 'subscribed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT'
-      alert("Cookie Set!")
-  }
 }
 
 // click title or down arrow
