@@ -75,13 +75,15 @@ const mailbar = `
 
 
 
-if ( ($('body').hasClass('sign-up') === true) || (document.cookie.replace(/(?:(?:^|.*;\s*)subscribed\s*\=\s*([^;]*).*$)|^.*$/, '$1') !== 'true') ) {
-  $('#mailbar').html(mailbar)
-}
+
 
 if(window.location.href === "http://connectin.hlkbeta.com/thank-you/") {
     alert("Cookie Set!")
     document.cookie = 'subscribed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT'
+}
+
+if ( ($('body').hasClass('sign-up') === true) || (document.cookie.replace(/(?:(?:^|.*;\s*)subscribed\s*\=\s*([^;]*).*$)|^.*$/, '$1') !== 'true') ) {
+  $('#mailbar').html(mailbar)
 }
 
 // click title or down arrow
