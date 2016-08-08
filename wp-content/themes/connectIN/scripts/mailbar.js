@@ -26,21 +26,21 @@ const mailbar = `
                     <label id="tfa_1-L" for="tfa_1" class="label preField reqMark">First Name</label>
                     <br>
                     <div class="inputWrapper">
-                        <input type="text" id="tfa_1" name="tfa_1" value="" placeholder="" title="First Name" class="required">
+                        <input required type="text" id="tfa_1" name="tfa_1" value="" placeholder="" title="First Name" class="required">
                     </div>
                 </div>
                 <div id="tfa_2-D" class="oneField field-container-D     ">
                     <label id="tfa_2-L" for="tfa_2" class="label preField reqMark">Last Name</label>
                     <br>
                     <div class="inputWrapper">
-                        <input type="text" id="tfa_2" name="tfa_2" value="" placeholder="" title="Last Name" class="required">
+                        <input required type="text" id="tfa_2" name="tfa_2" value="" placeholder="" title="Last Name" class="required">
                     </div>
                 </div>
                 <div id="tfa_3-D" class="oneField field-container-D     ">
                     <label id="tfa_3-L" for="tfa_3" class="label preField reqMark">Email</label>
                     <br>
                     <div class="inputWrapper">
-                        <input type="text" id="tfa_3" name="tfa_3" value="" placeholder="" title="Email" class="validate-email required">
+                        <input required type="text" id="tfa_3" name="tfa_3" value="" placeholder="" title="Email" class="validate-email required">
                     </div>
                 </div>
                 <div id="tfa_4-D" class="oneField field-container-D     ">
@@ -72,15 +72,22 @@ const mailbar = `
 </div>
 `
 
+if(window.location.href === "http://connectin.hlkbeta.com/thank-you/") {
+    // some code to loa
+    alert('OLOLOLOLO')
+    // document.cookie = 'subscribed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT'
+}
+
+
 if ( ($('body').hasClass('sign-up') === true) || (document.cookie.replace(/(?:(?:^|.*;\s*)subscribed\s*\=\s*([^;]*).*$)|^.*$/, '$1') !== 'true') ) {
   $('#mailbar').html(mailbar)
 }
 
-$('#tfa_0 input[type=submit]').click(function(e) {
-  e.preventDefault()
-  document.cookie = 'subscribed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT'
-  $('#tfa_0').submit()
-})
+// $('#tfa_0 input[type=submit]').click(function(e) {
+//   e.preventDefault()
+//
+//   $(form).submit()
+// })
 
 // click title or down arrow
 $('#mailbar-activate').on('click touchend', function () {
@@ -123,6 +130,6 @@ function dismissMailbar () {
     $(this).remove()
     $('body').removeClass('mailbar-active')
   })
-  
+
   document.cookie = 'subscribed=true'
 }
