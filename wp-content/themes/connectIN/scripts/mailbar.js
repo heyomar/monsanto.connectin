@@ -72,15 +72,16 @@ const mailbar = `
 </div>
 `
 
+
+
+if ( ($('body').hasClass('sign-up') === true) || (document.cookie.replace(/(?:(?:^|.*;\s*)subscribed\s*\=\s*([^;]*).*$)|^.*$/, '$1') !== 'true') ) {
+  $('#mailbar').html(mailbar)
+}
+
 if(window.location.href === "http://<?php echo $WP_SITEURL; ?>/thank-you/") {
     document.cookie = 'subscribed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT'
     alert("Cookie Set!")
-}else {
-  if ( ($('body').hasClass('sign-up') === true) || (document.cookie.replace(/(?:(?:^|.*;\s*)subscribed\s*\=\s*([^;]*).*$)|^.*$/, '$1') !== 'true') ) {
-    $('#mailbar').html(mailbar)
-  }
 }
-
 
 
 // click title or down arrow
