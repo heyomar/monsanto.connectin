@@ -72,22 +72,17 @@ const mailbar = `
 </div>
 `
 
-if(window.location.href === "http://connectin.hlkbeta.com/thank-you/") {
-    // some code to loa
-    alert('OLOLOLOLO')
-    // document.cookie = 'subscribed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT'
-}
+
 
 
 if ( ($('body').hasClass('sign-up') === true) || (document.cookie.replace(/(?:(?:^|.*;\s*)subscribed\s*\=\s*([^;]*).*$)|^.*$/, '$1') !== 'true') ) {
   $('#mailbar').html(mailbar)
 }
 
-// $('#tfa_0 input[type=submit]').click(function(e) {
-//   e.preventDefault()
-//
-//   $(form).submit()
-// })
+if(window.location.href === "http://connectin.hlkbeta.com/thank-you/") {
+    alert("Cookie Set!")
+    document.cookie = 'subscribed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT'
+}
 
 // click title or down arrow
 $('#mailbar-activate').on('click touchend', function () {
