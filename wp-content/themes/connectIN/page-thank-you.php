@@ -3,7 +3,7 @@ get_header();
 get_template_part('components/inner-hero');?>
 <script type="text/javascript">
 if(window.location.href === "http://connectin.hlkbeta.com/thank-you/") {
-    document.cookie = 'subscribed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT'
+    document.cookie = 'subscribed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/'
     alert("Cookie Set!")
 }
 </script>
