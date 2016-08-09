@@ -21,7 +21,7 @@ const mailbar = `
         <div class="wForm" id="tfa_0-WRPR" dir="ltr">
             <div class="codesection" id="code-tfa_0"></div>
             <h3 class="wFormTitle" id="tfa_0-T">ConnectIN Email Signup</h3>
-            <form method="post" action="https://www.tfaforms.com/responses/processor" class="hintsBelow labelsAbove" id="tfa_0">
+            <form method="post" action="https://www.tfaforms.com/responses/processor" class="hintsBelow labelsAbove ConnectIN-Email-Signup" id="tfa_0">
                 <div id="tfa_1-D" class="oneField field-container-D     ">
                     <label id="tfa_1-L" for="tfa_1" class="label preField reqMark">First Name</label>
                     <br>
