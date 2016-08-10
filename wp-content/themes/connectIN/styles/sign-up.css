@@ -1,3 +1,7 @@
+.sign-up .mailbar {
+  display: none;
+}
+
 #tfa_4-D {
   & .inputWrapper {
     background-color: transparent;
@@ -57,6 +61,10 @@
     & .errMsg {
       font-size: 12px;
       position: relative;
+
+      & span {
+        position: absolute;
+      }
     }
   }
 }
