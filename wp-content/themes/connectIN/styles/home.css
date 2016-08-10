@@ -72,3 +72,9 @@
 .product__ctn{
   padding-top: 60px;
 }
+
+@media screen and (max-width:768px) {
+  .hero__ctn {
+    background-image: url('../connectIN/assets/images/bg-hero-mobile.jpg');
+  }
+}
