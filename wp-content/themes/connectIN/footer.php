@@ -1,10 +1,6 @@
     </main>
     <footer class="site-footer">
 
-
-
-
-
   <div class="make__wide">    <?php
       $footargs = array(
         'theme_location' => 'footer-navigation'
