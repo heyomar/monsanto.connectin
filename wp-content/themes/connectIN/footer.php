@@ -14,7 +14,7 @@
       </div>
 
       <div class="disclaimers">
-        <strong>Monsanto and Vine Design&reg;,WestBred and Design&reg; and ConnectIN are registered trademarks of Monsanto Technology LLC. &copy;2016 Monsanto Company.</strong>
+        <strong>Monsanto and Vine Design&reg;,WestBred and Design&reg; and ConnectIN&trade; are registered trademarks of Monsanto Technology LLC. &copy;2016 Monsanto Company.</strong>
       </div></div>
 
     </footer>
