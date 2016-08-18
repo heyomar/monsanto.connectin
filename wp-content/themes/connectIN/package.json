@@ -14,7 +14,7 @@
     "styles:compile": "postcss --use postcss-import --use postcss-pxtorem --use postcss-cssnext --use postcss-em-media-query --map --output bundle.css styles/entry.css",
     "styles:lint": "stylelint styles/**/*.css",
     "styles:min": "postcss --use cssnano --output bundle.min.css bundle.css",
-    "serve": "browser-sync start --proxy 'connectin.dev:8888' --files '**/*.php' 'bundle.css' 'bundle.es5.js' --no-open --no-notify",
+    "serve": "browser-sync start --proxy 'connectin:4000' --files '**/*.php' 'bundle.css' 'bundle.es5.js' --no-open --no-notify",
     "watch": "parallelshell 'npm run watch:js' 'npm run watch:styles' 'npm run serve'",
     "watch:js": "nodemon --watch scripts --ext js --exec 'npm run js:compile'",
     "watch:styles": "nodemon --watch styles --ext css --exec 'npm run styles:compile'",
