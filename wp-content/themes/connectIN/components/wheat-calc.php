@@ -3,60 +3,77 @@
 	<form class="custom-form" id="seed_calc_form">
 
 		<!-- row -->
-		<div class="g-container full-width full lg-halves">
-
-			<!-- certified seed -->
-			<div class="g-cell calc-certified-seed">
-
-				<fieldset>
-					<legend class="h3 ae-brand">Certified Seed</legend>
-					<div class="form-input">
-						<label for="cert_seed_germination">% Germination</label>
-						<label class="suffix">%</label>
-						<input type="number" step="any" id="cert_seed_germination" data-format="percent">
-					</div>
-					<div class="form-input">
-						<label for="cert_seed_pure_seed">% Pure Seed</label>
-						<label class="suffix">%</label>
-						<input type="number" step="any" id="cert_seed_pure_seed" data-format="percent">
-					</div>
-					<div class="form-input">
-						<label for="cert_seed_cost_per_unit">Seed Cost / Unit</label>
-						<label class="prefix">$</label>
-						<input type="number" step="any" id="cert_seed_cost_per_unit" data-format="currency">
-					</div>
-				</fieldset>
+		<div class="improve__ctn g-container full-width full lg-halves">
+			<div class="row">
+			  <div class="col-sm-12">
+			    <div class="box">
+			      <h1><?php the_field('performance_headline'); ?></h1>
+			      <?php the_field('performance_copy'); ?>
+			    </div>
+			  </div>
 			</div>
 
-			<!-- saved seed -->
-			<div class="g-cell calc-saved-seed">
-
-				<fieldset>
-					<legend class="h3">Saved Seed</legend>
-					<div class="form-input">
-						<label for="saved_seed_germination">% Germination</label>
-						<label class="suffix">%</label>
-						<input type="number" step="any" id="saved_seed_germination">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<div class="box">
+						<!-- certified seed -->
+							<div class="g-cell calc-certified-seed">
+								<fieldset>
+									<legend class="h3 ae-brand">Certified Seed</legend>
+									<div class="form-input">
+										<label for="cert_seed_germination">% Germination</label>
+										<!-- <label class="suffix">%</label> -->
+										<input type="number" step="any" id="cert_seed_germination" data-format="percent">
+									</div>
+									<div class="form-input">
+										<label for="cert_seed_pure_seed">% Pure Seed</label>
+										<!-- <label class="suffix">%</label> -->
+										<input type="number" step="any" id="cert_seed_pure_seed" data-format="percent">
+									</div>
+									<div class="form-input">
+										<label for="cert_seed_cost_per_unit">Seed Cost / Unit</label>
+										<!-- <label class="prefix">$</label> -->
+										<input type="number" step="any" id="cert_seed_cost_per_unit" data-format="currency">
+									</div>
+								</fieldset>
+							</div>
 					</div>
-					<div class="form-input">
-						<label for="saved_seed_pure_seed">% Pure Seed</label>
-						<label class="suffix">%</label>
-						<input type="number" step="any" id="saved_seed_pure_seed">
-					</div>
-					<div class="form-input">
-						<label for="saved_seed_cost_per_unit">Seed Cost / Unit</label>
-						<label class="prefix">$</label>
-						<input type="number" step="any" id="saved_seed_cost_per_unit">
-					</div>
-				</fieldset>
-
 			</div>
+
+			<div class="col-xs-12 col-sm-6">
+			<div class="box">
+				<!-- saved seed -->
+				<div class="g-cell calc-saved-seed">
+
+						<fieldset>
+							<legend class="h3">Saved Seed</legend>
+							<div class="form-input">
+								<label for="saved_seed_germination">% Germination</label>
+								<!-- <label class="suffix">%</label> -->
+								<input type="number" step="any" id="saved_seed_germination">
+							</div>
+							<div class="form-input">
+								<label for="saved_seed_pure_seed">% Pure Seed</label>
+								<!-- <label class="suffix">%</label> -->
+								<input type="number" step="any" id="saved_seed_pure_seed">
+							</div>
+							<div class="form-input">
+								<label for="saved_seed_cost_per_unit">Seed Cost / Unit</label>
+								<!-- <label class="prefix">$</label> -->
+								<input type="number" step="any" id="saved_seed_cost_per_unit">
+							</div>
+						</fieldset>
+
+					</div>
+				</div>
+			</div>
+		</div>
 
 		</div>
 		<!-- / row -->
 
 		<!-- row -->
-		<div class="g-container ae-bg-white soft-ends">
+		<div class="yieldformcalc__ctn g-container ae-bg-white soft-ends">
 			<div class="g-cell full">
 
 				<div class="g-container form-row">
@@ -87,7 +104,7 @@
 						<label for="crop_wheat_price" class="col text-right">Wheat Price <small class="caption">($Bu/A)</small></label>
 					</div>
 					<div class="g-cell form-input">
-						<label class="prefix">$</label>
+						<!-- <label class="prefix">$</label> -->
 						<input type="number" step="any" id="crop_wheat_price">
 					</div>
 				</div>
@@ -120,7 +137,7 @@
 						<label for="crop_percent_yield_impact_overseeding" class="col text-right">% Yield Impact for Overseeding <small class="caption">(per 100,000 seeds/acre)</small></label>
 					</div>
 					<div class="g-cell form-input">
-						<label class="suffix">%</label>
+						<!-- <label class="suffix">%</label> -->
 						<input type="number" step="any" id="crop_percent_yield_impact_overseeding">
 					</div>
 				</div>
@@ -129,17 +146,17 @@
 						<label for="crop_percent_yield_impact_underseeding" class="col text-right">% Yield Impact for Underseeding <small class="caption">(per 100,000 seeds/acre)</small></label>
 					</div>
 					<div class="g-cell form-input">
-						<label class="suffix">%</label>
+						<!-- <label class="suffix">%</label> -->
 						<input type="number" step="any" id="crop_percent_yield_impact_underseeding">
 					</div>
 				</div>
-				<div class="g-container form-row">
+				<div class="calculate__btn-ctn g-container form-row">
 					<div class="g-cell form-label">
 						<label for="" class="col text-right"></label>
 					</div>
 					<div class="g-cell form-input">
 						<button type="button" class="btn" id="calculate">Calculate</button>
-						<div>
+						<div class="calculate__reset">
 							<a href="" class="btn-natural invisible" id="reset_form">Reset To Industry Standards</a>
 						</div>
 					</div>
