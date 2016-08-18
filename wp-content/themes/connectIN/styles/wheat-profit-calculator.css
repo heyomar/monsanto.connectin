@@ -1,0 +1,190 @@
+/*------------------------------------
+IMPROVE PERFORMANCE & PROFIT POTENTIAL
+------------------------------------*/
+.improve__ctn {
+  text-align: center;
+  padding: 35px 10px;
+  background-image: url('../connectIN/assets/images/bg-grains.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+
+.calc-certified-seed {
+  display: inline-block;
+  text-align: left;
+  width: 350px;
+
+  & fieldset {
+    border: 0;
+
+    & label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    & input {
+      background-color: #fff;
+      border: 1px solid var(--color-ltgray);
+      display: block;
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 5px;
+    }
+  }
+
+  & .h3 {
+    font-weight: bold;
+    color: var(--color-ltblue);
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}
+
+.calc-saved-seed {
+  display: inline-block;
+  text-align: left;
+  width: 350px;
+
+  & fieldset {
+    border: 0;
+
+    & label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    & input {
+      background-color: #fff;
+      border: 1px solid var(--color-ltgray);
+      display: block;
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 5px;
+    }
+  }
+
+  & .h3 {
+    font-weight: bold;
+    color: var(--color-ltblue);
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .calc-certified-seed {
+    width: 100%;
+
+
+    & input {
+      width: 100%;
+    }
+  }
+
+  .calc-saved-seed {
+    width: 100%;
+
+    & input {
+      width: 100%;
+    }
+  }
+
+
+}
+
+/*---------------------
+YIELD CALCULATIONS FORM
+----------------------*/
+.yieldformcalc__ctn {
+  border: 1px solid red;
+  background-color: var(--color-white);
+  padding: 35px 10px;
+
+  & .calculate__btn-ctn {
+    position: relative;
+    right: 222px;
+  }
+
+  & .calculate__reset {
+    text-align: right;
+    position: relative;
+    right: -120px;
+    padding-top: 10px;
+
+    & a {
+      text-decoration: none;
+      border-bottom: 5px solid var(--color-link);
+      color: inherit;
+    }
+  }
+
+  & .g-cell {
+    margin: 0 auto;
+    text-align: right;
+    max-width: 680px;
+    /*padding: 10px;*/
+
+  }
+
+  & .g-container {
+    padding-bottom: 15px;
+  }
+
+  & .form-label {
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  & .form-input {
+      display: inline-block;
+
+    & input {
+      background-color: var(--color-offwhite);
+      border: 1px solid var(--color-ltgray);
+      padding: 5px;
+      width: 340px;
+    }
+
+    & .control-radio {
+      /*display: inline-block;*/
+    }
+
+    & .btn {
+      padding: 10px 20px;
+      background-color: var(--color-ltblue);
+      color: #fff;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-dkblue);
+      }
+    }
+  }
+
+  & .caption {
+    font-weight: normal;
+    display: block;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .yieldformcalc__ctn {
+    & .g-cell {
+      text-align: left;
+    }
+
+    & .form-label {
+      display: block;
+    }
+
+    & .form-input {
+      display: block;
+
+      & input {
+        width: 100%;
+      }
+    }
+  }
+}
