@@ -1,6 +1,6 @@
-/*------------------------------------
+/*=========================================
 IMPROVE PERFORMANCE & PROFIT POTENTIAL
-------------------------------------*/
+===========================================*/
 .improve__ctn {
   text-align: center;
   padding: 35px 10px;
@@ -90,13 +90,11 @@ IMPROVE PERFORMANCE & PROFIT POTENTIAL
       width: 100%;
     }
   }
-
-
 }
 
-/*---------------------
+/*=========================================
 YIELD CALCULATIONS FORM
-----------------------*/
+===========================================*/
 .yieldformcalc__ctn {
   border: 1px solid red;
   background-color: var(--color-white);

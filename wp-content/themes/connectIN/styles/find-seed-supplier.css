@@ -9,3 +9,80 @@
   width: 200px;
   margin: 0 auto;
 }
+
+
+.suppliers__select-ctn {
+  padding: 20px;
+
+  & p {
+    font-weight: bold;
+  }
+  & select {
+    width: 100%;
+    -webkit-border-radius:1px;
+    -moz-border-radius:1px;
+    border-radius:1px;
+    height: 50px;
+    padding:10px;
+    margin: 0;
+    background: #fff;
+    color:#888;
+    border:1px solid #c9c9c4;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+  }
+  & label {position:relative}
+  & label:after {
+      content:'>';
+      font:35px "Consolas", monospace;
+      color:#aaa;
+      -webkit-transform:rotate(90deg);
+      -moz-transform:rotate(90deg);
+      -ms-transform:rotate(90deg);
+      transform:rotate(90deg);
+      right:11px;
+      top:-26px;
+      padding:14px;
+      border: 1px solid #c9c9c4;
+      position:absolute;
+      pointer-events:none;
+  }
+  & label:before {
+      content:'';
+      right:6px; top:0px;
+      width:20px; height:20px;
+      background:#f8f8f8;
+      position:absolute;
+      pointer-events:none;
+  }
+
+}
+
+.suppliers__section-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.suppliers__ctn {
+  padding: 40px;
+
+  & span {
+    display: block;
+  }
+  & .supplier__info {
+    border-left: 2px dotted var(--color-tan);
+    border-bottom: 2px dotted var(--color-tan);
+    padding: 25px;
+    margin-bottom: 35px;
+  }
+  & a {
+    border-bottom: 5px solid var(--color-link);
+    text-decoration: none;
+    color: inherit;
+  }
+
+}
