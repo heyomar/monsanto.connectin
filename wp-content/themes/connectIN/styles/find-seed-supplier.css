@@ -10,7 +10,6 @@
   margin: 0 auto;
 }
 
-
 .suppliers__select-ctn {
   padding: 60px 20px 20px;
 
@@ -99,8 +98,8 @@
     font-size: 20px;
   }
   & img {
-    width: 230px;
-    height: auto;
+    width: auto;
+    height: 200px;
     padding-right: 10px;
   }
   & span {

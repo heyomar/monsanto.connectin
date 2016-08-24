@@ -22,6 +22,10 @@
   text-transform: uppercase;
 }
 
+.make__offwhite {
+  background-color: var(--color-beige);
+}
+
 .remove__top-pad{
   padding-top: 0;
 }
