@@ -59,7 +59,6 @@
       position:absolute;
       pointer-events:none;
   }
-
 }
 
 .suppliers__section-title {
@@ -110,4 +109,12 @@
     border-bottom: 2px dotted var(--color-tan);
     padding: 25px;
   }
+}
+
+.show-state{
+  display: block;
+}
+
+#results.hidden{
+  display: none;
 }

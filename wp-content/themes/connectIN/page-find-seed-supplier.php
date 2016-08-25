@@ -34,7 +34,7 @@
   </div>
 </div>
 
-<div class="suppliers__section-title make__headline"><h3>Seed Suppliers</h3></div>
+<div id="results" class="hidden"><div class="suppliers__section-title make__headline"><h3>Seed Suppliers</h3></div>
 <div class="suppliers__ctn">
   <?php $suppliers = new WP_Query( array( 'post_type' => 'suppliers' ) );?>
     <?php if( $suppliers->have_posts()): ?>
@@ -93,6 +93,6 @@
   <?php endwhile; ?>
 </div>
 <?php endif ?>
-</div>
+</div></div>
 
 <?php get_footer();?>
