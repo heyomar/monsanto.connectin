@@ -1,8 +1,5 @@
 'use strict'
 
-import $ from 'jquery'
-import smoothScroll from 'smoothscroll'
-
 $(document).ready(function () {
 	// Main app startup
 	var Utility = (function () {

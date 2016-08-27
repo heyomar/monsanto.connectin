@@ -1,10 +1,6 @@
     </main>
     <footer class="site-footer">
 
-
-
-
-
   <div class="make__wide">    <?php
       $footargs = array(
         'theme_location' => 'footer-navigation'
@@ -25,6 +21,9 @@
   </body>
 
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/vendor/jquery.min.js"></script>
+  <?php if (is_page('wheat-profitability-calculator') ) {
+    echo "<script src='" . get_stylesheet_directory_uri() . "/scripts/vendor/Chart.min.js' charset='utf-8'></script>";
+  } ?>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/bundle.es5.js" charset="utf-8" defer></script>
   <?php wp_footer(); ?>
 
