@@ -166,7 +166,7 @@
 		<!-- / row -->
 
 		<!-- row -->
-		<div id="graph_compare_impact_section" class="g-container full ae-bkg-light soft-ends hidden calc-section center__grid">
+		<div class="add__graybg"><div id="graph_compare_impact_section" class="g-container full ae-bkg-light soft-ends hidden calc-section center__grid">
 			<div class="g-cell">
 
 				<div class="parsys-ID">
@@ -184,7 +184,7 @@
 				<div id="graph_compare_impact_wrapper" class="calc-chart"></div>
 
 			</div>
-		</div>
+		</div></div>
 		<!-- / row -->
 
 		<!-- row -->
