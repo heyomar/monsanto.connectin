@@ -1,3 +1,28 @@
+
+
+.calc-section {
+  padding: 50px 25px;
+  text-align: center;
+
+  & h3 {
+  font-weight: bold;
+  color: var(--color-ltblue);
+  text-transform: uppercase;
+  font-size: 18px;
+  }
+
+  & .calc-legend-icon {
+  display: inline-block;
+  width: auto;
+  height: 18px;
+  }
+
+  & a {
+    text-decoration: none;
+    border-bottom: 5px solid hsla(196, 90%, 91%, 1.00);
+    color: inherit;
+  }
+}
 /*=========================================
 IMPROVE PERFORMANCE & PROFIT POTENTIAL
 ===========================================*/
@@ -30,7 +55,7 @@ IMPROVE PERFORMANCE & PROFIT POTENTIAL
       display: block;
       margin-bottom: 20px;
       width: 100%;
-      padding: 5px;
+      padding: 8px;
     }
   }
 
@@ -61,7 +86,7 @@ IMPROVE PERFORMANCE & PROFIT POTENTIAL
       display: block;
       margin-bottom: 20px;
       width: 100%;
-      padding: 5px;
+      padding: 8px;
     }
   }
 
@@ -96,19 +121,28 @@ IMPROVE PERFORMANCE & PROFIT POTENTIAL
 YIELD CALCULATIONS FORM
 ===========================================*/
 .yieldformcalc__ctn {
-  border: 1px solid red;
   background-color: var(--color-white);
-  padding: 35px 10px;
+  padding: 35px 25px;
+  & #radiooptions__ctn {
+    width: 625px;
+    & > div {
+      display: inline-block;
+    }
+  }
+  & #crop_seasons_options {
+    display: inline-block;
+    & .control {
+      display: inline-block;
+      padding: 10px;
 
-  & .calculate__btn-ctn {
-    position: relative;
-    right: 222px;
+      & input {
+        width: auto;
+      }
+    }
   }
 
   & .calculate__reset {
-    text-align: right;
     position: relative;
-    right: -120px;
     padding-top: 10px;
 
     & a {
@@ -122,8 +156,6 @@ YIELD CALCULATIONS FORM
     margin: 0 auto;
     text-align: right;
     max-width: 680px;
-    /*padding: 10px;*/
-
   }
 
   & .g-container {
@@ -138,15 +170,12 @@ YIELD CALCULATIONS FORM
   & .form-input {
       display: inline-block;
 
+
     & input {
       background-color: var(--color-offwhite);
       border: 1px solid var(--color-ltgray);
-      padding: 5px;
+      padding: 8px;
       width: 340px;
-    }
-
-    & .control-radio {
-      /*display: inline-block;*/
     }
 
     & .btn {
@@ -159,12 +188,41 @@ YIELD CALCULATIONS FORM
         background-color: var(--color-dkblue);
       }
     }
+
+    & button {
+      position: relative;
+      right: 0;
+      width: 100%;
+    }
   }
 
   & .caption {
     font-weight: normal;
     display: block;
   }
+}
+
+@media screen and (min-width:768px) {
+  .form-label {
+    & label {
+      line-height: 0.5;
+    }
+  }
+
+  .calculate__btn-ctn {
+    position: relative;
+    right: 222px;
+  }
+
+  .calculate__reset {
+    right: 0;
+    position: relative;
+  }
+
+  .button__ctn {
+   left: 93px;
+   position: relative;
+ }
 }
 
 @media screen and (max-width:768px) {
@@ -185,4 +243,9 @@ YIELD CALCULATIONS FORM
       }
     }
   }
+}
+
+#graph_maximize_revenue_section ,
+#graph_compare_impact_section {
+  display: none;
 }

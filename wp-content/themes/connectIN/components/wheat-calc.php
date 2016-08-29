@@ -13,7 +13,7 @@
 			  </div>
 			</div>
 
-			<div class="row">
+			<div class="center__grid row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="box">
 						<!-- certified seed -->
@@ -41,31 +41,31 @@
 			</div>
 
 			<div class="col-xs-12 col-sm-6">
-			<div class="box">
-				<!-- saved seed -->
-				<div class="g-cell calc-saved-seed">
+				<div class="box">
+					<!-- saved seed -->
+					<div class="g-cell calc-saved-seed">
 
-						<fieldset>
-							<legend class="h3">Saved Seed</legend>
-							<div class="form-input">
-								<label for="saved_seed_germination">% Germination</label>
-								<!-- <label class="suffix">%</label> -->
-								<input type="number" step="any" id="saved_seed_germination">
-							</div>
-							<div class="form-input">
-								<label for="saved_seed_pure_seed">% Pure Seed</label>
-								<!-- <label class="suffix">%</label> -->
-								<input type="number" step="any" id="saved_seed_pure_seed">
-							</div>
-							<div class="form-input">
-								<label for="saved_seed_cost_per_unit">Seed Cost / Unit</label>
-								<!-- <label class="prefix">$</label> -->
-								<input type="number" step="any" id="saved_seed_cost_per_unit">
-							</div>
-						</fieldset>
+							<fieldset>
+								<legend class="h3">Saved Seed</legend>
+								<div class="form-input">
+									<label for="saved_seed_germination">% Germination</label>
+									<!-- <label class="suffix">%</label> -->
+									<input type="number" step="any" id="saved_seed_germination">
+								</div>
+								<div class="form-input">
+									<label for="saved_seed_pure_seed">% Pure Seed</label>
+									<!-- <label class="suffix">%</label> -->
+									<input type="number" step="any" id="saved_seed_pure_seed">
+								</div>
+								<div class="form-input">
+									<label for="saved_seed_cost_per_unit">Seed Cost / Unit</label>
+									<!-- <label class="prefix">$</label> -->
+									<input type="number" step="any" id="saved_seed_cost_per_unit">
+								</div>
+							</fieldset>
 
+						</div>
 					</div>
-				</div>
 			</div>
 		</div>
 
@@ -76,7 +76,7 @@
 		<div class="yieldformcalc__ctn g-container ae-bg-white soft-ends">
 			<div class="g-cell full">
 
-				<div class="g-container form-row">
+				<div id="radiooptions__ctn" class="g-container form-row">
 					<div class="g-cell form-label">
 						<label class="col text-right">Season</label>
 					</div>
@@ -154,7 +154,7 @@
 					<div class="g-cell form-label">
 						<label for="" class="col text-right"></label>
 					</div>
-					<div class="g-cell form-input">
+					<div class="g-cell form-input button__ctn">
 						<button type="button" class="btn" id="calculate">Calculate</button>
 						<div class="calculate__reset">
 							<a href="" class="btn-natural invisible" id="reset_form">Reset To Industry Standards</a>
@@ -166,14 +166,14 @@
 		<!-- / row -->
 
 		<!-- row -->
-		<div id="graph_compare_impact_section" class="g-container full ae-bkg-light soft-ends hidden calc-section">
+		<div id="graph_compare_impact_section" class="g-container full ae-bkg-light soft-ends hidden calc-section center__grid">
 			<div class="g-cell">
 
 				<div class="parsys-ID">
 					<!-- start .c-text-card -->
 					<article class="c-card c-text-card ae-text-card-opt4" data-shroud-version="0.1.0">
-						<h3>Compare the Impact of Using Certified Seed</h3>
-						<p>This graph illustrates how the net revenue from certified seed compares to that of saved seed, as well as how using an <a href="">Optimal Seeding Rate</a> compares to planting by the pound.</p>
+						<h3>Compare the Impact of Using an Optimal Seeding Rate</h3>
+						<p>This graph illustrates how the net revenue from using an <a href="/optimal-seed-rate">Optimal Seeding Rate</a> compares to planting by the pound, as well how certified seed compares to saved seed.</p>
 
 					</article>
 					<!-- end .c-text-card -->
@@ -188,15 +188,14 @@
 		<!-- / row -->
 
 		<!-- row -->
-		<div id="graph_maximize_revenue_section" class="g-container full ae-bkg-white soft-ends hidden calc-section">
+		<div id="graph_maximize_revenue_section" class="g-container full ae-bkg-white soft-ends hidden calc-section center__grid">
 			<div class="g-cell">
 
 				<div class="parsys-ID">
 					<!-- start .c-text-card -->
 					<article class="c-card c-text-card ae-text-card-opt4" data-shroud-version="0.1.0">
 						<h3>Maximize Revenue: Plant Certified Seed with an Optimal Seeding Rate</h3>
-						<p>The guessing games are over &mdash; certified seed planted at an Optimal Seeding Rate will give you the best return on your time and monetary investment. Next time you plant, use this combination to make sure you’re maximizing your profit potential. <a href="">Ask your seed supplier</a> about the certified seed varieties that are bred to win in your area, and how to get your Optimal Seeding Rate recommendation.</p>
-
+						<p>The guessing games are over — certified seed planted at an Optimal Seeding Rate will give you the best return on your time and monetary investment. Next time you plant, use this combination to make sure you’re maximizing your profit potential. <a href="/find-seed-supplier">Ask your seed supplier</a> about the certified seed varieties that are bred to win in your area, and how to get your Optimal Seeding Rate.</p>
 					</article>
 					<!-- end .c-text-card -->
 				</div>

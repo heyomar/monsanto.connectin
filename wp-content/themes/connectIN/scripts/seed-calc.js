@@ -274,10 +274,10 @@ $(document).ready(function () {
 		var CHART_MOBILE_MAX_HEIGHT = 400  // max height for mobile devices
 		var CHART_MAX_WIDTH = 600
 		var CHART_MAX_HEIGHT = 400
-		var COLOR_DARK_RED = '#85322c'
-		var COLOR_LIGHT_RED = '#cc4527'
-		var COLOR_DARK_BLUE = '#004d72'
-		var COLOR_LIGHT_BLUE = '#3bb0c9'
+		var COLOR_DARK_RED = '#004d72'
+		var COLOR_LIGHT_RED = '#3bb0c9'
+		var COLOR_DARK_BLUE = '#373836'
+		var COLOR_LIGHT_BLUE = '#646560'
 
 		// PROPERTIES
 
@@ -487,7 +487,7 @@ $(document).ready(function () {
 						pointBackgroundColor: COLOR_DARK_RED,
 						pointBorderColor: COLOR_DARK_RED,
 						pointStyle: 'circle',
-						legendIconImage: '/assets/images/icon-circle-filled-line-dk-red.png' // non-api property
+						legendIconImage: '/wp-content/themes/connectIN/assets/images/icon__circle-line-blue-solid.png' // non-api property
 					}, {
 						label: 'Certified Seed Net Revenue by Lb/A ($)',
 						data: SeedCalcData.getSeriesColumnData(certifiedSeedDataSeries, 'netRevenueLbPerAcre'),
@@ -496,7 +496,7 @@ $(document).ready(function () {
 						pointBackgroundColor: '#ffffff',
 						pointBorderColor: COLOR_LIGHT_RED,
 						pointStyle: 'circle',
-						legendIconImage: '/assets/images/icon-circle-line-lt-red.png' // non-api property
+						legendIconImage: '/wp-content/themes/connectIN/assets/images/icon__circle-line-blue.png' // non-api property
 					}, {
 						label: 'Saved Seed Net Revenue by Optimal Seeding Rate ($)',
 						data: SeedCalcData.getSeriesColumnData(savedSeedDataSeries, 'optimalSeedingRateNetRevenue'),
@@ -506,7 +506,7 @@ $(document).ready(function () {
 						pointBorderColor: COLOR_DARK_BLUE,
 						pointRadius: Chart.defaults.global.elements.point.radius + 1,
 						pointStyle: 'rect',
-						legendIconImage: '/assets/images/icon-rect-filled-line-dk-blue.png' // non-api property
+						legendIconImage: '/wp-content/themes/connectIN/assets/images/icon__square-line-dark-solid.png' // non-api property
 					}, {
 						label: 'Saved Seed Net Revenue by Lb/A ($)',
 						data: SeedCalcData.getSeriesColumnData(savedSeedDataSeries, 'netRevenueLbPerAcre'),
@@ -516,7 +516,7 @@ $(document).ready(function () {
 						pointBorderColor: COLOR_LIGHT_BLUE,
 						pointRadius: Chart.defaults.global.elements.point.radius + 1,
 						pointStyle: 'rect',
-						legendIconImage: '/assets/images/icon-rect-line-lt-blue.png' // non-api property
+						legendIconImage: '/wp-content/themes/connectIN/assets/images/icon__square-line-dark.png' // non-api property
 					}]
 				},
 				options: {
@@ -639,6 +639,7 @@ $(document).ready(function () {
 		var onCalculate = function (event) {
 			event.preventDefault()
 
+			$('#graph_compare_impact_section , #graph_maximize_revenue_section').slideDown()
 			// Recalculate and update the graphs
 			calculate()
 		}
