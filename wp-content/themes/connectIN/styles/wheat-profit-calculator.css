@@ -1,0 +1,268 @@
+
+
+.calc-section {
+  padding: 50px 25px;
+  text-align: center;
+
+  & h3 {
+  font-weight: bold;
+  color: var(--color-ltblue);
+  text-transform: uppercase;
+  font-size: 18px;
+  }
+
+  & a {
+    text-decoration: none;
+    border-bottom: 5px solid hsla(196, 90%, 91%, 1.00);
+    color: inherit;
+  }
+}
+/*=========================================
+IMPROVE PERFORMANCE & PROFIT POTENTIAL
+===========================================*/
+.improve__ctn {
+  text-align: center;
+  padding: 35px 10px;
+  background-image: url('../connectIN/assets/images/bg-grains.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+
+.calc-certified-seed {
+  display: inline-block;
+  text-align: left;
+  width: 350px;
+
+  & fieldset {
+    border: 0;
+
+    & label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    & input {
+      background-color: #fff;
+      border: 1px solid var(--color-ltgray);
+      display: block;
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 8px;
+    }
+  }
+
+  & .h3 {
+    font-weight: bold;
+    color: var(--color-ltblue);
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}
+
+.calc-saved-seed {
+  display: inline-block;
+  text-align: left;
+  width: 350px;
+
+  & fieldset {
+    border: 0;
+
+    & label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    & input {
+      background-color: #fff;
+      border: 1px solid var(--color-ltgray);
+      display: block;
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 8px;
+    }
+  }
+
+  & .h3 {
+    font-weight: bold;
+    color: var(--color-ltblue);
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .calc-certified-seed {
+    width: 100%;
+
+
+    & input {
+      width: 100%;
+    }
+  }
+
+  .calc-saved-seed {
+    width: 100%;
+
+    & input {
+      width: 100%;
+    }
+  }
+}
+
+/*=========================================
+YIELD CALCULATIONS FORM
+===========================================*/
+.yieldformcalc__ctn {
+  background-color: var(--color-white);
+  padding: 35px 25px;
+  & #radiooptions__ctn {
+    width: 625px;
+    & > div {
+      display: inline-block;
+    }
+  }
+  & #crop_seasons_options {
+    display: inline-block;
+    & .control {
+      display: inline-block;
+      padding: 10px;
+
+      & input {
+        width: auto;
+      }
+    }
+  }
+
+  & .calculate__reset {
+    position: relative;
+    padding-top: 10px;
+
+    & a {
+      text-decoration: none;
+      border-bottom: 5px solid var(--color-link);
+      color: inherit;
+    }
+  }
+
+  & .g-cell {
+    margin: 0 auto;
+    text-align: right;
+    max-width: 680px;
+  }
+
+  & .g-container {
+    padding-bottom: 15px;
+  }
+
+  & .form-label {
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  & .form-input {
+      display: inline-block;
+
+    & input {
+      background-color: var(--color-offwhite);
+      border: 1px solid var(--color-ltgray);
+      padding: 8px;
+      width: 340px;
+    }
+
+    & .btn {
+      padding: 10px 20px;
+      background-color: var(--color-ltblue);
+      color: #fff;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-dkblue);
+      }
+    }
+
+    & button {
+      position: relative;
+      right: 0;
+      width: 100%;
+    }
+  }
+
+  & .caption {
+    font-weight: normal;
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .form-label {
+    & label {
+      line-height: 0.5;
+    }
+  }
+
+  .calculate__btn-ctn {
+    position: relative;
+    right: 222px;
+  }
+
+  .calculate__reset {
+    right: 0;
+    position: relative;
+  }
+
+  .button__ctn {
+   left: 93px;
+   position: relative;
+ }
+}
+
+@media screen and (max-width:768px) {
+  .yieldformcalc__ctn {
+    & .g-cell {
+      text-align: left;
+    }
+
+    & .form-label {
+      display: block;
+    }
+
+    & .form-input {
+      display: block;
+
+      & input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#graph_maximize_revenue_section ,
+#graph_compare_impact_section {
+  display: none;
+}
+
+#graph_compare_impact_legend {
+  text-align: left;
+  border: 2px solid var(--color-offwhite);
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+#graph_maximize_revenue_legend {
+  text-align: left;
+  border: 2px solid var(--color-offwhite);
+  padding: 20px;
+  margin-bottom: 25px;
+
+  & .calc-legend-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.add__graybg{
+  background-color: var(--color-beige);
+}
