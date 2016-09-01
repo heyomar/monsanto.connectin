@@ -38,6 +38,10 @@
   padding-bottom: 35px;
 }
 
+.make__h3 {
+
+}
+
 @media screen and (max-width:1150px) {
   .make__break{
     display: block;

@@ -199,18 +199,61 @@
 					</article>
 					<!-- end .c-text-card -->
 				</div>
-
 				<div id="graph_maximize_revenue_legend" class="calc-legend"></div>
-
 				<div id="graph_maximize_revenue_wrapper" class="calc-chart"></div>
-
 			</div>
 		</div>
 		<!-- / row -->
-
 	</form>
-	<!-- / custom-form -->
+		<!-- / custom-form -->
+	<div class="actionData">
+		<h3 class="make__h3">Share your wheat profitability calculations</h3>
+		<button class="toggleModal">Email This Data</button>
+		<button class="">Download PDF</button>
+	</div>
+	<div class="modal">
+		<form class="">
+			<h3 class="make__h3">Email This Data</h3>
+		<span>Recipient:</span>
+		<span class="close toggleModal">&#215;</span>
+		<div class="field-ctn">
+			<div class="label-ctn">
+				<label for="name">Name&nbsp;</label>
+			</div>
+			<div class="input-ctn">
+				<input required type="text" name="name" value="">
+			</div>
+		</div>
 
+		<div class="field-ctn">
+			<div class="label-ctn">
+				<label for="email">Email &nbsp;</label>
+			</div>
+			<div class="input-ctn">
+				<input required type="text" name="email" value="">
+			</div>
+		</div>
+
+		<span>Sender:</span>
+		<div class="field-ctn">
+			<div class="label-ctn">
+				<label for="senderEmail">Email &nbsp;</label>
+			</div>
+			<div class="input-ctn">
+				<input required type="text" name="senderEmail" value="">
+			</div>
+		</div>
+		<div class="center__text" ><button id="sendPDF" type="button" name="button">Send PDF</button></div>
+		</form>
+	</div>
+
+	<div class="thankyoumodal">
+		<h3 class="make__h3">Thank You</h3>
+		<p>
+			The PDF has been sent.
+		</p>
+		<button type="button" name="button">START OVER</button>
+	</div>
 <script src="">
 	/*!
 	 * Chart.js

@@ -266,3 +266,100 @@ YIELD CALCULATIONS FORM
 .add__graybg{
   background-color: var(--color-beige);
 }
+
+.actionData {
+  background-color: var(--color-beige);
+  text-align: center;
+  padding: 40px 20px;
+
+  & button {
+    padding: 10px 20px;
+    background-color: hsla(196, 43%, 62%, 1.00);
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 0;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+}
+
+.modal {
+  max-width: 550px;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 25px;
+  z-index: 10;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+
+  & form {
+    max-width: 500px;
+  }
+
+  & span {
+    font-weight: bold;
+    padding-bottom: 20px;
+    display: block;
+  }
+  & .field-ctn {
+    display: block;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  & .label-ctn {
+    display: inline-block;
+  }
+  & .input-ctn {
+    display: inline-block;
+    width: 85%;
+  }
+  & label {
+    /*padding-right: 10px;*/
+  }
+  & input {
+    background-color: hsla(40, 33%, 96%, 1.00);
+    border: 1px solid hsla(60, 5%, 56%, 1.00);
+    padding: 8px;
+    width: 100%
+  }
+  & button {
+    padding: 10px 20px;
+    background-color: hsla(196, 43%, 62%, 1.00);
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 0;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+}
+
+.modal.active {
+  display: block;
+}
+
+.thankyoumodal.active{
+  display: block;
+}
+
+.modal .close {
+  position: absolute;
+  color: #FFF;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+  background-color: var(--color-beige);
+  border-radius: 20px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+.thankyoumodal {
+  display: none;
+}
