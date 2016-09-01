@@ -5,9 +5,9 @@ $('.toggleModal').on('click', function (e) {
   $('.modal').toggleClass('active');
 });
 
-$('#sendPDF').on('click', function(e){
-	$('.thankyoumodal').toggleClass('active');
-});
+// $('#sendPDF').on('click', function(e){
+// 	$('.thankyoumodal').toggleClass('active');
+// });
 
 $(document).ready(function () {
 	// Main app startup
