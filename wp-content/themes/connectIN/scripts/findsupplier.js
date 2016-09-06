@@ -14,17 +14,10 @@ function changeState () {
 navigator.geolocation.getCurrentPosition(success, error)
 
 function success (position) {
-  console.log(position.coords.latitude)
-  console.log(position.coords.longitude)
-
   var GEOCODING = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + position.coords.latitude + ',' + position.coords.longitude + '&key=AIzaSyAIapQbBrBcIFTuIlMxbXbMty3dT7R1b2k'
 
   $.getJSON(GEOCODING).done(function (location) {
-    console.log(location)
-    var thestate = location.results[0].address_components[4].long_name
-    thestate = thestate.replace(/\s+/g, '-').toLowerCase()
-    console.log(thestate)
-
+    var thestate = location.results[0].address_components[4].short_name
     $('#stateselect').val(thestate)
     changeState()
   })
