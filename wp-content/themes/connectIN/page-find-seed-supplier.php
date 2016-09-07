@@ -106,17 +106,15 @@
 </div>
 
 <div class="rep__ctn">
-<?php $reps = new WP_Query( array( 'post_type' => 'reps' ) );?>
+<?php $reps = new WP_Query( array('post_type' => 'reps',
+                                  'posts_per_page' => -1,
+                                  'orderby' => 'title',
+                                  'order' => 'ASC' ) );?>
 <h3 class="make__headline">Westbred Representatives</h3>
 <?php if( $reps->have_posts()): ?>
 <div class="row">
   <?php while ( $reps->have_posts()) : $reps->the_post();  ?>
-  <div class="col-xs-12 col-sm-6 rep <?php
-    $stateterms = get_the_terms(get_the_ID(), 'states' );
-    foreach ($stateterms as $stateterm) {
-      echo $stateterm->slug . " ";
-    }
-  ?>">
+  <div class="col-xs-12 col-sm-6 rep <?php the_field('rep_region'); ?>">
     <div class="box">
       <div class="rep__info">
         <div class="row">
