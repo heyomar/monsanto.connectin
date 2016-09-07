@@ -208,8 +208,9 @@
 		<!-- / custom-form -->
 	<div class="actionData">
 		<h3 class="make__h3">Share your wheat profitability calculations</h3>
+
 		<button class="toggleModal">Email This Data</button>
-		<button class="">Download PDF</button>
+		<button onclick="generate('download')" class="">Download PDF</button>
 	</div>
 	<div class="modal">
 		<form class="">
@@ -243,7 +244,7 @@
 				<input required type="text" name="senderEmail" value="">
 			</div>
 		</div>
-		<div class="center__text" ><button id="sendPDF" type="button" name="button">Send PDF</button></div>
+		<div class="center__text" ><button onclick="generate('email')" id="sendPDF" type="button" name="button">Send PDF</button></div>
 		</form>
 	</div>
 

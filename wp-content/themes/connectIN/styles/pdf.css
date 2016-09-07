@@ -872,6 +872,23 @@ h1 {
     padding: 50px 0 ;
     border-bottom: 2px dotted hsla(60, 5%, 56%, 1.00);
 }
+
+.make__bold {
+    font-weight: bold;
+}
+
+.make__normal {
+    font-weight: normal;
+}
+
+.make__center {
+    text-align: center;
+}
+
+.make__inlineblock {
+    display: inline-block;
+}
+
 .title__ctn {
     padding: 0;
 }
@@ -889,8 +906,16 @@ h1 {
     text-align: center;
 }
 
+.calc-certified-seed .form-input {
+    padding: 8px 0;
+}
+
 .calc-saved-seed {
     text-align: center;
+}
+
+.calc-saved-seed .form-input {
+    padding: 8px 0;
 }
 
 .calc-certified-seed fieldset input,
@@ -916,7 +941,7 @@ fieldset {
 }
 
 .yieldformcalc__ctn .form-input input {
-    width: 60px;
+    width: 20px;
     padding: 0 0 8px 0;
 }
 
@@ -926,10 +951,16 @@ fieldset {
 
 .yieldformcalc__ctn .form-label {
     display: inline-block;
+    padding: 10px 0;
 }
 
 .yieldformcalc__ctn .caption {
     display: block;
+}
+
+.yieldformcalc__ctn .left {
+    max-width: 56%;
+    margin: 0 auto;
 }
 
 #radiooptions__ctn {
@@ -950,4 +981,8 @@ fieldset {
     margin: 0 auto;
     max-width: 48%;
     padding-bottom: 40px;
+}
+
+.calculate__btn-ctn {
+    display: none;
 }
