@@ -72,7 +72,7 @@
     border-bottom: 2px dotted var(--color-tan);
     padding: 25px;
     margin-bottom: 35px;
-    height: 200px;
+    min-height: 200px;
   }
   & a {
     border-bottom: 5px solid var(--color-link);
