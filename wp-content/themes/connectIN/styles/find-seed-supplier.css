@@ -22,7 +22,7 @@
     -webkit-border-radius:1px;
     -moz-border-radius:1px;
     border-radius:1px;
-    height: 50px;
+    height: 49px;
     padding:10px;
     margin: 0;
     background: #fff;
@@ -47,18 +47,11 @@
       right:11px;
       top:-26px;
       padding:14px;
-      border: 1px solid #c9c9c4;
+      border-bottom: 1px solid #c9c9c4;
       position:absolute;
       pointer-events:none;
   }
-  & label:before {
-      content:'';
-      right:6px; top:0px;
-      width:20px; height:20px;
-      background:#f8f8f8;
-      position:absolute;
-      pointer-events:none;
-  }
+
 }
 
 .suppliers__section-title {
@@ -79,6 +72,7 @@
     border-bottom: 2px dotted var(--color-tan);
     padding: 25px;
     margin-bottom: 35px;
+    height: 200px;
   }
   & a {
     border-bottom: 5px solid var(--color-link);

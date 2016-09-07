@@ -9,6 +9,37 @@ $('.toggleModal').on('click', function (e) {
 // 	$('.thankyoumodal').toggleClass('active');
 // });
 
+
+
+
+var hello = $("input[name='crop_season']:checked").val();
+
+console.log(hello);
+
+function generate(type) {
+		var certSeed = '?certGerminiation=' + $('#cert_seed_germination').val()
+
+		certSeed += '&certPureSeed=' + $('#cert_seed_pure_seed').val() +
+								'&certSeedCost=' + $('#cert_seed_cost_per_unit').val()
+
+		var savedSeed = '?savedGermination=' + $('#saved_seed_germination').val()
+
+		savedSeed += '&savedPureSeed=' + $('#saved_seed_pure_seed').val() +
+								 '&savedSeedCost=' + $('#saved_seed_cost_per_unit').val()
+
+		var yieldForm = '&targetYield=' + $('#crop_target_yield').val() +
+										'&wheatPrice=' + $('#crop_wheat_price').val() +
+										'&targetPlantPopulation=' + $('crop_target_planting_population').val() +
+										'&flatSeedingRate=' + $('#crop_flat_seeding_rate').val() +
+										'&acresPlanted=' + $('#crop_acres_planted').val() +
+										'&yieldImpactOverseeding=' + $('#crop_percent_yield_impact_overseeding').val() +
+										'&yieldImpactUnderseeding=' + $('#crop_percent_yield_impact_underseeding').val()
+
+
+		var url = 'http://connectIN:4000/wp-content/themes/connectIN/pdf-template.html' + certSeed + savedSeed + yieldForm
+		window.location.href = url
+}
+
 $(document).ready(function () {
 	// Main app startup
 	var Utility = (function () {
@@ -534,7 +565,7 @@ $(document).ready(function () {
 							position: 'bottom',
 							scaleLabel: {
 								display: true,
-								labelString: 'Seed Size in Seeds/Lb',
+								labelString: 'Seeds/Lb',
 								fontStyle: 'bold'
 							},
 							ticks: {
