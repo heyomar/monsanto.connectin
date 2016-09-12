@@ -280,9 +280,12 @@ YIELD CALCULATIONS FORM
     border-bottom: 0;
     text-decoration: none;
     margin: 0 10px;
-  }
 
-}
+    &:hover {
+      background-color:  hsla(195, 33%, 50%, 1.00);
+      }
+    }
+  }
 
 .modal {
   max-width: 550px;
@@ -336,6 +339,7 @@ YIELD CALCULATIONS FORM
     text-decoration: none;
     margin: 0 10px;
   }
+
 }
 
 .modal.active {
@@ -362,4 +366,44 @@ YIELD CALCULATIONS FORM
 
 .thankyoumodal {
   display: none;
+}
+
+@media screen and (max-width:768px){
+  .actionData {
+    & button {
+      margin: 10px 0 ;
+      min-width: 100%;
+    }
+  }
+
+  .yieldformcalc__ctn #radiooptions__ctn > div {
+    display: block;
+  }
+
+  .modal {
+    position: fixed;
+    max-width: 100%;
+    height: 100vh;
+
+    & input {
+      width: 100%;
+    }
+
+    & .input-ctn {
+      width: 100%;
+    }
+  }
+}
+
+.calcpage__h3 {
+  font-weight: bold;
+  color: var(--color-ltblue);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.performance__ctn {
+  & .box {
+    padding-bottom: 30px;
+  }
 }

@@ -95,7 +95,7 @@
                     <span class="supplier__address-copy"><?php the_field('supplier_address'); ?></span>
                     <span><?php the_field('supplier_city'); ?>, <?php the_field('supplier_state'); ?> <?php the_field('supplier_zip'); ?></span>
                     <span class="supplier__phonenumber-copy"><?php the_field('supplier_phone_number'); ?></span>
-                    <span><a href="" class="supplier__email-copy"><?php the_field('supplier_email'); ?></a></span>
+                    <span><a href="mailto:<?php the_field('supplier_email'); ?>" class="supplier__email-copy"><?php the_field('supplier_email'); ?></a></span>
                     <span><a href="#" class="supplier__suteurl-copy"><?php the_field('supplier_site_url'); ?></a></span>
                   </div>
                 </div>
@@ -124,7 +124,7 @@
             <h4><?php the_title(); ?></h4>
             <span><?php the_field('rep_position'); ?></span>
             <span><?php the_field('rep_phone'); ?></span>
-            <span><?php the_field('rep_email'); ?></span>
+            <span><a href="mailto:<?php the_field('rep_email'); ?>" class="make__bluelink"><?php the_field('rep_email'); ?></a></span>
             <span><?php the_field('rep_address'); ?></span>
           </div>
         </div>

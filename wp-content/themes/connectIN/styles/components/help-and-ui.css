@@ -38,8 +38,10 @@
   padding-bottom: 35px;
 }
 
-.make__h3 {
-
+.make__bluelink{
+  border-bottom: 5px solid hsla(196, 90%, 91%, 1.00);
+  text-decoration: none;
+  color: inherit;
 }
 
 @media screen and (max-width:1150px) {

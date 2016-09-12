@@ -19,6 +19,7 @@
   color: var(--color-gray);
   text-transform: initial;
   text-align: center;
+  font-weight: 500;
 }
 
 .hero__title p::after{
@@ -31,7 +32,8 @@
 }
 
 .hero__subtitle{
-  color: var(--color-ltblue)
+  color: var(--color-ltblue);
+  text-transform: uppercase;
 }
 
 .hero__button{

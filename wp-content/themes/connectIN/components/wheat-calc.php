@@ -1,13 +1,13 @@
 
 	<!-- start custom-form -->
-	<form class="custom-form" id="seed_calc_form">
+	<form data-parsley-validate class="custom-form" id="seed_calc_form">
 
 		<!-- row -->
 		<div class="improve__ctn g-container full-width full lg-halves">
-			<div class="row">
+			<div class="row performance__ctn">
 			  <div class="col-sm-12">
 			    <div class="box">
-			      <h1><?php the_field('performance_headline'); ?></h1>
+			      <h3 class="calcpage__h3"><?php the_field('performance_headline'); ?></h3>
 			      <?php the_field('performance_copy'); ?>
 			    </div>
 			  </div>
@@ -110,7 +110,7 @@
 				</div>
 				<div class="g-container form-row">
 					<div class="g-cell form-label">
-						<label for="crop_target_planting_population" class="col text-right">Target Planting Population <small class="caption">(Plants / Acre)</small></label>
+						<label for="crop_target_planting_population" class="col text-right">Target Planting Population <small class="caption">(Plants/A)</small></label>
 					</div>
 					<div class="g-cell form-input">
 						<input type="number" step="any" id="crop_target_planting_population">
@@ -157,7 +157,7 @@
 					<div class="g-cell form-input button__ctn">
 						<button type="button" class="btn" id="calculate">Calculate</button>
 						<div class="calculate__reset">
-							<a href="" class="btn-natural invisible" id="reset_form">Reset To Industry Standards</a>
+							<a href="" class="btn-natural invisible" id="reset_form">Reset to Industry Standards</a>
 						</div>
 					</div>
 				</div>
@@ -205,56 +205,6 @@
 		</div>
 		<!-- / row -->
 	</form>
-		<!-- / custom-form -->
-	<div class="actionData">
-		<h3 class="make__h3">Share your wheat profitability calculations</h3>
-
-		<button class="toggleModal">Email This Data</button>
-		<button onclick="generate('download')" class="">Download PDF</button>
-	</div>
-	<div class="modal">
-		<form class="">
-			<h3 class="make__h3">Email This Data</h3>
-		<span>Recipient:</span>
-		<span class="close toggleModal">&#215;</span>
-		<div class="field-ctn">
-			<div class="label-ctn">
-				<label for="name">Name&nbsp;</label>
-			</div>
-			<div class="input-ctn">
-				<input required type="text" name="name" value="">
-			</div>
-		</div>
-
-		<div class="field-ctn">
-			<div class="label-ctn">
-				<label for="email">Email &nbsp;</label>
-			</div>
-			<div class="input-ctn">
-				<input required type="text" name="email" value="">
-			</div>
-		</div>
-
-		<span>Sender:</span>
-		<div class="field-ctn">
-			<div class="label-ctn">
-				<label for="senderEmail">Email &nbsp;</label>
-			</div>
-			<div class="input-ctn">
-				<input required type="text" name="senderEmail" value="">
-			</div>
-		</div>
-		<div class="center__text" ><button onclick="generate('email')" id="sendPDF" type="button" name="button">Send PDF</button></div>
-		</form>
-	</div>
-
-	<div class="thankyoumodal">
-		<h3 class="make__h3">Thank You</h3>
-		<p>
-			The PDF has been sent.
-		</p>
-		<button type="button" name="button">START OVER</button>
-	</div>
 <script src="">
 	/*!
 	 * Chart.js
