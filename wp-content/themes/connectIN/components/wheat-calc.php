@@ -126,7 +126,7 @@
 				</div>
 				<div class="g-container form-row">
 					<div class="g-cell form-label">
-						<label for="crop_acres_planted" class="col text-right">Acres Planted</label>
+						<label for="crop_acres_planted" class="acres__adjusted col text-right">Acres Planted</label>
 					</div>
 					<div class="g-cell form-input">
 						<input type="number" step="any" id="crop_acres_planted">
