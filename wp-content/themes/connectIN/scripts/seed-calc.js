@@ -314,9 +314,9 @@ $(document).ready(function () {
 		var CHART_MOBILE_SMALL_MAX_WIDTH = 400   // max width for small devices
 		var CHART_MOBILE_SMALL_MAX_HEIGHT = 267  // max height for small devices
 		var CHART_MOBILE_MAX_WIDTH = 600   // max width for mobile devices
-		var CHART_MOBILE_MAX_HEIGHT = 400  // max height for mobile devices
+		var CHART_MOBILE_MAX_HEIGHT = 300  // max height for mobile devices
 		var CHART_MAX_WIDTH = 600
-		var CHART_MAX_HEIGHT = 400
+		var CHART_MAX_HEIGHT = 300
 		var COLOR_DARK_RED = '#5293AB'
 		var COLOR_LIGHT_RED = '#72b1c8'
 		var COLOR_DARK_BLUE = '#373836'

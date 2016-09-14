@@ -1,6 +1,7 @@
 .field__caption {
   font-weight: normal;
 }
+
 .calc-section {
   padding: 50px 25px;
   text-align: center;
@@ -96,7 +97,6 @@ IMPROVE PERFORMANCE & PROFIT POTENTIAL
 @media screen and (max-width:768px) {
   .calc-certified-seed {
     width: 100%;
-
 
     & input {
       width: 100%;
@@ -431,6 +431,7 @@ YIELD CALCULATIONS FORM
       width: 100%;
     }
   }
+
 }
 
 .calcpage__h3 {
@@ -446,10 +447,6 @@ YIELD CALCULATIONS FORM
   }
 }
 
-#graph_maximize_revenue{
-
-}
-
 #email__checkbox {
   width: auto;
   display: inline-block;
@@ -462,4 +459,11 @@ YIELD CALCULATIONS FORM
 .modal__checkbox {
   padding-left: 51px;
   padding-bottom: 20px;
+}
+
+@media screen and (min-width:768px) {
+  #cert_seed_cost_per_unit {
+    margin-top: 24px;
+  }
+
 }

@@ -31,9 +31,10 @@
 										<input type="number" step="any" id="cert_seed_pure_seed" data-format="percent">
 									</div>
 									<div class="form-input">
-										<label for="cert_seed_cost_per_unit">Seed Cost / Unit</label>
+										<label for="cert_seed_cost_per_unit">Seed Cost / Unit<sup>*</sup><br><small class="caption make__weight-normal">(includes certified seed and treatment costs)</small></label>
 										<!-- <label class="prefix">$</label> -->
 										<input type="number" step="any" id="cert_seed_cost_per_unit" data-format="currency">
+										<small>*unit=cwt (hundredweight)</small>
 									</div>
 								</fieldset>
 							</div>
@@ -58,9 +59,10 @@
 									<input type="number" step="any" id="saved_seed_pure_seed">
 								</div>
 								<div class="form-input">
-									<label for="saved_seed_cost_per_unit">Seed Cost / Unit</label>
+									<label for="saved_seed_cost_per_unit">Seed Cost / Unit<sup>*</sup><br><small class="caption make__weight-normal">(includes current market price;costs of storage, seed treatment and cleaning)</small></label>
 									<!-- <label class="prefix">$</label> -->
 									<input type="number" step="any" id="saved_seed_cost_per_unit">
+									<small>*unit=cwt (hundredweight)</small>
 								</div>
 							</fieldset>
 

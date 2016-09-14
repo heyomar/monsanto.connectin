@@ -17,6 +17,10 @@
   margin: 0 auto;
 }
 
+.make__weight-normal {
+  font-weight: normal;
+}
+
 .make__headline{
   color: var(--color-ltblue);
   text-transform: uppercase;
