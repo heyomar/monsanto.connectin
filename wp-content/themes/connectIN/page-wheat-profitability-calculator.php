@@ -43,6 +43,11 @@ get_template_part('components/inner-hero'); ?>
       </div>
     </div>
 
+    <div class="modal__checkbox">
+      <input id="email__checkbox" type="checkbox" name="EmailCopy" value="Yes" checked>
+      <label id="email__checkbox-label" for="EmailCopy">Send a copy to myself</label>
+    </div>
+
     <div class="center__text">
       <button id="sendPDF" name="button" onclick="generate('email')" type=
       "button">Send PDF</button>

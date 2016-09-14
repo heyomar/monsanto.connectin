@@ -9,6 +9,16 @@ function changeState () {
   var selectedstate = $('#stateselect option:selected').val()
   $('.supplier, .rep').hide()
   $('.' + selectedstate).show()
+
+  if (!$('.' + selectedstate)[0]) {
+      $('.failure__nosuppliers').show()
+      var stateChosen = $('#stateselect option:selected').text()
+      $('.failureSpan').text(stateChosen)
+      $('.rep__ctn').hide()
+  } else {
+      $('.failure__nosuppliers').hide()
+      $('.rep__ctn').show()
+  }
 }
 
 navigator.geolocation.getCurrentPosition(success, error)

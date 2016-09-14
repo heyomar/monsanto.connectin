@@ -78,6 +78,7 @@
     border-bottom: 5px solid var(--color-link);
     text-decoration: none;
     color: inherit;
+    overflow-wrap: break-word
   }
 }
 
@@ -102,6 +103,10 @@
     border-left: 2px dotted var(--color-tan);
     border-bottom: 2px dotted var(--color-tan);
     padding: 25px;
+
+    & a {
+      overflow-wrap: break-word
+    }
   }
 }
 
@@ -111,4 +116,10 @@
 
 #results.hidden{
   display: none;
+}
+
+.failure__nosuppliers {
+  text-align: center;
+  display: none;
+
 }

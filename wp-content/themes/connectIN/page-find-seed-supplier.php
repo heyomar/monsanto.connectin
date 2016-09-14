@@ -77,7 +77,18 @@
   </div>
 </div>
 
+
+
 <div id="results" class="hidden"><div class="suppliers__section-title make__headline"><h3>Seed Suppliers</h3></div>
+<div class="row failure__nosuppliers">
+  <div class="col-xs-12">
+    <div class="box">
+      <h3>
+        Sorry, no WestBred seed suppliers are located in <span class="failureSpan"></span>. Please select another state.
+      </h3>
+    </div>
+  </div>
+</div>
 <div class="suppliers__ctn">
   <?php $suppliers = new WP_Query( array(
                                     'post_type' => 'suppliers',
