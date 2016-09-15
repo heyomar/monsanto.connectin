@@ -14,21 +14,19 @@ $('#reset_form').on('click', function(){
 });
 
 
-
-var hello = $("input[name='crop_season']:checked").val();
-
-console.log(hello);
-
 function generate(type) {
-		var certSeed = '?certGerminiation=' + $('#cert_seed_germination').val()
+		var certSeed = '?certGerminiation=' + $('#cert_seed_germination').val() +
+										'&certPureSeed=' + $('#cert_seed_pure_seed').val() +
+										'&certSeedCost=' + $('#cert_seed_cost_per_unit').val()
 
-		certSeed += '&certPureSeed=' + $('#cert_seed_pure_seed').val() +
-								'&certSeedCost=' + $('#cert_seed_cost_per_unit').val()
+		var savedSeed = '?savedGermination=' + $('#saved_seed_germination').val() +
+										'&savedPureSeed=' + $('#saved_seed_pure_seed').val() +
+								 		'&savedSeedCost=' + $('#saved_seed_cost_per_unit').val()
 
-		var savedSeed = '?savedGermination=' + $('#saved_seed_germination').val()
-
-		savedSeed += '&savedPureSeed=' + $('#saved_seed_pure_seed').val() +
-								 '&savedSeedCost=' + $('#saved_seed_cost_per_unit').val()
+		var season = '&season=spring'
+		if ($("input[name='crop_season'][value='winter']").prop('checked') === true) {
+				season = '&season=winter'
+		}
 
 		var yieldForm = '&targetYield=' + $('#crop_target_yield').val() +
 										'&wheatPrice=' + $('#crop_wheat_price').val() +
@@ -38,8 +36,12 @@ function generate(type) {
 										'&yieldImpactOverseeding=' + $('#crop_percent_yield_impact_overseeding').val() +
 										'&yieldImpactUnderseeding=' + $('#crop_percent_yield_impact_underseeding').val()
 
+		var emailData = '&recipientEmail=' + $('#recipientEmail').val() + '&senderEmail=' + $('#senderEmail').val() +
+										'&senderName=' + $('#senderName').val() + '&sendToSelf=' + $('#email__checkbox').is(':checked')
 
-		var url = 'http://connectIN:4000/wp-content/themes/connectIN/pdf-template.html' + certSeed + savedSeed + yieldForm
+
+
+		var url = 'http://connectIN:4000/wp-content/themes/connectIN/pdf-template.html' + certSeed + savedSeed + season + yieldForm + emailData
 		window.location.href = url
 }
 

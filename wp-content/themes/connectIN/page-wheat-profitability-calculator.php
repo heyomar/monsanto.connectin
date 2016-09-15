@@ -22,7 +22,7 @@ get_template_part('components/inner-hero'); ?>
         <label for="email">Email &nbsp;</label>
       </div>
       <div class="input-ctn">
-        <input name="email" required="" type="text" value="">
+        <input id="recipientEmail" name="email" required="" type="text" value="">
       </div>
     </div>
 
@@ -32,7 +32,7 @@ get_template_part('components/inner-hero'); ?>
         <label for="name">Name&nbsp;</label>
       </div>
       <div class="input-ctn">
-        <input name="name" required="" type="text" value="">
+        <input id="senderName" name="name" required="" type="text" value="">
       </div>
     </div>
     <div class="field-ctn">
@@ -40,7 +40,7 @@ get_template_part('components/inner-hero'); ?>
         <label for="senderEmail">Email &nbsp;</label>
       </div>
       <div class="input-ctn">
-        <input name="senderEmail" required="" type="text" value="">
+        <input id="senderEmail" name="senderEmail" required="" type="text" value="">
       </div>
     </div>
 

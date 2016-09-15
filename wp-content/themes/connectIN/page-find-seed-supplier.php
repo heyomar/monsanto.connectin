@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="make__offwhite row">
+<div  class="remove__margin make__offwhite row">
   <div class="col-xs-12 col-sm-8">
     <div class="box">
       <div class="inner-hero">
@@ -80,7 +80,7 @@
 
 
 <div id="results" class="hidden"><div class="suppliers__section-title make__headline"><h3>Seed Suppliers</h3></div>
-<div class="row failure__nosuppliers">
+<div style="margin:0;" id="failureMessage" class=" failure__nosuppliers">
   <div class="col-xs-12">
     <div class="box">
       <h3>

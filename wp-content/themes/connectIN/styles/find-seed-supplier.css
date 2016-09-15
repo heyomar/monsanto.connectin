@@ -63,6 +63,7 @@
 
 .suppliers__ctn {
   padding: 40px;
+  margin: 0;
 
   & span {
     display: block;
@@ -121,4 +122,9 @@
 .failure__nosuppliers {
   text-align: center;
   display: none;
+  padding: 0 10px;
+}
+
+.remove__margin {
+  margin: 0;
 }

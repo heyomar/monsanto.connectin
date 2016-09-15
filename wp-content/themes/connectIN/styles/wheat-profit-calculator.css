@@ -272,6 +272,10 @@ YIELD CALCULATIONS FORM
   .yieldformcalc__ctn #radiooptions__ctn > div {
     right: 0;
   }
+
+  #radiooptions__ctn {
+    max-width: 100%;
+  }
 }
 
 #graph_maximize_revenue_section ,
@@ -435,7 +439,6 @@ YIELD CALCULATIONS FORM
       width: 100%;
     }
   }
-
 }
 
 .calcpage__h3 {
