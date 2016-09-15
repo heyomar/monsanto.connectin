@@ -469,5 +469,8 @@ YIELD CALCULATIONS FORM
   #cert_seed_cost_per_unit {
     margin-top: 24px;
   }
+}
 
+select::-ms-expand {
+    display: none;
 }

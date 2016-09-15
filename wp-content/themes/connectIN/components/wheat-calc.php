@@ -59,7 +59,7 @@
 									<input type="number" step="any" id="saved_seed_pure_seed">
 								</div>
 								<div class="form-input">
-									<label for="saved_seed_cost_per_unit">Seed Cost / Unit<sup>*</sup><br><small class="caption make__weight-normal">(includes current market price;costs of storage, seed treatment and cleaning)</small></label>
+									<label for="saved_seed_cost_per_unit">Seed Cost / Unit<sup>*</sup><br><small class="caption make__weight-normal">(includes current market price; costs of storage, seed treatment and cleaning)</small></label>
 									<!-- <label class="prefix">$</label> -->
 									<input type="number" step="any" id="saved_seed_cost_per_unit">
 									<small>*unit=cwt (hundredweight)</small>

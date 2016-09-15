@@ -15,14 +15,7 @@ get_template_part('components/inner-hero'); ?>
 
     <span>Recipient:</span>
     <span class="close toggleModal">&#215;</span>
-    <div class="field-ctn">
-      <div class="label-ctn">
-        <label for="name">Name&nbsp;</label>
-      </div>
-      <div class="input-ctn">
-        <input name="name" required="" type="text" value="">
-      </div>
-    </div>
+
 
     <div class="field-ctn">
       <div class="label-ctn">
@@ -34,6 +27,14 @@ get_template_part('components/inner-hero'); ?>
     </div>
 
     <span>Sender:</span>
+    <div class="field-ctn">
+      <div class="label-ctn">
+        <label for="name">Name&nbsp;</label>
+      </div>
+      <div class="input-ctn">
+        <input name="name" required="" type="text" value="">
+      </div>
+    </div>
     <div class="field-ctn">
       <div class="label-ctn">
         <label for="senderEmail">Email &nbsp;</label>

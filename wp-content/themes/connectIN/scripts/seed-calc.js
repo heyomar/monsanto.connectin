@@ -345,13 +345,13 @@ $(document).ready(function () {
 			updateUserDataFromForm()
 
 			// Scroll to first graph (set a delay to allow the sections to become visible)
-			setTimeout(function() {
-				var headerBar = document.querySelector('.c-site-nav-wrapper-header'),
-					headerBarFixed = window.getComputedStyle(headerBar).position === 'fixed',
-					offset = headerBarFixed ? -headerBar.clientHeight : 0,
-					top = Utility.getTop(document.querySelector('.calc-section')) + offset
-				smoothScroll(top)
-			}, 50)
+			// setTimeout(function() {
+			// 	var headerBar = document.querySelector('.c-site-nav-wrapper-header'),
+			// 		headerBarFixed = window.getComputedStyle(headerBar).position === 'fixed',
+			// 		offset = headerBarFixed ? -headerBar.clientHeight : 0,
+			// 		top = Utility.getTop(document.querySelector('.calc-section')) + offset
+			// 	smoothScroll(top)
+			// }, 50)
 
 			// Re-render the graphs
 			var certifiedSeedDataSeries = SeedCalcData.getDataSeries(certifiedSeedData)
@@ -684,6 +684,7 @@ $(document).ready(function () {
 
 			$('#graph_compare_impact_section , #graph_maximize_revenue_section').slideDown()
 			// Recalculate and update the graphs
+
 			calculate()
 		}
 
