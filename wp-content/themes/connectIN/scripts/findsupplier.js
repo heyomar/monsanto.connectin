@@ -1,5 +1,4 @@
-$(document).ready(function () {
-  if(window.location.href.indexOf("/find-seed-supplier") > -1) {
+  if( $('body').hasClass('find-seed-supplier') ) {
     $('#stateselect').change(function () {
       changeState()
     })
@@ -39,5 +38,3 @@ $(document).ready(function () {
       console.log(err)
     }
   }
-
-})
