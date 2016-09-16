@@ -5,21 +5,50 @@ $('.toggleModal').on('click', function (e) {
   $('.modal').toggleClass('active');
 });
 
-// $('#sendPDF').on('click', function(e){
-// 	$('.thankyoumodal').toggleClass('active');
-// });
+$('.close').on('click', function (e) {
+  $('.thankyoumodal').removeClass('active');
+});
 
 $('#reset_form').on('click', function(){
 	window.location.reload();
 });
 
+// function calcValidate () {
+	// if ($('#cert_seed_germination').val() !== null) {
+	// 		alert('there is data in the field');
+	// } else {
+	//
+	// }
+// }
+
+function ajaxPost(url, onComplete, dataType) {
+
+	if (window.XDomainRequest) {
+
+		var xdr = new XDomainRequest();
+		xdr.timeout = 3000;
+
+		xdr.onload = function () {
+			var result = JSON.parse(xdr.responseText);
+			onComplete(result);
+		};
+
+		xdr.open("get", url);
+		xdr.send();
+
+	} else {
+		var ajaxConfig = { url: url, success: onComplete };
+		if (dataType != null) ajaxConfig.dataType = dataType;
+		$.ajax(ajaxConfig);
+	}
+};
 
 function generate(type) {
-		var certSeed = '?certGerminiation=' + $('#cert_seed_germination').val() +
+		var certSeed = '?certGermination=' + $('#cert_seed_germination').val() +
 										'&certPureSeed=' + $('#cert_seed_pure_seed').val() +
 										'&certSeedCost=' + $('#cert_seed_cost_per_unit').val()
 
-		var savedSeed = '?savedGermination=' + $('#saved_seed_germination').val() +
+		var savedSeed = '&savedGermination=' + $('#saved_seed_germination').val() +
 										'&savedPureSeed=' + $('#saved_seed_pure_seed').val() +
 								 		'&savedSeedCost=' + $('#saved_seed_cost_per_unit').val()
 
@@ -39,10 +68,24 @@ function generate(type) {
 		var emailData = '&recipientEmail=' + $('#recipientEmail').val() + '&senderEmail=' + $('#senderEmail').val() +
 										'&senderName=' + $('#senderName').val() + '&sendToSelf=' + $('#email__checkbox').is(':checked')
 
+		if (type === 'download') {
+			var downloadString = 'http://test.monpdfservice.hlktesting.com/WBProfitCalc/WheatProfitability/WheatProfitabilityToPdf' + certSeed + savedSeed + season + yieldForm
+			window.location.href = downloadString
+		}
 
+		if (type === 'email') {
+			var emailString = 'http://test.monpdfservice.hlktesting.com/WBProfitCalc/WheatProfitability/WheatProfitabilityToEmail' + certSeed + savedSeed + season + yieldForm + emailData
 
-		var url = 'http://connectIN:4000/wp-content/themes/connectIN/pdf-template.html' + certSeed + savedSeed + season + yieldForm + emailData
-		window.location.href = url
+		ajaxPost(emailString, function(data){
+			if (data.success) {
+				$('.modal').hide()
+				$('.thankyoumodal').toggleClass('active')
+			} else {
+				alert(data.error)
+			}
+		}, 'jsonp')
+
+		}
 }
 
 $(document).ready(function () {

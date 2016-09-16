@@ -58,6 +58,7 @@ get_template_part('components/inner-hero'); ?>
 </div>
 
 <div class="thankyoumodal">
+  <span class="close toggleModal">&#215;</span>
   <h3 class="make__h3">Thank You</h3>
   <p>The PDF has been sent.</p><button name="button" type="button">START
   OVER</button>
