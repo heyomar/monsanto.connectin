@@ -12,10 +12,9 @@ get_template_part('components/inner-hero'); ?>
 <div class="modal">
   <form class="">
     <h3 class="make__h3">Email This Data</h3>
-
+    
     <span>Recipient:</span>
     <span class="close toggleModal">&#215;</span>
-
 
     <div class="field-ctn">
       <div class="label-ctn">

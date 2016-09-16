@@ -63,7 +63,7 @@ function generate(type) {
 
 		var yieldForm = '&targetYield=' + $('#crop_target_yield').val() +
 										'&wheatPrice=' + $('#crop_wheat_price').val() +
-										'&targetPlantPopulation=' + $('crop_target_planting_population').val() +
+										'&targetPlantPopulation=' + $('#crop_target_planting_population').val() +
 										'&flatSeedingRate=' + $('#crop_flat_seeding_rate').val() +
 										'&acresPlanted=' + $('#crop_acres_planted').val() +
 										'&yieldImpactOverseeding=' + $('#crop_percent_yield_impact_overseeding').val() +
