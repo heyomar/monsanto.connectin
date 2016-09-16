@@ -26,7 +26,7 @@ get_template_part('components/inner-hero'); ?>
       </div>
     </div>
 
-    <span>Sender:</span>
+    <!-- <span>Sender:</span>
     <div class="field-ctn">
       <div class="label-ctn">
         <label for="name">Name&nbsp;</label>
@@ -47,7 +47,7 @@ get_template_part('components/inner-hero'); ?>
     <div class="modal__checkbox">
       <input id="email__checkbox" type="checkbox" name="EmailCopy" value="Yes" checked>
       <label id="email__checkbox-label" for="EmailCopy">Send a copy to myself</label>
-    </div>
+    </div> -->
 
     <div class="center__text">
       <button id="sendPDF" name="button" onclick="generate('email')" type=
@@ -59,8 +59,8 @@ get_template_part('components/inner-hero'); ?>
 
 <div class="thankyoumodal">
   <span class="close toggleModal">&#215;</span>
-  <h3 class="make__h3">Thank You</h3>
-  <p>The PDF has been sent.</p><button name="button" type="button">START
-  OVER</button>
+  <h3 class="calcpage__h3 center__text">Thank You</h3>
+  <p>The PDF has been sent.</p><div class="center__text"><button id="thankyou__startover" name="button" type="button">START
+  OVER</button></div>
 </div>
 <?php get_footer(); ?>

@@ -311,6 +311,7 @@ YIELD CALCULATIONS FORM
   background-color: var(--color-beige);
   text-align: center;
   padding: 40px 20px;
+  display: none;
 
   & button {
     padding: 10px 20px;
@@ -422,6 +423,20 @@ YIELD CALCULATIONS FORM
   padding: 25px;
   z-index: 10;
   box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+
+  & p {
+    text-align: center;
+  }
+
+  & button {
+    padding: 10px 20px;
+    background-color: hsla(196, 43%, 62%, 1.00);
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 0;
+    text-decoration: none;
+    margin: 0 10px;
+  }
 }
 
 @media screen and (max-width:768px){

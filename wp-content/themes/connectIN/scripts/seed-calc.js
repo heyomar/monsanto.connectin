@@ -1,6 +1,13 @@
 'use strict'
 
-//MODAL WINDOW
+// function calcValidate () {
+// 	if ($('#cert_seed_germination').val() = null) {
+// 			alert('there is data in the field');
+// 	} else {
+//
+// 	}
+// }
+
 $('.toggleModal').on('click', function (e) {
   $('.modal').toggleClass('active');
 });
@@ -9,17 +16,14 @@ $('.close').on('click', function (e) {
   $('.thankyoumodal').removeClass('active');
 });
 
-$('#reset_form').on('click', function(){
+$('#reset_form,#thankyou__startover').on('click', function(){
 	window.location.reload();
 });
 
-// function calcValidate () {
-	// if ($('#cert_seed_germination').val() !== null) {
-	// 		alert('there is data in the field');
-	// } else {
-	//
-	// }
-// }
+$('#calculate').on('click', function(){
+	$('.actionData').show().slideDown()
+})
+
 
 function ajaxPost(url, onComplete, dataType) {
 
@@ -65,8 +69,7 @@ function generate(type) {
 										'&yieldImpactOverseeding=' + $('#crop_percent_yield_impact_overseeding').val() +
 										'&yieldImpactUnderseeding=' + $('#crop_percent_yield_impact_underseeding').val()
 
-		var emailData = '&recipientEmail=' + $('#recipientEmail').val() + '&senderEmail=' + $('#senderEmail').val() +
-										'&senderName=' + $('#senderName').val() + '&sendToSelf=' + $('#email__checkbox').is(':checked')
+		var emailData = '&recipientEmail=' + $('#recipientEmail').val()
 
 		if (type === 'download') {
 			var downloadString = 'http://test.monpdfservice.hlktesting.com/WBProfitCalc/WheatProfitability/WheatProfitabilityToPdf' + certSeed + savedSeed + season + yieldForm
@@ -87,6 +90,7 @@ function generate(type) {
 
 		}
 }
+
 
 $(document).ready(function () {
 	// Main app startup
