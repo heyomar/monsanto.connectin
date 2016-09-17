@@ -12,7 +12,7 @@ $('#reset_form,#thankyou__startover').on('click', function(){
 	window.location.reload();
 });
 
-if( $('body').hasClass('wheat-profitability-calculator') ) {
+// if( $('body').hasClass('wheat-profitability-calculator') ) {
 
 	function ajaxPost(url, onComplete, dataType) {
 
@@ -81,7 +81,7 @@ if( $('body').hasClass('wheat-profitability-calculator') ) {
 	}
 
 
-}
+// }
 
 
 
