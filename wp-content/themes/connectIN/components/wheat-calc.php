@@ -1,6 +1,6 @@
 
 	<!-- start custom-form -->
-	<form data-parsley-validate class="custom-form" id="seed_calc_form">
+	<form class="custom-form" id="seed_calc_form">
 
 		<!-- row -->
 		<div class="improve__ctn g-container full-width full lg-halves">
@@ -23,17 +23,18 @@
 									<div class="form-input">
 										<label for="cert_seed_germination">% Germination</label>
 										<!-- <label class="suffix">%</label> -->
-										<input type="number" step="any" id="cert_seed_germination" data-format="percent">
+										<input class="calc-field" required type="number" step="any" id="cert_seed_germination" data-format="percent">
+
 									</div>
 									<div class="form-input">
 										<label for="cert_seed_pure_seed">% Pure Seed</label>
 										<!-- <label class="suffix">%</label> -->
-										<input type="number" step="any" id="cert_seed_pure_seed" data-format="percent">
+										<input class="calc-field" required type="number" step="any" id="cert_seed_pure_seed" data-format="percent">
 									</div>
 									<div class="form-input">
 										<label for="cert_seed_cost_per_unit">Seed Cost / Unit<sup>*</sup><br><small class="caption make__weight-normal">(includes certified seed and treatment costs)</small></label>
 										<!-- <label class="prefix">$</label> -->
-										<input type="number" step="any" id="cert_seed_cost_per_unit" data-format="currency">
+										<input class="calc-field" required type="number" step="any" id="cert_seed_cost_per_unit" data-format="currency">
 										<small>*unit=cwt (hundredweight)</small>
 									</div>
 								</fieldset>
@@ -51,17 +52,17 @@
 								<div class="form-input">
 									<label for="saved_seed_germination">% Germination</label>
 									<!-- <label class="suffix">%</label> -->
-									<input type="number" step="any" id="saved_seed_germination">
+									<input class="calc-field" required type="number" step="any" id="saved_seed_germination">
 								</div>
 								<div class="form-input">
 									<label for="saved_seed_pure_seed">% Pure Seed</label>
 									<!-- <label class="suffix">%</label> -->
-									<input type="number" step="any" id="saved_seed_pure_seed">
+									<input class="calc-field" required type="number" step="any" id="saved_seed_pure_seed">
 								</div>
 								<div class="form-input">
 									<label for="saved_seed_cost_per_unit">Seed Cost / Unit<sup>*</sup><br><small class="caption make__weight-normal">(includes current market price; costs of storage, seed treatment and cleaning)</small></label>
 									<!-- <label class="prefix">$</label> -->
-									<input type="number" step="any" id="saved_seed_cost_per_unit">
+									<input class="calc-field" required type="number" step="any" id="saved_seed_cost_per_unit">
 									<small>*unit=cwt (hundredweight)</small>
 								</div>
 							</fieldset>
@@ -84,11 +85,11 @@
 					</div>
 					<div class="g-cell form-input form-inline" id="crop_seasons_options">
 						<label class="control control-radio">Winter Wheat
-							<input type="radio" id="crop_season_winter" name="crop_season" value="winter">
+							<input required type="radio" id="crop_season_winter" name="crop_season" value="winter">
 							<div class="indicator"></div>
 						</label>
 						<label class="control control-radio">Spring Wheat
-							<input type="radio" id="crop_season_spring" name="crop_season" value="spring">
+							<input required type="radio" id="crop_season_spring" name="crop_season" value="spring">
 							<div class="indicator"></div>
 						</label>
 					</div>
@@ -98,7 +99,7 @@
 						<label for="crop_target_yield" class="col text-right">Target Yield <small class="caption">(Bu/A)</small></label>
 					</div>
 					<div class="g-cell form-input">
-						<input type="number" step="any" id="crop_target_yield">
+						<input class="calc-field" required type="number" step="any" id="crop_target_yield">
 					</div>
 				</div>
 				<div class="g-container form-row">
@@ -107,7 +108,7 @@
 					</div>
 					<div class="g-cell form-input">
 						<!-- <label class="prefix">$</label> -->
-						<input type="number" step="any" id="crop_wheat_price">
+						<input class="calc-field" required type="number" step="any" id="crop_wheat_price">
 					</div>
 				</div>
 				<div class="g-container form-row">
@@ -115,7 +116,7 @@
 						<label for="crop_target_planting_population" class="col text-right">Target Planting Population <small class="caption">(Plants/A)</small></label>
 					</div>
 					<div class="g-cell form-input">
-						<input type="number" step="any" id="crop_target_planting_population">
+						<input class="calc-field" required type="number" step="any" id="crop_target_planting_population">
 					</div>
 				</div>
 				<div class="g-container form-row">
@@ -123,7 +124,7 @@
 						<label for="crop_flat_seeding_rate" class="col text-right">Flat Seeding Rate for Comparison <small class="caption">(Lbs/A)</small></label>
 					</div>
 					<div class="g-cell form-input">
-						<input type="number" step="any" id="crop_flat_seeding_rate">
+						<input class="calc-field" required type="number" step="any" id="crop_flat_seeding_rate">
 					</div>
 				</div>
 				<div class="g-container form-row">
@@ -131,7 +132,7 @@
 						<label for="crop_acres_planted" class="acres__adjusted col text-right">Acres Planted</label>
 					</div>
 					<div class="g-cell form-input">
-						<input type="number" step="any" id="crop_acres_planted">
+						<input class="calc-field" required type="number" step="any" id="crop_acres_planted">
 					</div>
 				</div>
 				<div class="g-container form-row">
@@ -140,16 +141,16 @@
 					</div>
 					<div class="g-cell form-input">
 						<!-- <label class="suffix">%</label> -->
-						<input type="number" step="any" id="crop_percent_yield_impact_overseeding">
+						<input class="calc-field" required type="number" step="any" id="crop_percent_yield_impact_overseeding">
 					</div>
 				</div>
-				<div class="g-container form-row">
+				<div id="yieldImpactForUnderseeding" class="g-container form-row">
 					<div class="g-cell form-label">
 						<label for="crop_percent_yield_impact_underseeding" class="col text-right">% Yield Impact for Underseeding <small class="caption">(per 100,000 seeds/acre)</small></label>
 					</div>
 					<div class="g-cell form-input">
 						<!-- <label class="suffix">%</label> -->
-						<input type="number" step="any" id="crop_percent_yield_impact_underseeding">
+						<input class="calc-field" required type="number" step="any" id="crop_percent_yield_impact_underseeding">
 					</div>
 				</div>
 				<div class="calculate__btn-ctn g-container form-row">
@@ -157,7 +158,7 @@
 						<label for="" class="col text-right"></label>
 					</div>
 					<div class="g-cell form-input button__ctn">
-						<button type="button" class="btn" id="calculate">Calculate</button>
+						<button type="submit" class="btn" id="calculate">Calculate</button>
 						<div class="calculate__reset">
 							<a href="" class="btn-natural invisible" id="reset_form">Reset to Industry Standards</a>
 						</div>
@@ -207,6 +208,9 @@
 		</div>
 		<!-- / row -->
 	</form>
+	<script type="text/javascript">
+
+	</script>
 <script src="">
 	/*!
 	 * Chart.js

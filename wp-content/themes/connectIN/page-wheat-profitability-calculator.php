@@ -10,9 +10,9 @@ get_template_part('components/inner-hero'); ?>
 </div>
 
 <div class="modal">
-  <form class="">
+  <form id="emailDataForm" class="">
     <h3 class="make__h3">Email This Data</h3>
-    
+
     <span>Recipient:</span>
     <span class="close toggleModal">&#215;</span>
 
@@ -21,7 +21,7 @@ get_template_part('components/inner-hero'); ?>
         <label for="email">Email &nbsp;</label>
       </div>
       <div class="input-ctn">
-        <input id="recipientEmail" name="email" required="" type="text" value="">
+        <input id="recipientEmail" name="email" required="" type="text" value="" required>
       </div>
     </div>
 

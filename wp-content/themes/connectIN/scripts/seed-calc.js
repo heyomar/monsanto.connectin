@@ -1,13 +1,5 @@
 'use strict'
 
-// function calcValidate () {
-// 	if ($('#cert_seed_germination').val() = null) {
-// 			alert('there is data in the field');
-// 	} else {
-//
-// 	}
-// }
-
 $('.toggleModal').on('click', function (e) {
   $('.modal').toggleClass('active');
 });
@@ -19,10 +11,6 @@ $('.close').on('click', function (e) {
 $('#reset_form,#thankyou__startover').on('click', function(){
 	window.location.reload();
 });
-
-$('#calculate').on('click', function(){
-	$('.actionData').show().slideDown()
-})
 
 if( $('body').hasClass('wheat-profitability-calculator') ) {
 
@@ -100,6 +88,7 @@ if( $('body').hasClass('wheat-profitability-calculator') ) {
 
 $(document).ready(function () {
 	// Main app startup
+
 	var Utility = (function () {
 		// Get the top position of an element in the document
 		// From smoothScroll, https://github.com/alicelieutier/smoothScroll/blob/master/smoothscroll.js
@@ -737,10 +726,38 @@ $(document).ready(function () {
 		var onCalculate = function (event) {
 			event.preventDefault()
 
-			$('#graph_compare_impact_section , #graph_maximize_revenue_section').slideDown()
-			// Recalculate and update the graphs
+			function validateForm() {
+				  var isValid = true;
+				  $('.calc-field').each(function() {
+				    if ( $(this).val() === '') {
+							$(this).css({"border-color": "red"})
+							isValid = false
+							console.log(isValid)
+						}else {
+							$(this).css({"border-color": "#66665c"})
+						}
+				  });
+				  return isValid;
+				}
 
-			calculate()
+			$(document).ready(function(){
+				var go = validateForm()
+				var errorFormMessage = '<span class="errorFormMessage">Please complete all fields above.</span>'
+				if ( go == true) {
+					console.log('it is valid')
+					$('.errorFormMessage').remove()
+					$('#graph_compare_impact_section , #graph_maximize_revenue_section').slideDown()
+					$('.actionData').show().slideDown()
+					calculate()
+				}else if ( go == false) {
+					console.log('it is not valid')
+					if ($('.errorFormMessage')[0]) {
+
+					}else {
+						$('#yieldImpactForUnderseeding').after(errorFormMessage)
+					}
+				}
+			})
 		}
 
 		var onFormInputChange = function (event) {

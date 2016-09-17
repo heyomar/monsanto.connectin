@@ -502,3 +502,11 @@ YIELD CALCULATIONS FORM
 select::-ms-expand {
     display: none;
 }
+
+.errorFormMessage {
+  color: red;
+  font-size: 12px;
+  position: relative;
+  left: -198px;
+  top: -7px;
+}
