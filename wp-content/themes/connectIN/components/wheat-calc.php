@@ -22,19 +22,19 @@
 									<legend class="h3 ae-brand">Certified Seed</legend>
 									<div class="form-input">
 										<label for="cert_seed_germination">% Germination</label>
-										<!-- <label class="suffix">%</label> -->
+										<span class="suffix">%</span>
 										<input class="calc-field" required type="number" step="any" id="cert_seed_germination" data-format="percent">
 
 									</div>
 									<div class="form-input">
 										<label for="cert_seed_pure_seed">% Pure Seed</label>
-										<!-- <label class="suffix">%</label> -->
+										<span class="suffix">%</span>
 										<input class="calc-field" required type="number" step="any" id="cert_seed_pure_seed" data-format="percent">
 									</div>
 									<div class="form-input">
 										<label for="cert_seed_cost_per_unit">Seed Cost / Unit<sup>*</sup><br><small class="caption make__weight-normal">(includes certified seed and treatment costs)</small></label>
-										<!-- <label class="prefix">$</label> -->
-										<input class="calc-field" required type="number" step="any" id="cert_seed_cost_per_unit" data-format="currency">
+
+										<span class="prefix__dollar"><input class="calc-field" required type="number" step="any" id="cert_seed_cost_per_unit" data-format="currency"></span>
 										<small>*unit=cwt (hundredweight)</small>
 									</div>
 								</fieldset>
@@ -51,18 +51,18 @@
 								<legend class="h3">Saved Seed</legend>
 								<div class="form-input">
 									<label for="saved_seed_germination">% Germination</label>
-									<!-- <label class="suffix">%</label> -->
+									<span class="suffix">%</span>
 									<input class="calc-field" required type="number" step="any" id="saved_seed_germination">
 								</div>
 								<div class="form-input">
 									<label for="saved_seed_pure_seed">% Pure Seed</label>
-									<!-- <label class="suffix">%</label> -->
+									<span class="suffix">%</span>
 									<input class="calc-field" required type="number" step="any" id="saved_seed_pure_seed">
 								</div>
 								<div class="form-input">
 									<label for="saved_seed_cost_per_unit">Seed Cost / Unit<sup>*</sup><br><small class="caption make__weight-normal">(includes current market price; costs of storage, seed treatment and cleaning)</small></label>
-									<!-- <label class="prefix">$</label> -->
-									<input class="calc-field" required type="number" step="any" id="saved_seed_cost_per_unit">
+
+									<span class="prefix__dollar"><input class="calc-field" required type="number" step="any" id="saved_seed_cost_per_unit"></span>
 									<small>*unit=cwt (hundredweight)</small>
 								</div>
 							</fieldset>
@@ -107,8 +107,8 @@
 						<label for="crop_wheat_price" class="col text-right">Wheat Price <small class="caption">($Bu/A)</small></label>
 					</div>
 					<div class="g-cell form-input">
-						<!-- <label class="prefix">$</label> -->
-						<input class="calc-field" required type="number" step="any" id="crop_wheat_price">
+
+						<span class="prefix__dollar"><input class="calc-field" required type="number" step="any" id="crop_wheat_price"></span>
 					</div>
 				</div>
 				<div class="g-container form-row">
@@ -140,7 +140,7 @@
 						<label for="crop_percent_yield_impact_overseeding" class="col text-right">% Yield Impact for Overseeding <small class="caption">(per 100,000 seeds/acre)</small></label>
 					</div>
 					<div class="g-cell form-input">
-						<!-- <label class="suffix">%</label> -->
+						<span class="suffix">%</span>
 						<input class="calc-field" required type="number" step="any" id="crop_percent_yield_impact_overseeding">
 					</div>
 				</div>
@@ -149,7 +149,7 @@
 						<label for="crop_percent_yield_impact_underseeding" class="col text-right">% Yield Impact for Underseeding <small class="caption">(per 100,000 seeds/acre)</small></label>
 					</div>
 					<div class="g-cell form-input">
-						<!-- <label class="suffix">%</label> -->
+						<span class="suffix">%</span>
 						<input class="calc-field" required type="number" step="any" id="crop_percent_yield_impact_underseeding">
 					</div>
 				</div>
@@ -158,7 +158,7 @@
 						<label for="" class="col text-right"></label>
 					</div>
 					<div class="g-cell form-input button__ctn">
-						<button type="submit" class="btn" id="calculate">Calculate</button>
+						<button type="button" class="btn" id="calculate">Calculate</button>
 						<div class="calculate__reset">
 							<a href="" class="btn-natural invisible" id="reset_form">Reset to Industry Standards</a>
 						</div>

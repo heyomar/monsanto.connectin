@@ -2,6 +2,10 @@
   font-weight: normal;
 }
 
+.form-input {
+  position: relative;
+}
+
 .calc-section {
   padding: 50px 25px;
   text-align: center;
@@ -61,6 +65,10 @@ IMPROVE PERFORMANCE & PROFIT POTENTIAL
     text-transform: uppercase;
     font-size: 18px;
   }
+
+  & .prefix__dollar::before {
+    top: 82px;
+  }
 }
 
 .calc-saved-seed {
@@ -91,6 +99,10 @@ IMPROVE PERFORMANCE & PROFIT POTENTIAL
     color: var(--color-ltblue);
     text-transform: uppercase;
     font-size: 18px;
+  }
+
+  & .prefix__dollar::before {
+    top: 82px;
   }
 }
 
@@ -212,12 +224,11 @@ YIELD CALCULATIONS FORM
   }
 
   & .suffix {
-    position: relative;
-    right: -370px;
-    display: inline-block;
+    top: 10px;
   }
-
-  & #crop_wheat_price {
+  & .prefix {
+    left: 22px;
+    top: 0;
   }
 }
 
@@ -229,8 +240,7 @@ YIELD CALCULATIONS FORM
   }
 
   .calculate__btn-ctn {
-    position: relative;
-    right: 263px;
+    text-align: center;
   }
 
   .calculate__reset {
@@ -239,7 +249,7 @@ YIELD CALCULATIONS FORM
   }
 
   .button__ctn {
-   left: 90px;
+   left: 60px;
    position: relative;
    }
 
@@ -439,6 +449,21 @@ YIELD CALCULATIONS FORM
   }
 }
 
+.errorFormMessage {
+  color: red;
+  font-size: 12px;
+  position: relative;
+  left: -198px;
+  top: -7px;
+}
+
+.prefix__dollar::before {
+  content: "$";
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+
 @media screen and (max-width:768px){
   .actionData {
     & button {
@@ -464,6 +489,17 @@ YIELD CALCULATIONS FORM
       width: 100%;
     }
   }
+
+  .errorFormMessage {
+    left: 0;
+  }
+  .calc-certified-seed .prefix__dollar::before {
+    top: 58px;
+  }
+  .calc-saved-seed .prefix__dollar::before {
+    top: 58px;
+  }
+
 }
 
 .calcpage__h3 {
@@ -493,20 +529,24 @@ YIELD CALCULATIONS FORM
   padding-bottom: 20px;
 }
 
+#cert_seed_cost_per_unit,
+#saved_seed_cost_per_unit,
+#crop_wheat_price{
+  padding-left: 22px;
+}
+
+span.suffix {
+  position: absolute;
+  top: 34px;
+  right: 10px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
 @media screen and (min-width:768px) {
   #cert_seed_cost_per_unit {
     margin-top: 24px;
   }
-}
-
-select::-ms-expand {
-    display: none;
-}
-
-.errorFormMessage {
-  color: red;
-  font-size: 12px;
-  position: relative;
-  left: -198px;
-  top: -7px;
 }
