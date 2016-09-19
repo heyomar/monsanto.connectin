@@ -332,8 +332,15 @@ YIELD CALCULATIONS FORM
     text-decoration: none;
     margin: 0 10px;
 
+
     &:hover {
       background-color:  hsla(195, 33%, 50%, 1.00);
+      }
+    }
+    & #pdfForm {
+      display: inline-block;
+      & button {
+        line-height: 1.8;
       }
     }
   }
@@ -469,6 +476,10 @@ YIELD CALCULATIONS FORM
     & button {
       margin: 10px 0 ;
       min-width: 100%;
+    }
+
+    & #pdfForm {
+      width: 100%;
     }
   }
 
