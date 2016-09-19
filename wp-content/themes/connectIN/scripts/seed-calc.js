@@ -742,7 +742,7 @@ $(document).ready(function () {
 
 			$(document).ready(function(){
 				var go = validateForm()
-				var errorFormMessage = '<span class="errorFormMessage">Please complete all fields above.</span>'
+				var errorFormMessage = '<span class="errorFormMessage">You must complete all fields above to calculate.</span>'
 				if ( go == true) {
 					console.log('it is valid')
 					$('.errorFormMessage').remove()
