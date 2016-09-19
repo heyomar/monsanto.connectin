@@ -12,11 +12,35 @@ $('#reset_form,#thankyou__startover').on('click', function(){
 	window.location.reload();
 });
 
-$('#downloadPDF').click(function(e) {
+$('#downloadPDF').click(function (e) {
 	e.preventDefault()
 
 	$('#pdfData').val(JSON.stringify(dataExtract()))
 	$('#pdfForm').submit()
+})
+
+$('#mailPDF').click(function (e) {
+	var queryStringAdd = '&recipients=' + encodeURIComponent($('#recipientEmail').val())
+											+ '&sender=' + encodeURIComponent('no-reply@hlkagency.com')
+											+ '&subject=' + encodeURIComponent('Wheat Profitability Results')
+											+ '&firstName='
+											+ '&memberBusname='
+
+	$.ajax({
+		url: 'http://hlk-pdf-server.centralus.cloudapp.azure.com/api/v1/Email?templateName=WestBred_ProfitCalc' + queryStringAdd,
+		type: 'POST',
+		data: '{ "json" : ' + JSON.stringify(dataExtract()) + '}'
+	})
+	.done(function() {
+		console.log("success");
+	})
+	.fail(function() {
+		console.log("error");
+	})
+	.always(function() {
+		console.log("complete");
+	})
+
 })
 
 function dataExtract () {

@@ -52,8 +52,7 @@ get_template_part('components/inner-hero'); ?>
     </div> -->
 
     <div class="center__text">
-      <button id="sendPDF" name="button" onclick="generate('email')" type=
-      "button">Send PDF</button>
+      <button id="mailPDF" type="button">Send PDF</button>
     </div>
 
   </form>
