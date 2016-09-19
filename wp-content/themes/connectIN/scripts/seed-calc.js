@@ -12,6 +12,12 @@ $('#reset_form,#thankyou__startover').on('click', function(){
 	window.location.reload();
 });
 
+// $("#calculate").click(function() {
+// $('html, body').animate({
+// scrollTop: $(".add__graybg").offset().top
+// }, 2000);
+// });
+
 // if( $('body').hasClass('wheat-profitability-calculator') ) {
 
 	function ajaxPost(url, onComplete, dataType) {
