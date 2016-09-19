@@ -12,73 +12,101 @@ $('#reset_form,#thankyou__startover').on('click', function(){
 	window.location.reload();
 });
 
+$('#downloadPDF').click(function(e) {
+	e.preventDefault()
+
+	$('#pdfData').val(JSON.stringify(dataExtract()))
+	$('#pdfForm').submit()
+})
+
+function dataExtract () {
+	return {
+		certGermination: $('#cert_seed_germination').val(),
+		certPureSeed: $('#cert_seed_pure_seed').val(),
+		certSeedCost: $('#cert_seed_cost_per_unit').val(),
+		savedGermination: $('#saved_seed_germination').val(),
+		savedPureSeed: $('#saved_seed_pure_seed').val(),
+		savedSeedCost: $('#saved_seed_cost_per_unit').val(),
+		season: $('input[name="crop_season"]:checked').val(),
+		targetYield: $('#crop_target_yield').val(),
+		wheatPrice: $('#crop_wheat_price').val(),
+		targetPlantPopulation: $('#crop_target_planting_population').val(),
+		flatSeedingRate: $('#crop_flat_seeding_rate').val(),
+		acresPlanted: $('#crop_acres_planted').val(),
+		yieldImpactOverseeding: $('#crop_percent_yield_impact_overseeding').val(),
+		yieldImpactUnderseeding: $('#crop_percent_yield_impact_underseeding').val(),
+		impactCompareGraph: $('#compareGraph').val(),
+		maximizeRevenueGraph: $('#revenueGraph').val()
+	}
+}
+
 // if( $('body').hasClass('wheat-profitability-calculator') ) {
 
-	function ajaxPost(url, onComplete, dataType) {
+	// function ajaxPost(url, onComplete, dataType) {
 
-		if (window.XDomainRequest) {
+	// 	if (window.XDomainRequest) {
 
-			var xdr = new XDomainRequest();
-			xdr.timeout = 3000;
+	// 		var xdr = new XDomainRequest();
+	// 		xdr.timeout = 3000;
 
-			xdr.onload = function () {
-				var result = JSON.parse(xdr.responseText);
-				onComplete(result);
-			};
+	// 		xdr.onload = function () {
+	// 			var result = JSON.parse(xdr.responseText);
+	// 			onComplete(result);
+	// 		};
 
-			xdr.open("get", url);
-			xdr.send();
+	// 		xdr.open("get", url);
+	// 		xdr.send();
 
-		} else {
-			var ajaxConfig = { url: url, success: onComplete };
-			if (dataType != null) ajaxConfig.dataType = dataType;
-			$.ajax(ajaxConfig);
-		}
-	};
+	// 	} else {
+	// 		var ajaxConfig = { url: url, success: onComplete };
+	// 		if (dataType != null) ajaxConfig.dataType = dataType;
+	// 		$.ajax(ajaxConfig);
+	// 	}
+	// };
 
-	function generate(type) {
-			var certSeed = '?certGermination=' + $('#cert_seed_germination').val() +
-											'&certPureSeed=' + $('#cert_seed_pure_seed').val() +
-											'&certSeedCost=' + $('#cert_seed_cost_per_unit').val()
+	// function generate(type) {
+	// 		var certSeed = '?certGermination=' + $('#cert_seed_germination').val() +
+	// 										'&certPureSeed=' + $('#cert_seed_pure_seed').val() +
+	// 										'&certSeedCost=' + $('#cert_seed_cost_per_unit').val()
 
-			var savedSeed = '&savedGermination=' + $('#saved_seed_germination').val() +
-											'&savedPureSeed=' + $('#saved_seed_pure_seed').val() +
-									 		'&savedSeedCost=' + $('#saved_seed_cost_per_unit').val()
+	// 		var savedSeed = '&savedGermination=' + $('#saved_seed_germination').val() +
+	// 										'&savedPureSeed=' + $('#saved_seed_pure_seed').val() +
+	// 								 		'&savedSeedCost=' + $('#saved_seed_cost_per_unit').val()
 
-			var season = '&season=spring'
-			if ($("input[name='crop_season'][value='winter']").prop('checked') === true) {
-					season = '&season=winter'
-			}
+	// 		var season = '&season=spring'
+	// 		if ($("input[name='crop_season'][value='winter']").prop('checked') === true) {
+	// 				season = '&season=winter'
+	// 		}
 
-			var yieldForm = '&targetYield=' + $('#crop_target_yield').val() +
-											'&wheatPrice=' + $('#crop_wheat_price').val() +
-											'&targetPlantPopulation=' + $('#crop_target_planting_population').val() +
-											'&flatSeedingRate=' + $('#crop_flat_seeding_rate').val() +
-											'&acresPlanted=' + $('#crop_acres_planted').val() +
-											'&yieldImpactOverseeding=' + $('#crop_percent_yield_impact_overseeding').val() +
-											'&yieldImpactUnderseeding=' + $('#crop_percent_yield_impact_underseeding').val()
+	// 		var yieldForm = '&targetYield=' + $('#crop_target_yield').val() +
+	// 										'&wheatPrice=' + $('#crop_wheat_price').val() +
+	// 										'&targetPlantPopulation=' + $('#crop_target_planting_population').val() +
+	// 										'&flatSeedingRate=' + $('#crop_flat_seeding_rate').val() +
+	// 										'&acresPlanted=' + $('#crop_acres_planted').val() +
+	// 										'&yieldImpactOverseeding=' + $('#crop_percent_yield_impact_overseeding').val() +
+	// 										'&yieldImpactUnderseeding=' + $('#crop_percent_yield_impact_underseeding').val()
 
-			var emailData = '&recipientEmail=' + $('#recipientEmail').val()
+	// 		var emailData = '&recipientEmail=' + $('#recipientEmail').val()
 
-			if (type === 'download') {
-				var downloadString = 'http://test.monpdfservice.hlktesting.com/WBProfitCalc/WheatProfitability/WheatProfitabilityToPdf' + certSeed + savedSeed + season + yieldForm
-				window.location.href = downloadString
-			}
+	// 		if (type === 'download') {
+	// 			var downloadString = 'http://test.monpdfservice.hlktesting.com/WBProfitCalc/WheatProfitability/WheatProfitabilityToPdf' + certSeed + savedSeed + season + yieldForm
+	// 			window.location.href = downloadString
+	// 		}
 
-			if (type === 'email') {
-				var emailString = 'http://test.monpdfservice.hlktesting.com/WBProfitCalc/WheatProfitability/WheatProfitabilityToEmail' + certSeed + savedSeed + season + yieldForm + emailData
+	// 		if (type === 'email') {
+	// 			var emailString = 'http://test.monpdfservice.hlktesting.com/WBProfitCalc/WheatProfitability/WheatProfitabilityToEmail' + certSeed + savedSeed + season + yieldForm + emailData
 
-			ajaxPost(emailString, function(data){
-				if (data.success) {
-					$('.modal').hide()
-					$('.thankyoumodal').toggleClass('active')
-				} else {
-					alert(data.error)
-				}
-			}, 'jsonp')
+	// 		ajaxPost(emailString, function(data){
+	// 			if (data.success) {
+	// 				$('.modal').hide()
+	// 				$('.thankyoumodal').toggleClass('active')
+	// 			} else {
+	// 				alert(data.error)
+	// 			}
+	// 		}, 'jsonp')
 
-			}
-	}
+	// 		}
+	// }
 
 
 // }
@@ -409,14 +437,6 @@ $(document).ready(function () {
 			}
 		}
 
-		var emailData = function () {
-			// TODO: Prepare the data for sending to PDF generator
-		}
-
-		var downloadPdf = function () {
-			// TODO: Prepare the data for sending to PDF generator
-		}
-
 		var updateUserDataFromForm = function () {
 			var form = document.getElementById('seed_calc_form')
 
@@ -637,6 +657,10 @@ $(document).ready(function () {
 				}
 			})
 
+      setTimeout(function () {
+        $('#compareGraph').val(chart.toBase64Image())
+      }, 1500)
+
 			// Update legend
 			legend.classList.add('calc-chart-type-' + chart.config.type);
 
@@ -703,6 +727,10 @@ $(document).ready(function () {
 					}
 				}
 			})
+
+      setTimeout(function () {
+        $('#revenueGraph').val(chart.toBase64Image())
+      }, 1500)
 
 			// Update legend
 			legend.classList.add('calc-chart-type-' + chart.config.type);
