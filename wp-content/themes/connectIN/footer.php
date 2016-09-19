@@ -21,6 +21,7 @@
   </body>
 
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/vendor/jquery.min.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/vendor/spin.js"></script>
   <?php if (is_page('wheat-profitability-calculator') ) {
     echo "<script src='" . get_stylesheet_directory_uri() . "/scripts/vendor/Chart.min.js' charset='utf-8'></script>";
   } ?>
