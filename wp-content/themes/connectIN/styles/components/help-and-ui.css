@@ -85,3 +85,9 @@
 .button__plain:hover{
   background-color: var(--color-dkblue);
 }
+
+@media screen and (max-width:768px){
+  .button__plain {
+    font-size: 12px;
+  }
+}

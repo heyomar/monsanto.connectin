@@ -331,6 +331,8 @@ YIELD CALCULATIONS FORM
     border-bottom: 0;
     text-decoration: none;
     margin: 0 10px;
+    font-family: 'nexabold', sans-serif;
+    font-size: 16px;
 
 
     &:hover {
@@ -340,7 +342,7 @@ YIELD CALCULATIONS FORM
     & #pdfForm {
       display: inline-block;
       & button {
-        line-height: 1.8;
+        line-height: 1.5;
       }
     }
   }
