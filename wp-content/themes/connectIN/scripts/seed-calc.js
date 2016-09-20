@@ -93,9 +93,6 @@ $('#mailPDF').click(function (e) {
 		})
 	}
 
-
-
-
 })
 
 function dataExtract () {
@@ -118,78 +115,6 @@ function dataExtract () {
 		maximizeRevenueGraph: $('#revenueGraph').val()
 	}
 }
-
-// if( $('body').hasClass('wheat-profitability-calculator') ) {
-
-	// function ajaxPost(url, onComplete, dataType) {
-
-	// 	if (window.XDomainRequest) {
-
-	// 		var xdr = new XDomainRequest();
-	// 		xdr.timeout = 3000;
-
-	// 		xdr.onload = function () {
-	// 			var result = JSON.parse(xdr.responseText);
-	// 			onComplete(result);
-	// 		};
-
-	// 		xdr.open("get", url);
-	// 		xdr.send();
-
-	// 	} else {
-	// 		var ajaxConfig = { url: url, success: onComplete };
-	// 		if (dataType != null) ajaxConfig.dataType = dataType;
-	// 		$.ajax(ajaxConfig);
-	// 	}
-	// };
-
-	// function generate(type) {
-	// 		var certSeed = '?certGermination=' + $('#cert_seed_germination').val() +
-	// 										'&certPureSeed=' + $('#cert_seed_pure_seed').val() +
-	// 										'&certSeedCost=' + $('#cert_seed_cost_per_unit').val()
-
-	// 		var savedSeed = '&savedGermination=' + $('#saved_seed_germination').val() +
-	// 										'&savedPureSeed=' + $('#saved_seed_pure_seed').val() +
-	// 								 		'&savedSeedCost=' + $('#saved_seed_cost_per_unit').val()
-
-	// 		var season = '&season=spring'
-	// 		if ($("input[name='crop_season'][value='winter']").prop('checked') === true) {
-	// 				season = '&season=winter'
-	// 		}
-
-	// 		var yieldForm = '&targetYield=' + $('#crop_target_yield').val() +
-	// 										'&wheatPrice=' + $('#crop_wheat_price').val() +
-	// 										'&targetPlantPopulation=' + $('#crop_target_planting_population').val() +
-	// 										'&flatSeedingRate=' + $('#crop_flat_seeding_rate').val() +
-	// 										'&acresPlanted=' + $('#crop_acres_planted').val() +
-	// 										'&yieldImpactOverseeding=' + $('#crop_percent_yield_impact_overseeding').val() +
-	// 										'&yieldImpactUnderseeding=' + $('#crop_percent_yield_impact_underseeding').val()
-
-	// 		var emailData = '&recipientEmail=' + $('#recipientEmail').val()
-
-	// 		if (type === 'download') {
-	// 			var downloadString = 'http://test.monpdfservice.hlktesting.com/WBProfitCalc/WheatProfitability/WheatProfitabilityToPdf' + certSeed + savedSeed + season + yieldForm
-	// 			window.location.href = downloadString
-	// 		}
-
-	// 		if (type === 'email') {
-	// 			var emailString = 'http://test.monpdfservice.hlktesting.com/WBProfitCalc/WheatProfitability/WheatProfitabilityToEmail' + certSeed + savedSeed + season + yieldForm + emailData
-
-	// 		ajaxPost(emailString, function(data){
-	// 			if (data.success) {
-	// 				$('.modal').hide()
-	// 				$('.thankyoumodal').toggleClass('active')
-	// 			} else {
-	// 				alert(data.error)
-	// 			}
-	// 		}, 'jsonp')
-
-	// 		}
-	// }
-
-
-// }
-
 
 
 

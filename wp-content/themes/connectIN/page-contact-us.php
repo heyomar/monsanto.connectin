@@ -12,15 +12,15 @@ get_template_part('components/inner-hero'); ?>
                 <div id="tfa_1-D" class="oneField field-container-D     ">
                     <label id="tfa_1-L" for="tfa_1" class="label preField reqMark">Email</label>
                     <br>
-                    <div class="inputWrapper">
-                        <input type="text" id="tfa_1" name="tfa_1" value="" placeholder="" title="Email" class="validate-email required">
+                    <div id="contactEmail" class="inputWrapper">
+                        <input type="text" id="tfa_1" name="tfa_1" value="" placeholder="" title="Email" class="contactUsField validate-email required">
                     </div>
                 </div>
                 <div id="tfa_2-D" class="oneField field-container-D     ">
                     <label id="tfa_2-L" for="tfa_2" class="label preField reqMark">Message</label>
                     <br>
-                    <div class="inputWrapper">
-                        <textarea id="tfa_2" name="tfa_2" title="Message" class="required"></textarea>
+                    <div id="contactMessage" class="inputWrapper">
+                        <textarea id="tfa_2" name="tfa_2" title="Message" class="contactUsField required"></textarea>
                     </div>
                 </div>
                 <div class="actions" id="tfa_0-A">

@@ -28,29 +28,6 @@ get_template_part('components/inner-hero'); ?>
       </div>
     </div>
 
-    <!-- <span>Sender:</span>
-    <div class="field-ctn">
-      <div class="label-ctn">
-        <label for="name">Name&nbsp;</label>
-      </div>
-      <div class="input-ctn">
-        <input id="senderName" name="name" required="" type="text" value="">
-      </div>
-    </div>
-    <div class="field-ctn">
-      <div class="label-ctn">
-        <label for="senderEmail">Email &nbsp;</label>
-      </div>
-      <div class="input-ctn">
-        <input id="senderEmail" name="senderEmail" required="" type="text" value="">
-      </div>
-    </div>
-
-    <div class="modal__checkbox">
-      <input id="email__checkbox" type="checkbox" name="EmailCopy" value="Yes" checked>
-      <label id="email__checkbox-label" for="EmailCopy">Send a copy to myself</label>
-    </div> -->
-
     <div class="center__text">
       <button id="mailPDF" type="button">Send PDF</button>
     </div>
