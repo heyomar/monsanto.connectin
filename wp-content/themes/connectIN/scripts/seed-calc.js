@@ -44,7 +44,7 @@ $('#mailPDF').click(function (e) {
 		$('#recipientEmail').css({"border-color": "inherit"})
 		var queryStringAdd = '&recipients=' + encodeURIComponent($('#recipientEmail').val())
 												+ '&sender=' + encodeURIComponent('no-reply@hlkagency.com')
-												+ '&subject=' + encodeURIComponent('Wheat Profitability Results')
+												+ '&subject=' + encodeURIComponent('Your Wheat Profitability Calculator Results')
 												+ '&firstName='
 												+ '&memberBusname='
 
