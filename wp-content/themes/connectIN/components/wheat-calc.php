@@ -175,8 +175,8 @@
 				<div class="parsys-ID">
 					<!-- start .c-text-card -->
 					<article class="c-card c-text-card ae-text-card-opt4" data-shroud-version="0.1.0">
-						<h3>Compare the Impact of Using an Optimal Seeding Rate</h3>
-						<p>This graph illustrates how the net revenue from using an <a href="/optimal-seed-rate">Optimal Seeding Rate</a> compares to planting by the pound, as well how certified seed compares to saved seed.</p>
+						<h3><?php the_field('compare_headline') ?></h3>
+						<?php the_field('compare_copy') ?>
 
 					</article>
 					<!-- end .c-text-card -->
@@ -197,8 +197,8 @@
 				<div class="parsys-ID">
 					<!-- start .c-text-card -->
 					<article class="c-card c-text-card ae-text-card-opt4" data-shroud-version="0.1.0">
-						<h3>Maximize Revenue: Plant Certified Seed with an Optimal Seeding Rate</h3>
-						<p>The guessing games are over — certified seed planted at an Optimal Seeding Rate will give you the best return on your time and monetary investment. Next time you plant, use this combination to make sure you’re maximizing your profit potential. <a href="/find-seed-supplier">Ask your seed supplier</a> about the certified seed varieties that are bred to win in your area, and how to get your Optimal Seeding Rate.</p>
+						<h3><?php the_field('maximize_headline') ?></h3>
+						<?php the_field('maximize_copy') ?>
 					</article>
 					<!-- end .c-text-card -->
 				</div>

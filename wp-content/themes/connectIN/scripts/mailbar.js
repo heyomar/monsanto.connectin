@@ -73,7 +73,13 @@ const mailbar = `
 `
 
 if ( ($('body').hasClass('sign-up') === true) || (document.cookie.replace(/(?:(?:^|.*;\s*)subscribed\s*\=\s*([^;]*).*$)|^.*$/, '$1') !== 'true') ) {
-  $('#mailbar').html(mailbar)
+
+  if ($('body').hasClass('contact-us') === true) {
+    $('#mailbar').hide()
+  }else {
+    $('#mailbar').html(mailbar)
+  }
+
 }
 
 // click title or down arrow
