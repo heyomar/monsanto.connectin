@@ -1,4 +1,4 @@
-window.alert = function () {}
+// window.alert = function () {}
 //  Validate Contact Us Fields
 if ($('body').hasClass('contact-us')) {
     $('.primaryAction').on('click', function(e) {
