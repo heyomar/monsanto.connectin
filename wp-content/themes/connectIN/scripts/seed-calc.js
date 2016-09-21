@@ -38,7 +38,11 @@ $('#mailPDF').click(function (e) {
 
 	if (emailInput == false) {
 		$('#recipientEmail').css({"border-color": "red"})
-		$('#mailPDF').after(emailError)
+		if ($('.emailError')[0]) {
+		}else {
+			$('#mailPDF').after(emailError)
+		}
+
 
 	}else {
 		$('.emailError').remove()
