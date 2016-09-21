@@ -10,6 +10,7 @@ $('.close').on('click', function (e) {
 
 $('#reset_form,#thankyou__startover').on('click', function(){
 	window.location.reload();
+	$(window).scrollTop(0);
 });
 
 $("#emailDataForm").bind("keypress", function(e) {
