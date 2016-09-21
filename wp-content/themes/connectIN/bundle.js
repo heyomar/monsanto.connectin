@@ -155,21 +155,21 @@ const mailbar = `
                     <label id="tfa_1-L" for="tfa_1" class="label preField reqMark">First Name</label>
                     <br>
                     <div class="inputWrapper">
-                        <input required type="text" id="tfa_1" name="tfa_1" value="" placeholder="" title="First Name" class="required">
+                        <input type="text" id="tfa_1" name="tfa_1" value="" placeholder="" title="First Name" class="required">
                     </div>
                 </div>
                 <div id="tfa_2-D" class="oneField field-container-D     ">
                     <label id="tfa_2-L" for="tfa_2" class="label preField reqMark">Last Name</label>
                     <br>
                     <div class="inputWrapper">
-                        <input required type="text" id="tfa_2" name="tfa_2" value="" placeholder="" title="Last Name" class="required">
+                        <input type="text" id="tfa_2" name="tfa_2" value="" placeholder="" title="Last Name" class="required">
                     </div>
                 </div>
                 <div id="tfa_3-D" class="oneField field-container-D     ">
                     <label id="tfa_3-L" for="tfa_3" class="label preField reqMark">Email</label>
                     <br>
                     <div class="inputWrapper">
-                        <input required type="text" id="tfa_3" name="tfa_3" value="" placeholder="" title="Email" class="validate-email required">
+                        <input type="text" id="tfa_3" name="tfa_3" value="" placeholder="" title="Email" class="validate-email required">
                     </div>
                 </div>
                 <div id="tfa_4-D" class="oneField field-container-D     ">
@@ -202,7 +202,13 @@ const mailbar = `
 `
 
 if ( ($('body').hasClass('sign-up') === true) || (document.cookie.replace(/(?:(?:^|.*;\s*)subscribed\s*\=\s*([^;]*).*$)|^.*$/, '$1') !== 'true') ) {
-  $('#mailbar').html(mailbar)
+
+  if ($('body').hasClass('contact-us') === true) {
+    $('#mailbar').hide()
+  }else {
+    $('#mailbar').html(mailbar)
+  }
+
 }
 
 // click title or down arrow
@@ -291,6 +297,48 @@ $('.benefits__headline').on('click', function () {
     $(this).toggleClass('active')
   }
 })
+window.alert = function () {}
+//  Validate Contact Us Fields
+if ($('body').hasClass('contact-us')) {
+    $('.primaryAction').on('click', function(e) {
+        e.preventDefault();
+
+        function Valit() {
+            var isValid = true;
+            if ($('.validate-email').val() === "") {
+                $('#contactEmail').css({
+                    "border": "1px solid red"
+                })
+                isValid = false;
+            } else {
+                $('#contactEmail').css({
+                    "border-color": "initial"
+                })
+            }
+            if ($('#tfa_2').val() === "") {
+                $('#contactMessage').css({
+                    "border": "1px solid red"
+                })
+                isValid = false;
+            } else {
+                $('#contactMessage').css({
+                    "border-color": "initial"
+                })
+            }
+            return isValid;
+        }
+        var runit = Valit();
+        var error = '<span style="position:static;" class="errorFormMessage">You must complete all fields above.</span>'
+        if (runit == true) {
+            $('#tfa_0').submit()
+            $('.errorFormMessage').remove()
+        } else {
+            if ($('.errorFormMessage')[0]) {} else {
+                $('#contactMessage').after(error)
+            }
+        }
+    })
+}
 'use strict'
 
 $('.toggleModal').on('click', function (e) {
@@ -303,7 +351,15 @@ $('.close').on('click', function (e) {
 
 $('#reset_form,#thankyou__startover').on('click', function(){
 	window.location.reload();
+	$(window).scrollTop(0);
 });
+
+$("#emailDataForm").bind("keypress", function(e) {
+   if (e.keyCode == 13) {
+      return false; // ignore default event
+   }
+});
+
 
 $('#downloadPDF').click(function (e) {
 	e.preventDefault()
@@ -313,26 +369,71 @@ $('#downloadPDF').click(function (e) {
 })
 
 $('#mailPDF').click(function (e) {
-	var queryStringAdd = '&recipients=' + encodeURIComponent($('#recipientEmail').val())
-											+ '&sender=' + encodeURIComponent('no-reply@hlkagency.com')
-											+ '&subject=' + encodeURIComponent('Wheat Profitability Results')
-											+ '&firstName='
-											+ '&memberBusname='
+	//Validate Email
+	function is_email(email){
+	var emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+	return emailReg.test(email); }
 
-	$.ajax({
-		url: 'http://hlk-pdf-server.centralus.cloudapp.azure.com/api/v1/Email?templateName=WestBred_ProfitCalc' + queryStringAdd,
-		type: 'POST',
-		data: '{ "json" : ' + JSON.stringify(dataExtract()) + '}'
-	})
-	.done(function() {
-		console.log("success");
-	})
-	.fail(function() {
-		console.log("error");
-	})
-	.always(function() {
-		console.log("complete");
-	})
+	var emailInput = is_email($('#recipientEmail').val())
+	var emailError = '<small class="emailError">Please enter valid email.</small'
+
+	if (emailInput == false) {
+		$('#recipientEmail').css({"border-color": "red"})
+		$('#mailPDF').after(emailError)
+
+	}else {
+		$('.emailError').remove()
+		$('#recipientEmail').css({"border-color": "inherit"})
+		var queryStringAdd = '&recipients=' + encodeURIComponent($('#recipientEmail').val())
+												+ '&sender=' + encodeURIComponent('no-reply@hlkagency.com')
+												+ '&subject=' + encodeURIComponent('Your Wheat Profitability Calculator Results')
+												+ '&firstName='
+												+ '&memberBusname='
+
+		$.ajax({
+			url: 'http://hlk-pdf-server.centralus.cloudapp.azure.com/api/v1/EmailLink?templateName=WestBred_ProfitCalc' + queryStringAdd,
+			type: 'POST',
+			data: '{ "json" : ' + JSON.stringify(dataExtract()) + '}',
+			beforeSend: function() {
+				var opts = {
+				  lines: 13 // The number of lines to draw
+				, length: 28 // The length of each line
+				, width: 14 // The line thickness
+				, radius: 42 // The radius of the inner circle
+				, scale: 0.15 // Scales overall size of the spinner
+				, corners: 0.3 // Corner roundness (0..1)
+				, color: '#fff' // #rgb or #rrggbb or array of colors
+				, opacity: 0 // Opacity of the lines
+				, rotate: 0 // The rotation offset
+				, direction: 1 // 1: clockwise, -1: counterclockwise
+				, speed: 1 // Rounds per second
+				, trail: 85 // Afterglow percentage
+				, fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
+				, zIndex: 2e9 // The z-index (defaults to 2000000000)
+				, className: 'spinner' // The CSS class to assign to the spinner
+				, top: '-20px' // Top position relative to parent
+				, left: '50%' // Left position relative to parent
+				, shadow: false // Whether to render a shadow
+				, hwaccel: false // Whether to use hardware acceleration
+				, position: 'relative' // Element positioning
+				}
+				var spinner = new Spinner(opts).spin()
+				$('#mailPDF').css('color', 'transparent');
+				$('#mailPDF').after(spinner.el)
+			}
+		})
+		.done(function() {
+			$('.modal').hide()
+			$('.thankyoumodal').toggleClass('active')
+			console.log("success");
+		})
+		.fail(function() {
+			console.log("error");
+		})
+		.always(function() {
+			console.log("complete");
+		})
+	}
 
 })
 
@@ -356,78 +457,6 @@ function dataExtract () {
 		maximizeRevenueGraph: $('#revenueGraph').val()
 	}
 }
-
-// if( $('body').hasClass('wheat-profitability-calculator') ) {
-
-	// function ajaxPost(url, onComplete, dataType) {
-
-	// 	if (window.XDomainRequest) {
-
-	// 		var xdr = new XDomainRequest();
-	// 		xdr.timeout = 3000;
-
-	// 		xdr.onload = function () {
-	// 			var result = JSON.parse(xdr.responseText);
-	// 			onComplete(result);
-	// 		};
-
-	// 		xdr.open("get", url);
-	// 		xdr.send();
-
-	// 	} else {
-	// 		var ajaxConfig = { url: url, success: onComplete };
-	// 		if (dataType != null) ajaxConfig.dataType = dataType;
-	// 		$.ajax(ajaxConfig);
-	// 	}
-	// };
-
-	// function generate(type) {
-	// 		var certSeed = '?certGermination=' + $('#cert_seed_germination').val() +
-	// 										'&certPureSeed=' + $('#cert_seed_pure_seed').val() +
-	// 										'&certSeedCost=' + $('#cert_seed_cost_per_unit').val()
-
-	// 		var savedSeed = '&savedGermination=' + $('#saved_seed_germination').val() +
-	// 										'&savedPureSeed=' + $('#saved_seed_pure_seed').val() +
-	// 								 		'&savedSeedCost=' + $('#saved_seed_cost_per_unit').val()
-
-	// 		var season = '&season=spring'
-	// 		if ($("input[name='crop_season'][value='winter']").prop('checked') === true) {
-	// 				season = '&season=winter'
-	// 		}
-
-	// 		var yieldForm = '&targetYield=' + $('#crop_target_yield').val() +
-	// 										'&wheatPrice=' + $('#crop_wheat_price').val() +
-	// 										'&targetPlantPopulation=' + $('#crop_target_planting_population').val() +
-	// 										'&flatSeedingRate=' + $('#crop_flat_seeding_rate').val() +
-	// 										'&acresPlanted=' + $('#crop_acres_planted').val() +
-	// 										'&yieldImpactOverseeding=' + $('#crop_percent_yield_impact_overseeding').val() +
-	// 										'&yieldImpactUnderseeding=' + $('#crop_percent_yield_impact_underseeding').val()
-
-	// 		var emailData = '&recipientEmail=' + $('#recipientEmail').val()
-
-	// 		if (type === 'download') {
-	// 			var downloadString = 'http://test.monpdfservice.hlktesting.com/WBProfitCalc/WheatProfitability/WheatProfitabilityToPdf' + certSeed + savedSeed + season + yieldForm
-	// 			window.location.href = downloadString
-	// 		}
-
-	// 		if (type === 'email') {
-	// 			var emailString = 'http://test.monpdfservice.hlktesting.com/WBProfitCalc/WheatProfitability/WheatProfitabilityToEmail' + certSeed + savedSeed + season + yieldForm + emailData
-
-	// 		ajaxPost(emailString, function(data){
-	// 			if (data.success) {
-	// 				$('.modal').hide()
-	// 				$('.thankyoumodal').toggleClass('active')
-	// 			} else {
-	// 				alert(data.error)
-	// 			}
-	// 		}, 'jsonp')
-
-	// 		}
-	// }
-
-
-// }
-
 
 
 
