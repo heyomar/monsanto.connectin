@@ -50,7 +50,7 @@ $('#mailPDF').click(function (e) {
 												+ '&memberBusname='
 
 		$.ajax({
-			url: 'http://hlk-pdf-server.centralus.cloudapp.azure.com/api/v1/Email?templateName=WestBred_ProfitCalc' + queryStringAdd,
+			url: 'http://hlk-pdf-server.centralus.cloudapp.azure.com/api/v1/EmailLink?templateName=WestBred_ProfitCalc' + queryStringAdd,
 			type: 'POST',
 			data: '{ "json" : ' + JSON.stringify(dataExtract()) + '}',
 			beforeSend: function() {
