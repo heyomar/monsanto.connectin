@@ -24,4 +24,3 @@ wp-content/*
 
 # theme stuff ignores
 node_modules
-wp-content/themes/connectIN/bundle.*
