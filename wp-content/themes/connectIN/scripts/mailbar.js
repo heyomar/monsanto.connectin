@@ -26,21 +26,21 @@ const mailbar = `
                     <label id="tfa_1-L" for="tfa_1" class="label preField reqMark">First Name</label>
                     <br>
                     <div class="inputWrapper">
-                        <input required type="text" id="tfa_1" name="tfa_1" value="" placeholder="" title="First Name" class="required">
+                        <input type="text" id="tfa_1" name="tfa_1" value="" placeholder="" title="First Name" class="required">
                     </div>
                 </div>
                 <div id="tfa_2-D" class="oneField field-container-D     ">
                     <label id="tfa_2-L" for="tfa_2" class="label preField reqMark">Last Name</label>
                     <br>
                     <div class="inputWrapper">
-                        <input required type="text" id="tfa_2" name="tfa_2" value="" placeholder="" title="Last Name" class="required">
+                        <input type="text" id="tfa_2" name="tfa_2" value="" placeholder="" title="Last Name" class="required">
                     </div>
                 </div>
                 <div id="tfa_3-D" class="oneField field-container-D     ">
                     <label id="tfa_3-L" for="tfa_3" class="label preField reqMark">Email</label>
                     <br>
                     <div class="inputWrapper">
-                        <input required type="text" id="tfa_3" name="tfa_3" value="" placeholder="" title="Email" class="validate-email required">
+                        <input type="text" id="tfa_3" name="tfa_3" value="" placeholder="" title="Email" class="validate-email required">
                     </div>
                 </div>
                 <div id="tfa_4-D" class="oneField field-container-D     ">
