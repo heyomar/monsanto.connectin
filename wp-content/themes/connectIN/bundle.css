@@ -3222,7 +3222,7 @@ YIELD CALCULATIONS FORM
 span.suffix {
   position: absolute;
   top: 34px;
-  right: 10px;
+  right: 20px;
 }
 select::-ms-expand {
   display: none;

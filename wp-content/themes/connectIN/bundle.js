@@ -343,6 +343,7 @@ if ($('body').hasClass('contact-us')) {
 
 $('.toggleModal').on('click', function (e) {
   $('.modal').toggleClass('active');
+
 });
 
 $('.close').on('click', function (e) {
@@ -383,7 +384,6 @@ $('#mailPDF').click(function (e) {
 		}else {
 			$('#mailPDF').after(emailError)
 		}
-
 
 	}else {
 		$('.emailError').remove()
@@ -1233,10 +1233,15 @@ $(document).ready(function () {
       $('.' + selectedstate).show()
 
       if (!$('.' + selectedstate)[0]) {
+        if ($('#stateselect option:selected').text() === 'Select a state') {
+          $('#results').hide()
+        }else {
+          $('#results').show()
           $('.failure__nosuppliers').show()
           var stateChosen = $('#stateselect option:selected').text()
           $('.failureSpan').text(stateChosen)
           $('.rep__ctn').hide()
+        }
       } else {
           $('.failure__nosuppliers').hide()
           $('.rep__ctn').show()
