@@ -1182,7 +1182,7 @@ $(document).ready(function () {
 		}
 
 		var wireEvents = function () {
-			var formElements = document.getElementById('seed_calc_form').querySelectorAll('input, textarea, select')
+			var formElements = $('#seed_calc_form input, #seed_calc_form textarea, #seed_calc_form select')
 			for (var i = 0; i < formElements.length; i++) {
 				var el = formElements[i]
 				el.addEventListener('change', onFormInputChange)
