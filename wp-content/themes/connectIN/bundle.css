@@ -2710,6 +2710,7 @@ html.mailbar-active,
   border-left: 2px dotted hsla(17,4%,78%, 1.00);
   border-bottom: 2px dotted hsla(17,4%,78%, 1.00);
   padding: 25px;
+  min-height: 315px;
 }
 .rep__ctn .rep__info a{
   word-wrap: break-word;

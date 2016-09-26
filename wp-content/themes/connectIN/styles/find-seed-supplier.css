@@ -104,6 +104,7 @@
     border-left: 2px dotted var(--color-tan);
     border-bottom: 2px dotted var(--color-tan);
     padding: 25px;
+    min-height: 315px;
 
     & a {
       overflow-wrap: break-word
