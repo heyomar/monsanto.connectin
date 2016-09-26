@@ -25,6 +25,18 @@
   display: none;
 }
 
+.make__visible {
+  display: block;
+}
+
+.make__inline-block{
+  display: inline-block;
+}
+
+.make__bold {
+  font-weight: bold;
+}
+
 .make__headline{
   color: var(--color-ltblue);
   text-transform: uppercase;
