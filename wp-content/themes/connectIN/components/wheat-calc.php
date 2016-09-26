@@ -34,10 +34,7 @@
 									<div class="form-input">
 										<label for="cert_seed_cost_per_unit">Seed Cost / Unit<sup>*</sup><br><small class="caption make__weight-normal">(includes certified seed and treatment costs)</small></label>
 
-										<div class="prefix__ctn">
-											<span class="">$</span>
-											<input class="calc-field" required type="number" step="any" id="cert_seed_cost_per_unit" data-format="currency">
-										</div>
+										<span class="prefix__dollar"><input class="calc-field" required type="number" step="any" id="cert_seed_cost_per_unit" data-format="currency"></span>
 										<small>*unit=cwt (hundredweight)</small>
 									</div>
 								</fieldset>
@@ -57,20 +54,15 @@
 									<span class="suffix">%</span>
 									<input class="calc-field" required type="number" step="any" id="saved_seed_germination">
 								</div>
-
 								<div class="form-input">
 									<label for="saved_seed_pure_seed">% Pure Seed</label>
 									<span class="suffix">%</span>
 									<input class="calc-field" required type="number" step="any" id="saved_seed_pure_seed">
 								</div>
-
 								<div class="form-input">
 									<label for="saved_seed_cost_per_unit">Seed Cost / Unit<sup>*</sup><br><small class="caption make__weight-normal">(includes current market price; costs of storage, seed treatment and cleaning)</small></label>
 
-									<div class="prefix__ctn">
-										<span class="">$</span>
-										<input class="calc-field" required type="number" step="any" id="saved_seed_cost_per_unit">
-									</div>
+									<span class="prefix__dollar"><input class="calc-field" required type="number" step="any" id="saved_seed_cost_per_unit"></span>
 									<small>*unit=cwt (hundredweight)</small>
 								</div>
 							</fieldset>

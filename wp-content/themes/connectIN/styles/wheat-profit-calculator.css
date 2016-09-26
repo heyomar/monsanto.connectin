@@ -461,14 +461,16 @@ YIELD CALCULATIONS FORM
 .errorFormMessage {
   color: red;
   font-size: 12px;
-.prefix__ctn {
   position: relative;
+  left: -81px;
+  top: -7px;
+}
 
-  & span {
-    position: absolute;
-    left: 8px;
-    top: 10px;
-  }
+.prefix__dollar::before {
+  content: "$";
+  position: absolute;
+  top: 10px;
+  left: 8px;
 }
 
 @media screen and (max-width:768px){
@@ -503,6 +505,12 @@ YIELD CALCULATIONS FORM
 
   .errorFormMessage {
     left: 0;
+  }
+  .calc-certified-seed .prefix__dollar::before {
+    top: 58px;
+  }
+  .calc-saved-seed .prefix__dollar::before {
+    top: 58px;
   }
 
 }
