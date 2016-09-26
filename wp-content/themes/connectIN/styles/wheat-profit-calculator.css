@@ -464,6 +464,15 @@ YIELD CALCULATIONS FORM
   left: 8px;
 }
 
+.prefix__ctn {
+  position: relative;
+  & span {
+    position: absolute;
+    left: 8px;
+    top:10px;
+  }
+}
+
 @media screen and (max-width:768px){
   .actionData {
     & button {
