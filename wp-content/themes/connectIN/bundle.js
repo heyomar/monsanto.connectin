@@ -343,7 +343,6 @@ if ($('body').hasClass('contact-us')) {
 
 $('.toggleModal').on('click', function (e) {
   $('.modal').toggleClass('active');
-
 });
 
 $('.close').on('click', function (e) {
@@ -384,6 +383,7 @@ $('#mailPDF').click(function (e) {
 		}else {
 			$('#mailPDF').after(emailError)
 		}
+
 
 	}else {
 		$('.emailError').remove()
