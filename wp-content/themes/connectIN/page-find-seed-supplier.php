@@ -126,7 +126,10 @@
 <?php if( $reps->have_posts()): ?>
 <div class="row">
   <?php while ( $reps->have_posts()) : $reps->the_post();  ?>
-  <div class="col-xs-12 col-sm-6 rep <?php the_field('rep_region'); ?>">
+  <div class="col-xs-12 col-sm-6 rep <?php
+    foreach (get_field('rep_region') as $region) {
+      echo "$region ";
+    } ?>">
     <div class="box">
       <div class="rep__info">
         <div class="row">
