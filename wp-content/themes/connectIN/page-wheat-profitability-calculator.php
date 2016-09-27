@@ -12,12 +12,11 @@ get_template_part('components/inner-hero'); ?>
   </form>
 </div>
 
-<div class="modal">
+<div id="emailData" class="modal">
   <form id="emailDataForm" class="">
     <h3 class="make__h3">Email This Data</h3>
 
     <span>Recipient:</span>
-    <span class="close toggleModal">&#215;</span>
 
     <div class="field-ctn">
       <div class="label-ctn">
@@ -35,8 +34,7 @@ get_template_part('components/inner-hero'); ?>
   </form>
 </div>
 
-<div class="thankyoumodal">
-  <span class="close toggleModal">&#215;</span>
+<div id="thankyoumodal" class="modal">
   <h3 class="calcpage__h3 center__text">Thank You</h3>
   <p>The PDF has been sent.</p><div class="center__text"><button id="thankyou__startover" name="button" type="button">START
   OVER</button></div>

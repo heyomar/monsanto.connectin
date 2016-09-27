@@ -341,9 +341,10 @@ if ($('body').hasClass('contact-us')) {
 }
 'use strict'
 
-$('.toggleModal').on('click', function (e) {
-  $('.modal').toggleClass('active');
-});
+$('.toggleModal').on('click',function(){
+		$('#emailData').slideDown()
+ });
+
 
 $('.close').on('click', function (e) {
   $('.thankyoumodal').removeClass('active');
@@ -427,8 +428,8 @@ $('#mailPDF').click(function (e) {
 			}
 		})
 		.done(function() {
-			$('.modal').hide()
-			$('.thankyoumodal').toggleClass('active')
+			$('#emailData').hide()
+			$('#thankyoumodal').show().slideDown()
 			console.log("success");
 		})
 		.fail(function() {
