@@ -12,7 +12,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ConnectIN™ Wheat Insight System" />
     <meta property="og:description" content="WestBred® wheat is dedicated to helping growers get the most out of every acre. That’s why we’re proud to offer the ConnectIN™ System to our seed suppliers. This system allows seed suppliers to provide Optimal Seeding Rate recommendations, based on a grower’s specific seed and fields, that help growers maximize their yield and profit potential." />
-    <meta property="og:image" content="assets/images/site__logo.png" />
+    <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/site__logo.png" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon-32x32.png" sizes="32x32">
