@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php wp_title(); ?></title>
-    <!-- TODO: temporary fonts tag, replace with production assets -->
     <link rel="stylesheet" href="https://cloud.typography.com/7547052/7841152/css/fonts.css">
 
     <!-- FACEBOOK OPEN GRAPH META -->
-    <meta property="og:url" content="http://connectinsystem.com/" />
+    <meta property="og:url" content="https://connectinsystem.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ConnectIN™ Wheat Insight System" />
     <meta property="og:description" content="WestBred® wheat is dedicated to helping growers get the most out of every acre. That’s why we’re proud to offer the ConnectIN™ System to our seed suppliers. This system allows seed suppliers to provide Optimal Seeding Rate recommendations, based on a grower’s specific seed and fields, that help growers maximize their yield and profit potential." />
