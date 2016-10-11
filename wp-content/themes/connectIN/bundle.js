@@ -398,7 +398,7 @@ if ($('body').hasClass('contact-us')) {
 														+ '&memberBusname='
 
 				$.ajax({
-					url: 'http://hlk-pdf-server.centralus.cloudapp.azure.com/api/v1/EmailLink?templateName=WestBred_ProfitCalc' + queryStringAdd,
+					url: 'https://hlk-pdf-server.centralus.cloudapp.azure.com/api/v1/EmailLink?templateName=WestBred_ProfitCalc' + queryStringAdd,
 					type: 'POST',
 					data: '{ "json" : ' + JSON.stringify(dataExtract()) + '}',
 					beforeSend: function() {
