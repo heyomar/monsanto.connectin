@@ -25,7 +25,7 @@
   <?php if (is_page('wheat-profitability-calculator') ) {
     echo "<script src='" . get_stylesheet_directory_uri() . "/scripts/vendor/Chart.min.js' charset='utf-8'></script>";
   } ?>
-  <script src="<?php echo get_stylesheet_directory_uri(); ?>/bundle.es5.js?v=2" charset="utf-8" defer></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/bundle.es5.js?v=3" charset="utf-8" defer></script>
   <?php wp_footer(); ?>
 
 </html>
