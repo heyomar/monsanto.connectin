@@ -6,7 +6,7 @@ get_template_part('components/inner-hero'); ?>
 <div class="actionData">
   <h3 class="make__h3">SHARE YOUR WHEAT PROFITABILITY
   CALCULATIONS</h3><button class="toggleModal">EMAIL THIS DATA</button>
-  <form action="https://hlk-pdf-server.centralus.cloudapp.azure.com/api/v1/Download?templateName=WestBred_ProfitCalc" method='post' id="pdfForm">
+  <form action="http://hlk-pdf-server.centralus.cloudapp.azure.com/api/v1/Download?templateName=WestBred_ProfitCalc" method='post' id="pdfForm">
     <input type="hidden" name="json" id="pdfData">
     <button type="submit" id="downloadPDF">DOWNLOAD PDF</button>
   </form>
