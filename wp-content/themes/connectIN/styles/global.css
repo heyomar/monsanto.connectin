@@ -29,3 +29,10 @@ body, html {
 main {
   background-color: #fff;
 }
+
+a {
+  border-bottom: 5px solid var(--color-link);
+  text-decoration: none;
+  color: inherit;
+  overflow-wrap: break-word;
+}
