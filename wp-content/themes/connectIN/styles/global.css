@@ -30,7 +30,7 @@ main {
   background-color: #fff;
 }
 
-a {
+main a {
   border-bottom: 5px solid var(--color-link);
   text-decoration: none;
   color: inherit;
