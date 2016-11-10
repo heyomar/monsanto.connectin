@@ -13,11 +13,11 @@
     <meta property="og:description" content="WestBred® wheat is dedicated to helping growers get the most out of every acre. That’s why we’re proud to offer the ConnectIN™ System to our seed suppliers. This system allows seed suppliers to provide Optimal Seeding Rate recommendations, based on a grower’s specific seed and fields, that help growers maximize their yield and profit potential." />
     <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/site__logo.png" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/manifest.json">
-    <link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/safari-pinned-tab.svg" color="#008198">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#008198">
     <meta name="theme-color" content="#ffffff">
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
