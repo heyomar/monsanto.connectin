@@ -57,7 +57,7 @@
 														+ '&memberBusname='
 
 				$.ajax({
-					url: 'http://hlk-pdf-server.centralus.cloudapp.azure.com/api/v1/EmailLink?templateName=WestBred_ProfitCalc' + queryStringAdd,
+					url: 'https://pdfgen.msvc.io/api/v1/EmailLink?templateName=WestBred_ProfitCalc' + queryStringAdd,
 					type: 'POST',
 					data: '{ "json" : ' + JSON.stringify(dataExtract()) + '}',
 					beforeSend: function() {
