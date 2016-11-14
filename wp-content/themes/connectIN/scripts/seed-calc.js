@@ -51,7 +51,7 @@
 				$('.emailError').remove()
 				$('#recipientEmail').css({"border-color": "inherit"})
 				var queryStringAdd = '&recipients=' + encodeURIComponent($('#recipientEmail').val())
-														+ '&sender=' + encodeURIComponent('no-reply@hlkagency.com')
+														+ '&sender=' + encodeURIComponent('no-reply@connectinsystem.com')
 														+ '&subject=' + encodeURIComponent('Your Wheat Profitability Calculator Results')
 														+ '&firstName='
 														+ '&memberBusname='
