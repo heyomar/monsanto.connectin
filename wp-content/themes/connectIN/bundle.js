@@ -392,13 +392,13 @@ if ($('body').hasClass('contact-us')) {
 				$('.emailError').remove()
 				$('#recipientEmail').css({"border-color": "inherit"})
 				var queryStringAdd = '&recipients=' + encodeURIComponent($('#recipientEmail').val())
-														+ '&sender=' + encodeURIComponent('no-reply@hlkagency.com')
+														+ '&sender=' + encodeURIComponent('no-reply@connectinsystem.com')
 														+ '&subject=' + encodeURIComponent('Your Wheat Profitability Calculator Results')
 														+ '&firstName='
 														+ '&memberBusname='
 
 				$.ajax({
-					url: 'http://hlk-pdf-server.centralus.cloudapp.azure.com/api/v1/EmailLink?templateName=WestBred_ProfitCalc' + queryStringAdd,
+					url: 'https://pdfgen.msvc.io/api/v1/EmailLink?templateName=WestBred_ProfitCalc' + queryStringAdd,
 					type: 'POST',
 					data: '{ "json" : ' + JSON.stringify(dataExtract()) + '}',
 					beforeSend: function() {
