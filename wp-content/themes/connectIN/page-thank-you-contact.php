@@ -10,7 +10,7 @@
 <div class="seed-supplier-cta">
   <p><strong>In the meantime, find a seed supplier or<br>WestBred representative near you.</strong></p>
   <p>
-    <a target="_blank" class="button" href="http://www.westbred.com/associates/pages/locateassociates.aspx">Find a Seed Supplier</a>
+    <a target="_blank" class="button" href="http://connectinsystem.com/find-seed-supplier/">Find a Seed Supplier</a>
   </p>
 </div>
 <?php get_footer();?>
