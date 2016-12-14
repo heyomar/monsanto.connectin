@@ -14,6 +14,7 @@ ehthumbs.db
 /*
 !.gitignore
 !wp-content/
+!/Vagrantfile
 
 # Ignore everything in the "wp-content" directory, except the "plugins" and
 # "themes" directories.
