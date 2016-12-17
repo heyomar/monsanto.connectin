@@ -1,0 +1,122 @@
+/*[----------------------------------
+		INTRO SECTION
+-------------------------------------]*/
+.intro {
+	background-image: url(assets/images/hardware/hardware__intro-bg.jpg);
+	background-position: bottom;
+	background-size: cover;
+	padding: 50px 20px;
+
+	& .title {
+		color: var(--color-white);
+		font-weight: bold;
+		font-size: 36px;
+	}
+
+	& .subtitle {
+		font-size: 26px;
+		text-transform: uppercase;
+	}
+
+	& .copy {
+		color: var(--color-white);
+		font-size: 18px;
+	}
+}
+/*[----------------------------------
+		CALLOUT SECTION
+-------------------------------------]*/
+.callouts {
+	& .order {
+		min-height: 250px;
+		background-image: url('assets/images/hardware/hardware__callouts-grains.jpg');
+		background-position: center;
+		background-size: cover;
+		padding: 50px;
+	}
+
+	& .training {
+		min-height: 250px;
+		background-color: var(--color-gray);
+		color: var(--color-white);
+		padding: 50px;
+	}
+}
+/*[----------------------------------
+		BENEFITS SECTION
+-------------------------------------]*/
+.lead {
+	padding: 40px;
+	& .copy {
+		line-height: 27px;
+	}
+}
+
+.reasons {
+	padding: 0 40px 40px;
+
+	& .hide-image {
+		display: none;
+	}
+
+	& .bullet-image {
+		padding-top: 20px;
+		max-width: 150px;
+		height: auto;
+	}
+
+	& .list {
+		& .title {
+			font-weight: bold;
+			text-align: left;
+			margin-left: -20px;
+		}
+
+		& li {
+			line-height: 2.1;
+		}
+	}
+
+	& .list-image {
+		text-align: center;
+	}
+}
+
+
+
+.inner {
+	padding: 20px;
+}
+/*[----------------------------------
+		HELPER CLASSES
+-------------------------------------]*/
+.nopad {
+	padding: 0;
+}
+
+.button {
+	background-color: var(--color-ltblue);
+	color: var(--color-white);
+	display: inline-block;
+	padding: 18px 0;
+	font-family: NexaBold;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 18px 15px;
+	border: 0;
+
+	&::after {
+		content: "→";
+    padding-left: 10px;
+	}
+}
+
+
+/*[----------------------------------
+		MEDIA
+-------------------------------------]*/
+@media screen and (min-width:1020px) {
+	.reasons .hide-image {
+		display: block;
+	}
+}
