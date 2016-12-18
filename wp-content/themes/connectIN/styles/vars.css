@@ -67,9 +67,4 @@
       background-color: var(--color-dkblue);
     }
   }
-
-	/*––––
-Media Queries
-––––––––––––––––––––––––––––*/
-@custom-media --tablet screen and (min-width: 768px);
 }

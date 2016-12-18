@@ -1,0 +1,63 @@
+.hero {
+	text-align: center;
+
+	& .inner {
+		min-height: 350px;
+		background-image:url('assets/images/hardware/howtoorder__hero-bg.jpg');
+		background-position: center;
+		background-size: cover;
+		position: relative;
+	}
+
+	& .content {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 0 20px;
+	}
+
+	& .title {
+		color: var(--color-white);
+		font-size: 36px;
+	}
+
+	& .copy {
+		color: var(--color-white);
+		font-size: 18px;
+	}
+}
+
+
+.step-one {
+	background-color: var(--color-beige);
+	min-height: 300px;
+
+	& .content {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	& .title {
+		border: 1px solid red;
+		font-weight: bold;
+		display: block;
+
+		&::before {
+			content: '1';
+			padding: 15px;
+			height: 75px;
+			width: 75px;
+			text-align: center;
+			display: inline-block;
+			color: var(--color-ltblue);
+			border-radius: 50px;
+			margin-right: 10px;
+			border: 2px solid var(--color-ltblue);
+			padding-top: 25px;
+		}
+	}
+
+	& .copy {
+		text-align: left;
+	}
+}
