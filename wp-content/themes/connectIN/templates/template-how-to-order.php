@@ -31,33 +31,32 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
 		<div class="step step-one">
 			<div class="inner mxw-1000-center">
-				<span class="number">1</span>
+				<div class="number">1</div>
+				<h3 class="title">Purchase the ConnectIN Seed Counter Directly</h3>
 				<div class="content">
-					<h3 class="title">Purchase the ConnectIN Seed Counter Directly</h3>
+
 					<p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing
 					elit. Nesciunt, aperiam ab ipsam, porro dolorum dolor nisi a suscipit
-					molestias fugit consequuntur architecto pariatur maiores voluptates
-				</p>
+					molestias fugit consequuntur architecto pariatur maiores voluptates</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="step step-two">
 			<div class="inner mxw-1000-center">
-				<span class="number">2</span>
+				<div class="number">2</div>
+				<h3 class="title">Purchase the ConnectIN Seed Counter Directly</h3>
 				<div class="content">
-					<h3 class="title">Purchase the ConnectIN Seed Counter Directly</h3>
 					<p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing
 					elit. Nesciunt, aperiam ab ipsam, porro dolorum dolor nisi a suscipit
-					molestias fugit consequuntur architecto pariatur maiores voluptates
-				</p>
+					molestias fugit consequuntur architecto pariatur maiores voluptates</p>
 				</div>
 			</div>
 		</div>
 <!--[––––
 			↓ SUPPORTED DEVICES ↓
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
-		<div class="supported-devices">
+		<div class="supported-devices deskpad">
 			<div class="inner mxw-1000-center">
 				<div class="row">
 
@@ -113,7 +112,7 @@
 			</div>
 		</div>
 
-	<div class="find-tablet">
+	<div class="find-tablet deskpad">
 		<div class="inner">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4 nopad">

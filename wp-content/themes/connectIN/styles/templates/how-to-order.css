@@ -1,6 +1,6 @@
-/*––––––
-		HERO
-–––––––––––––––––––––––––––––––––––––––––*/
+/*[–––
+			↓ HERO ↓
+––––––––––––––––––––––––––––––––––––––//]*/
 .hero {
 	text-align: center;
 
@@ -32,9 +32,9 @@
 
 
 
-/*––––––
-		STEPS
-–––––––––––––––––––––––––––––––––––––––––*/
+/*[–––
+			↓ STEPS ↓
+––––––––––––––––––––––––––––––––––––––//]*/
 .number {
 	font-weight: bold;
 	padding-top: 10px;
@@ -55,8 +55,7 @@
 	flex-direction: column;
 	justify-content: center;
 
-	& .content {
-		border: 1px solid red;
+	& .title {
 		display: inline-block;
 	}
 }
@@ -67,14 +66,10 @@
 
 
 
-
-/*––––––
-		SUPPORTED DEVICES
-–––––––––––––––––––––––––––––––––––––––––*/
+/*[–––
+			↓ SUPPORTED DEVICES ↓
+––––––––––––––––––––––––––––––––––––––//]*/
 .supported-devices {
-
-	& .printers {}
-
 	& .title {
 		text-align: center;
 		border-bottom: 2px dotted var(--color-ltgray);
@@ -92,9 +87,9 @@
 
 
 
-/*––––––
-		COPY SNIPPET
-–––––––––––––––––––––––––––––––––––––––––*/
+/*[–––
+			↓ COPY SNIPPET ↓
+––––––––––––––––––––––––––––––––––––––//]*/
 .copy-snippet {
 	text-align: center;
 	padding: 0 20px;
@@ -102,11 +97,10 @@
 
 
 
-/*––––––
-		FIND TABLET
-–––––––––––––––––––––––––––––––––––––––––*/
+/*[–––
+			↓ FIND TABLET ↓
+––––––––––––––––––––––––––––––––––––––//]*/
 .find-tablet {
-
 	& .title {
 		text-align: center;
 		border-bottom: 2px dotted var(--color-ltgray);
@@ -118,14 +112,13 @@
 		text-align: center;
 		padding: 20px;
 	}
-
 }
 
 
 
-/*––––––
-		INCENTIVES
-–––––––––––––––––––––––––––––––––––––––––*/
+/*[–––
+			↓ INCENTIVES ↓
+––––––––––––––––––––––––––––––––––––––//]*/
 .incentives {
 	padding: 20px;
 	text-align: center;
@@ -134,14 +127,23 @@
 
 
 
-/*––––––
-		MEDIA
-–––––––––––––––––––––––––––––––––––––––––*/
+/*[–––
+			↓ MEDIA ↓
+––––––––––––––––––––––––––––––––––––––//]*/
 @media screen and (min-width:768px) {
+	.step .content {
+		margin-left: 75px;
+	}
 	.tablets {
 		border-right: 2px dotted var(--color-ltgray);
 	}
+	.deskpad {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
 
+@media screen and (min-width:1023px) {
 	.amazon {
 		border-left: 2px dotted var(--color-ltgray);
 		border-right: 2px dotted var(--color-ltgray);
