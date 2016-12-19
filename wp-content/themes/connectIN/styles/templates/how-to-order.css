@@ -1,3 +1,6 @@
+/*––––––
+		HERO
+–––––––––––––––––––––––––––––––––––––––––*/
 .hero {
 	text-align: center;
 
@@ -28,36 +31,119 @@
 }
 
 
-.step-one {
-	background-color: var(--color-beige);
+
+/*––––––
+		STEPS
+–––––––––––––––––––––––––––––––––––––––––*/
+.number {
+	font-weight: bold;
+	padding-top: 10px;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	display: inline-block;
+	color: var(--color-ltblue);
+	border-radius: 50px;
+	margin-right: 10px;
+	border: 3px solid var(--color-ltblue);
+	font-size: 25px;
+}
+
+.step {
 	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
 	& .content {
-		max-width: 960px;
-		margin: 0 auto;
+		border: 1px solid red;
+		display: inline-block;
 	}
+}
+
+.step-one {
+	background-color: var(--color-offwhite);
+}
+
+
+
+
+/*––––––
+		SUPPORTED DEVICES
+–––––––––––––––––––––––––––––––––––––––––*/
+.supported-devices {
+
+	& .printers {}
 
 	& .title {
-		border: 1px solid red;
-		font-weight: bold;
-		display: block;
-
-		&::before {
-			content: '1';
-			padding: 15px;
-			height: 75px;
-			width: 75px;
-			text-align: center;
-			display: inline-block;
-			color: var(--color-ltblue);
-			border-radius: 50px;
-			margin-right: 10px;
-			border: 2px solid var(--color-ltblue);
-			padding-top: 25px;
-		}
+		text-align: center;
+		border-bottom: 2px dotted var(--color-ltgray);
+		padding-bottom: 15px;
 	}
 
-	& .copy {
-		text-align: left;
+	& .list-title {
+		margin-left: -20px;
+	}
+
+	& li {
+		line-height: 2.1;
+	}
+}
+
+
+
+/*––––––
+		COPY SNIPPET
+–––––––––––––––––––––––––––––––––––––––––*/
+.copy-snippet {
+	text-align: center;
+	padding: 0 20px;
+}
+
+
+
+/*––––––
+		FIND TABLET
+–––––––––––––––––––––––––––––––––––––––––*/
+.find-tablet {
+
+	& .title {
+		text-align: center;
+		border-bottom: 2px dotted var(--color-ltgray);
+		padding-bottom: 15px;
+		margin: 0;
+	}
+
+	& .instructions {
+		text-align: center;
+		padding: 20px;
+	}
+
+}
+
+
+
+/*––––––
+		INCENTIVES
+–––––––––––––––––––––––––––––––––––––––––*/
+.incentives {
+	padding: 20px;
+	text-align: center;
+	background-color: var(--color-offwhite);
+}
+
+
+
+/*––––––
+		MEDIA
+–––––––––––––––––––––––––––––––––––––––––*/
+@media screen and (min-width:768px) {
+	.tablets {
+		border-right: 2px dotted var(--color-ltgray);
+	}
+
+	.amazon {
+		border-left: 2px dotted var(--color-ltgray);
+		border-right: 2px dotted var(--color-ltgray);
 	}
 }
