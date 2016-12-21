@@ -6,6 +6,8 @@
 /* CSS LIBRARIES */
 @import "./nexa.css";
 @import "./symbols.css";
+@import "./slick.css";
+@import "./lity.css";
 
 /* UNIVERSAL STYLESHEETS */
 @import "./vars.css";
@@ -32,3 +34,4 @@
 @import "./thank-you.css";
 @import "./templates/hardware.css";
 @import "./templates/how-to-order.css";
+@import "./templates/training.css";

@@ -3,10 +3,10 @@
 ––––––––––––––––––––––––––––––––––––––//]*/
 .hero {
 	text-align: center;
+	background-image:url('assets/images/hardware/howtoorder__hero-bg.jpg');
 
 	& .inner {
 		min-height: 350px;
-		background-image:url('assets/images/hardware/howtoorder__hero-bg.jpg');
 		background-position: center;
 		background-size: cover;
 		position: relative;
@@ -21,7 +21,7 @@
 
 	& .title {
 		color: var(--color-white);
-		font-size: 36px;
+		font-size: 25px;
 	}
 
 	& .copy {
@@ -44,24 +44,29 @@
 	display: inline-block;
 	color: var(--color-ltblue);
 	border-radius: 50px;
-	margin-right: 10px;
+	margin-right: 5px;
 	border: 3px solid var(--color-ltblue);
 	font-size: 25px;
 }
 
 .step {
-	min-height: 300px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
 	& .title {
 		display: inline-block;
+		margin: 0;
 	}
 }
 
 .step-one {
+	min-height: 300px;
 	background-color: var(--color-offwhite);
+}
+
+.step-two {
+	min-height: 250px;
 }
 
 
@@ -112,6 +117,10 @@
 		text-align: center;
 		padding: 20px;
 	}
+
+	& .content {
+		padding-bottom: 40px;
+	}
 }
 
 
@@ -131,11 +140,17 @@
 			↓ MEDIA ↓
 ––––––––––––––––––––––––––––––––––––––//]*/
 @media screen and (min-width:768px) {
+	.hero .title {
+		font-size: 36px;
+	}
 	.step .content {
 		margin-left: 75px;
 	}
 	.tablets {
 		border-right: 2px dotted var(--color-ltgray);
+	}
+	.find-tablet {
+		padding-bottom: 50px;
 	}
 	.deskpad {
 		padding-left: 40px;

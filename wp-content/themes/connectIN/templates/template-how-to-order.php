@@ -12,7 +12,7 @@
 			↓ HERO ↓
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
 		<div class="hero">
-			<div class="inner">
+			<div class="inner mxw-1000-center">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<div class="content">
@@ -31,7 +31,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
 		<div class="step step-one">
 			<div class="inner mxw-1000-center">
-				<div class="number">1</div>
+				<span class="number">1</span>
 				<h3 class="title">Purchase the ConnectIN Seed Counter Directly</h3>
 				<div class="content">
 
@@ -116,7 +116,7 @@
 		<div class="inner">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4 nopad">
-					<div class="content">
+					<div class="content phone">
 						<h3 class="title">Live Phone Support<br>and Direct Ordering</h3>
 						<div class="instructions">A preferred electronic provider, Zones™ Inc. is providing for Wheat Seed Suppliers a live ONE on ONE phone support, that can walk you through and provide direct information of hardware specifications to purchase tablets or printers.
 						Call Zones today at (253) 205-3798 to order your tablet or printer.</div>
@@ -133,7 +133,7 @@
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-4 nopad">
-					<div class="content">
+					<div class="content retailer">
 						<h3 class="title">Purchase Through Any<br>Electronic Retailer<sup>**</sup></h3>
 						<div class="instructions">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, velit, quibusdam eum consequuntur illum vel incidunt, perferendis ratione quo alias mollitia, obcaecati odio nulla commodi magni fugit accusamus unde! Praesentium?

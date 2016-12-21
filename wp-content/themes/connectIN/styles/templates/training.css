@@ -1,0 +1,95 @@
+/*[–––
+			↓ REPORTING ↓
+––––––––––––––––––––––––––––––––––––––//]*/
+.reporting {
+	text-align: center;
+	padding: 20px;
+}
+
+
+
+/*[–––
+			↓ MOBILE VIDEO PLAYER ↓
+––––––––––––––––––––––––––––––––––––––//]*/
+#slicktest {
+}
+
+.block {
+	border: 1px solid red;
+	margin: 5px;
+}
+
+
+
+/*[–––
+			↓ DESKTOP VIDEO PLAYER ↓
+––––––––––––––––––––––––––––––––––––––//]*/
+.player {
+	padding: 0 40px;
+	display: none;
+
+	& .inner {
+		background-color: var(--color-offwhite);
+		padding: 0;
+	}
+
+	& .video {}
+}
+
+.videos {
+	border: 1px solid red;
+	text-align: right;
+	background-color: var(--color-offwhite);
+	margin-left: 8px;
+	height: 100%;
+	max-height: 400px;
+
+	& .list {
+		list-style-type: none;
+		padding: 0;
+		overflow: scroll;
+		height: 400px;
+		margin: 0;
+
+		& .item {
+			cursor: pointer;
+			padding: 10px;
+			border-bottom: 1px solid var(--color-white);
+			font-size: 14px;
+			font-weight: bold;
+			color: var(--color-white);
+			background-color: var(--color-ltblue);
+
+			&:hover {
+				background-color:var(--color-gray);
+			}
+
+			&.active {
+				background-color: var(--color-gray);
+			}
+		}
+	}
+
+}
+
+
+
+/*[–––
+			↓ REPORTING GUIDES ↓
+––––––––––––––––––––––––––––––––––––––//]*/
+.reporting-guides {
+	text-align: center;
+	padding: 20px;
+}
+
+/*[–––
+			↓ MEDIA ↓
+––––––––––––––––––––––––––––––––––––––//]*/
+@media screen and (min-width:768px) {
+	.carousel {
+		display: none;
+	}
+	.player {
+		display: block;
+	}
+}
