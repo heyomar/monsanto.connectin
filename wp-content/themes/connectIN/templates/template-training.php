@@ -48,12 +48,19 @@
 			<div class="inner nopad">
 				<div class="row">
 					<div class="col-xs-12">
-						<div id="slicktest" class="content">
+						<div id="slick-reporting" class="content">
 
 						<?php if( have_rows('videos') ): ?>
 							<?php while ( have_rows('videos') ) : the_row(); ?>
 
-							<div class="block"><?php the_sub_field('video'); ?></div>
+							<div class="block">
+								<h4><?php the_sub_field('video_title') ?></h4>
+								<a href="<?php
+								$iframe = get_sub_field('video');
+								preg_match('/src="(.+?)"/', $iframe, $matches);
+								$src = $matches[1];
+								echo $src;?>" data-lity> <div style="background-image:url('http://placehold.it/350x150');" class="thumbnail"></div> </a>
+							</div>
 
 							<?php endwhile; ?>
 						<?php endif; ?>

@@ -11,12 +11,16 @@
 /*[–––
 			↓ MOBILE VIDEO PLAYER ↓
 ––––––––––––––––––––––––––––––––––––––//]*/
-#slicktest {
+.block {
+	margin: 5px;
+	text-align: center;
 }
 
-.block {
-	border: 1px solid red;
-	margin: 5px;
+.thumbnail {
+	background-size: cover;
+	background-position: center;
+	min-height: 300px;
+	width: 100%;
 }
 
 
@@ -37,7 +41,6 @@
 }
 
 .videos {
-	border: 1px solid red;
 	text-align: right;
 	background-color: var(--color-offwhite);
 	margin-left: 8px;

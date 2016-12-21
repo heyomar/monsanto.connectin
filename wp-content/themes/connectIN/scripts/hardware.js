@@ -1,4 +1,4 @@
-$('#slicktest').slick({
+$('#slick-reporting').slick({
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 3,
@@ -27,7 +27,7 @@ $('#slicktest').slick({
 
 $('.list .item').on('click', function () {
 	$(this).addClass('active');
-	
+
 	const chosenVideoURL = $(this).attr('data-video');
 	console.log(chosenVideoURL);
 	$('#frame').attr('src', chosenVideoURL);
