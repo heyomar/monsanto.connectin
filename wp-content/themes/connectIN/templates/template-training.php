@@ -34,7 +34,7 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
 						<div class="content">
-							<h3 class="title">Transactional Reporting</h3>
+							<h2 class="title">Transactional Reporting</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed unde officiis aliquam vel debitis quos minima animi labore praesentium, enim, minus, commodi voluptatum ratione neque dignissimos tenetur fuga autem? Nulla?</p>
 						</div>
 					</div>
@@ -114,7 +114,37 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
 						<h3 class="title">Transactionl Reporting Guides</h3>
-						THIS IS WHERE THE GUIDE FORMS WILL GO
+
+						<div class="action">
+							<div class="mxw-600-center">
+								<div class="row">
+									<div class="col-xs-11 col-sm-9 nopad">
+										<div class="download"><a href="#">Download</a></div>
+									</div>
+
+									<div class="col-xs-1 col-sm-3 nopad">
+										<div class="email"><a href="#">EMAIL</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--[––––
+			↓ QUICK TRAINING TIPS ↓
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
+		<div class="quick-training-tips">
+			<div class="inner mxw-1000-center">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="content">
+							<h2 class="title">Quick Training Tips</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eligendi illo exercitationem explicabo harum beatae nesciunt, cupiditate, fugit accusantium reprehenderit atque dolorum placeat minus enim, ducimus possimus voluptatibus, perspiciatis libero.</p>
+						</div>
 					</div>
 				</div>
 			</div>
