@@ -16,11 +16,8 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<div class="content">
-							<h2 class="title">How To Use The Conenctin<br>Wheat Insight System</h2>
-							<p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing
-							elit. Facilis eaque, nisi at quibusdam. Obcaecati voluptas quo,
-							eligendi inventore! Fugit magni vel facilis molestias illum at
-							quam necessitatibus quibusdam nemo impedit.</p>
+							<h2 class="title"><?php the_field('hero_title'); ?></h2>
+							<div class="copy"><?php the_field('hero_copy'); ?></div>
 						</div>
 					</div>
 				</div>
@@ -34,8 +31,8 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
 						<div class="content">
-							<h2 class="title">Transactional Reporting</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed unde officiis aliquam vel debitis quos minima animi labore praesentium, enim, minus, commodi voluptatum ratione neque dignissimos tenetur fuga autem? Nulla?</p>
+							<h2 class="title"><?php the_field('tr_title'); ?></h2>
+							<?php the_field('tr_copy'); ?>
 						</div>
 					</div>
 				</div>
@@ -50,8 +47,8 @@
 					<div class="col-xs-12">
 						<div id="slick-reporting" class="content">
 
-						<?php if( have_rows('videos') ): ?>
-							<?php while ( have_rows('videos') ) : the_row(); ?>
+						<?php if( have_rows('reporting_videos') ): ?>
+							<?php while ( have_rows('reporting_videos') ) : the_row(); ?>
 
 							<div class="block">
 								<h4><?php the_sub_field('video_title') ?></h4>
@@ -80,8 +77,8 @@
 						<div class="content">
 							<div class="videos">
 								<ul class="list">
-									<?php if( have_rows('videos') ): ?>
-										<?php while ( have_rows('videos') ) : the_row(); ?>
+									<?php if( have_rows('reporting_videos') ): ?>
+										<?php while ( have_rows('reporting_videos') ) : the_row(); ?>
 
 											<?php
 											$iframe = get_sub_field('video');
@@ -114,20 +111,30 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
 						<h3 class="title">Transactionl Reporting Guides</h3>
+						<?php if( have_rows('transactional_reporting_guides') ): ?>
 
-						<div class="action">
-							<div class="mxw-600-center">
-								<div class="row">
-									<div class="col-xs-11 col-sm-9 nopad">
-										<div class="download"><a href="#">Download</a></div>
+						    <?php while ( have_rows('transactional_reporting_guides') ) : the_row(); ?>
+									<div class="action">
+										<div class="mxw-600-center">
+											<div class="row">
+												<div class="col-xs-11 col-sm-9 nopad">
+													<div class="download"><a href="<?php the_sub_field('file') ?>"><?php the_sub_field('file_name'); ?></a></div>
+												</div>
+
+												<div class="col-xs-1 col-sm-3 nopad">
+													<div class="email"><a href="#">EMAIL</a></div>
+												</div>
+											</div>
+										</div>
 									</div>
 
-									<div class="col-xs-1 col-sm-3 nopad">
-										<div class="email"><a href="#">EMAIL</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
+						    <?php endwhile; ?>
+
+						<?php else : ?>
+
+						<?php endif; ?>
+
+
 
 					</div>
 				</div>

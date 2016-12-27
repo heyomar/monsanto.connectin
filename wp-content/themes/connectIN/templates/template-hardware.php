@@ -9,130 +9,114 @@
  <?php get_header(); ?>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-
+<!--[––––
+			↓ INTRO HERO ↓
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
 			<section class="intro">
 				<div class="inner">
 					<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<div class="content">
-									<h2 class="title">Why The System Is Necessary and Valuable</h2>
-									<h3 class="subtitle">A Business Solution For A New Need</h3>
-									<p class="copy">Differences in seed size and density can result in over- or underseeding, inhibiting a grower’s yield and profit potential. Instead, they recommend using customized seeding rates that account for these differences. With the new technology of the ConnectIN™ Wheat Insight System, you can help your customers purchase and plant seeds in a way that aligns with the new recommendations — and enjoy the many benefits it brings to your seed supply business. <br><br> <strong>Planting by the pound is no longer agronomists’ <br>recommended method.</strong>
-									</p>
-
+									<h2 class="title"><?php the_field('hero_title'); ?></h2>
+									<h3 class="subtitle"><?php the_field('hero_sub_title'); ?></h3>
+									<?php the_field('hero_copy'); ?>
 								</div>
 							</div>
 
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<div class="content">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/6DBi41reeF0" frameborder="0" allowfullscreen></iframe>
+									<iframe width="560" height="315" src="<?php the_field('hero_video_link'); ?>" frameborder="0" allowfullscreen></iframe>
 								</div>
 						</div>
 
 						<div class="col-xs-12 col-sm-12">
 							<div class="content">
-								<p class="copy">Differences in seed size and density can result in over- or underseeding, inhibiting a grower’s yield and profit potential. Instead, they recommend using customized seeding rates that account for these differences. With the new technology of the ConnectIN™ Wheat Insight System, you can help your customers purchase and plant seeds in a way that aligns with the new recommendations — and enjoy the many benefits it 		brings to your seed supply business.</p>
+								<?php the_field('hero_under_video_copy'); ?>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-
+<!--[––––
+			↓ CALLOUTS ↓
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
 			<section class="callouts">
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 nopad">
 							<div class="content order">
-								<h2>Order The System</h2>
-								<p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eaque neque maiores obcaecati excepturi debitis inventore magni odio, animi similique, totam quod numquam, soluta voluptas, eius cumque doloremque. Facere, suscipit.</p>
-								<a href="" class="button">Order The System</a>
+								<h2><?php the_field('ots_title'); ?></h2>
+								<div class="copy"><?php the_field('ots_copy'); ?></div>
+								<a href="<?php the_field('ots_button_link'); ?>" class="button"><?php the_field('ots_button_copy'); ?></a>
 							</div>
 						</div>
 
 						<div class="col-xs-12 col-sm-6 nopad">
 							<div class="content training">
-								<h2>Training Materials</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde blanditiis molestiae nulla perspiciatis impedit sint, amet magnam quam libero nesciunt dignissimos quisquam quas ipsam, quasi officia possimus veritatis consequatur eveniet!</p>
-								<a href="" class="button">Using The System</a>
+								<h2><?php the_field('tm_title'); ?></h2>
+								<div class="copy"><?php the_field('tm_copy'); ?></div>
+								<a href="<?php the_field('tm_button_link'); ?>" class="button"><?php the_field('tm_button_copy'); ?></a>
 							</div>
 						</div>
 					</div>
 			</section>
-
+<!--[––––
+			↓ BENEFITS ↓
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
 			<section class="benefits">
 				<div class="lead">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6">
 							<div class="content">
-								<h2 class="title">System Benefits</h2>
-								<p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, reiciendis veritatis dicta fugiat neque enim recusandae tempora asperiores omnis, culpa eos ex porro temporibus, odio quis, doloribus officiis nulla. Quisquam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eum vitae hic quam aperiam vel enim rem eligendi facilis fugit nulla animi, eius doloribus aspernatur error sunt, eveniet magnam nemo.</p>
+								<h2 class="title"><?php the_field('sb_title'); ?></h2>
+								<p class="copy"><?php the_field('sb_copy'); ?></p>
 							</div>
 						</div>
 
 						<div class="col-xs-12 col-sm-12 col-md-6">
 							<div class="content">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/6DBi41reeF0" frameborder="0" allowfullscreen></iframe>
+								<iframe width="560" height="315" src="<?php the_field('sb_video_link'); ?>" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
 					</div>
 				</div>
+<!--[––––
+			↓ REASONS ↓
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
+<div class="reasons">
+	<div class="row">
 
-				<div class="reasons">
-					<div class="row">
+		<?php if( have_rows('sb_list') ): ?>
+			<?php while ( have_rows('sb_list') ) : the_row(); ?>
 
-						<div class="hide-image col-xs-12 col-sm-2">
-							<div class="content list-image">
-								<img class="bullet-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hardware/list-truck.png" alt="">
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-10 col-md-10">
-							<div class="content">
-								<ul class="list">
-									<span class="title">Smarter Business Planning</span>
-									<li>Forecast more accurately and make more informed decisions with the help of historical sales data.</li>
-									<li>Follow seed from ordering to packaging, all the way to harvest. Get estimated arrival times, and provide yield estimates to your customers.</li>
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="hide-image col-xs-12 col-sm-2">
-							<div class="content list-image">
-								<img class="bullet-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hardware/list-forklift.png" alt="">
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-10 col-md-10">
-							<div class="content">
-								<ul class="list">
-									<span class="title">Better Inventory Management</span>
-									<li>Transactional data adjusts inventory levels in real time.</li>
-									<li>Know what inventory you have in stock at all times, and avoid overselling.</li>
-									<li>Process returns with sales adjustments that update inventory.</li>
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="hide-image col-xs-12 col-sm-2">
-							<div class="content list-image">
-								<img class="bullet-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hardware/list-people.png" alt="">
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-10 col-md-10">
-							<div class="content">
-								<ul class="list">
-										<span class="title">Easier Reporting and Analytics</span>
-										<li>Capture transactions and complete grower licenses automatically at the point of sale.</li>
-										<li>Automate seed purity and germination labeling.</li>
-										<li>View sales by customer, date and variety.</li>
-										<li>No more period end duplication — just validate your sales and account for adjustments and returns.</li>
-								</ul>
-							</div>
-						</div>
-
-
-					</div>
+			<div class="hide-image col-xs-12 col-sm-2">
+				<div class="content list-image">
+					<img class="bullet-image" src="<?php the_sub_field('image'); ?>" alt="">
 				</div>
-			</section>
+			</div>
+
+			<div class="col-xs-12 col-sm-10 col-md-10">
+				<div class="content">
+					<ul class="list">
+
+						<span class="title"><?php the_sub_field('list_heading'); ?></span>
+						<?php if( have_rows('list_items') ): ?>
+
+							<?php while ( have_rows('list_items') ) : the_row(); ?>
+								<li><?php the_sub_field('bullet_points') ?></li>
+							<?php endwhile; ?>
+
+						<?php else : ?>
+						<?php endif; ?>
+
+					</ul>
+				</div>
+			</div>
+			<?php endwhile; ?>
+		<?php else : ?>
+		<?php endif; ?>
+		</div>
+	</div>
+</section>
 
 		<?php endwhile; ?>
 	<?php endif ?>
