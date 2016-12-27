@@ -16,11 +16,8 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<div class="content">
-							<h2 class="title">How To Order The Conenctin System</h2>
-							<p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing
-							elit. Facilis eaque, nisi at quibusdam. Obcaecati voluptas quo,
-							eligendi inventore! Fugit magni vel facilis molestias illum at
-							quam necessitatibus quibusdam nemo impedit.</p>
+							<h2 class="title"><?php the_field('hero_title') ?></h2>
+							<div class="copy"><?php the_field('hero_copy') ?></div>
 						</div>
 					</div>
 				</div>
@@ -32,12 +29,10 @@
 		<div class="step step-one">
 			<div class="inner mxw-1000-center">
 				<span class="number">1</span>
-				<h3 class="title">Purchase the ConnectIN Seed Counter Directly</h3>
+				<h3 class="title"><?php the_field('step_1_title'); ?></h3>
 				<div class="content">
 
-					<p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing
-					elit. Nesciunt, aperiam ab ipsam, porro dolorum dolor nisi a suscipit
-					molestias fugit consequuntur architecto pariatur maiores voluptates</p>
+					<div class="copy"><?php the_field('step_1_copy'); ?></div>
 				</div>
 			</div>
 		</div>
@@ -45,11 +40,9 @@
 		<div class="step step-two">
 			<div class="inner mxw-1000-center">
 				<div class="number">2</div>
-				<h3 class="title">Purchase the ConnectIN Seed Counter Directly</h3>
+				<h3 class="title"><?php the_field('step_2_title'); ?></h3>
 				<div class="content">
-					<p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing
-					elit. Nesciunt, aperiam ab ipsam, porro dolorum dolor nisi a suscipit
-					molestias fugit consequuntur architecto pariatur maiores voluptates</p>
+					<div class="copy"><?php the_field('step_2_copy'); ?></div>
 				</div>
 			</div>
 		</div>
@@ -62,37 +55,59 @@
 
 					<div class="col-xs-12 col-sm-6 col-md-6 nopad">
 						<div class="content tablets">
-							<h3 class="title">Mobile Tablets</h3>
+							<h3 class="title"><?php the_field('mt_section_title'); ?></h3>
 							<div class="list">
-								<ul>
-									<strong class="list-title">Apple iPad Air 2</strong>
-									<li>IOS 8.0 or greater</li>
-									<li>16GB or greater</li>
-									<li>WiFi or WiFi + Cellular</li>
-									<li>Bluetooth Technology</li>
-								</ul>
-								<ul>
-									<strong class="list-title">Samsung&reg; Galaxy Tab S2 9.7"</strong>
-									<li>Android 5 Lollipop or greater</li>
-									<li>16GB or greater</li>
-									<li>WiFi</li>
-									<li>Bluetooth Technology</li>
-								</ul>
+								<?php if( have_rows('mobile_device') ): ?>
+
+								    <?php while ( have_rows('mobile_device') ) : the_row(); ?>
+											<ul>
+												<strong class="list-title"><?php the_sub_field('device_name'); ?></strong>
+												<?php if( have_rows('specs') ): ?>
+
+												    <?php while ( have_rows('specs') ) : the_row(); ?>
+															<li><?php the_sub_field('specs_bullet'); ?></li>
+												    <?php endwhile; ?>
+
+												<?php else : ?>
+
+												<?php endif; ?>
+											</ul>
+
+								    <?php endwhile; ?>
+
+								<?php else : ?>
+
+								<?php endif; ?>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-xs-12 col-sm-6 col-md-6 nopad">
 						<div class="content printers">
-							<h3 class="title">Printers</h3>
+							<h3 class="title"><?php the_field('p_section_title'); ?></h3>
 							<div class="list">
-								<ul>
-									<strong class="list-title">Brother HL5200DWT or HP LaserJet Pro 400 M402N</strong>
-									<li>Black and White</li>
-									<li>Double Sided</li>
-									<li>Two Trays</li>
-									<li>Wifi Technology</li>
-								</ul>
+								<?php if( have_rows('printer_device') ): ?>
+
+								    <?php while ( have_rows('printer_device') ) : the_row(); ?>
+											<ul>
+												<strong class="list-title"><?php the_sub_field('device_name'); ?></strong>
+												<?php if( have_rows('specs') ): ?>
+
+														<?php while ( have_rows('specs') ) : the_row(); ?>
+															<li><?php the_sub_field('bullet'); ?></li>
+														<?php endwhile; ?>
+
+												<?php else : ?>
+
+												<?php endif; ?>
+											</ul>
+
+								    <?php endwhile; ?>
+
+								<?php else : ?>
+
+								<?php endif; ?>
+
 							</div>
 						</div>
 					</div>
@@ -106,7 +121,7 @@
 			<div class="inner mxw-1000-center">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="content">
-						<p>If you don’t already own a complementary tablet or printer, you may purchase<br> one using one of the options below.</p>
+						<?php the_field('wtb_intro_copy'); ?>
 					</div>
 				</div>
 			</div>
@@ -117,26 +132,38 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4 nopad">
 					<div class="content phone">
-						<h3 class="title">Live Phone Support<br>and Direct Ordering</h3>
-						<div class="instructions">A preferred electronic provider, Zones™ Inc. is providing for Wheat Seed Suppliers a live ONE on ONE phone support, that can walk you through and provide direct information of hardware specifications to purchase tablets or printers.
-						Call Zones today at (253) 205-3798 to order your tablet or printer.</div>
+						<h3 class="title"><?php the_field('zones_title'); ?></h3>
+						<div class="instructions">
+							<img src="<?php the_field('zones_logo') ?>" alt="">
+							<?php the_field('zones_copy') ?>
+						</div>
 					</div>
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-4 nopad">
 					<div class="content amazon">
-						<h3 class="title">Amazon.com Wish List<br>for System Hardware</h3>
-						<div class="instructions">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aut incidunt, soluta dolorum autem optio, sequi. Molestiae temporibus voluptates quibusdam voluptatem, nemo porro repellat rem molestias non est. Id, labore. <br><br>
-						<a class="button" href="">Shop now</a>
+						<h3 class="title"><?php the_field('amazon_title'); ?></h3>
+						<div class="instructions">
+							<?php the_field('amazon_copy'); ?>
+						<a class="button" href="<?php the_field('button_link'); ?>"><?php the_field('button_copy'); ?></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-4 nopad">
 					<div class="content retailer">
-						<h3 class="title">Purchase Through Any<br>Electronic Retailer<sup>**</sup></h3>
+						<h3 class="title"><?php the_field('retailer_title') ?></h3>
 						<div class="instructions">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, velit, quibusdam eum consequuntur illum vel incidunt, perferendis ratione quo alias mollitia, obcaecati odio nulla commodi magni fugit accusamus unde! Praesentium?
+							<?php if( have_rows('retailer_logos') ): ?>
+
+							    <?php while ( have_rows('retailer_logos') ) : the_row(); ?>
+										<img src="<?php the_sub_field('logo'); ?>" alt=""><br>
+							    <?php endwhile; ?>
+
+							<?php else : ?>
+
+							<?php endif; ?>
+							<?php the_field('help_text'); ?>
 						</div>
 					</div>
 				</div>
@@ -152,9 +179,9 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="content">
-						<h3 class="title">Program Incentives</h3>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, exercitationem cupiditate aspernatur sint saepe autem nesciunt, veritatis iure rerum suscipit excepturi aliquid assumenda laudantium magnam quos, tempora libero soluta, nam. <br><br>
-						<a class="button" href="">Learn More</a>
+						<h3 class="title"><?php the_field('pi_title'); ?></h3>
+						<?php the_field('pi_copy'); ?>
+						<a class="button" href="<?php the_field('pi_button_link');?>"><?php the_field('pi_button_copy'); ?></a>
 					</div>
 				</div>
 			</div>
