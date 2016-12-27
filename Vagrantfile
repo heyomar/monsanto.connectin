@@ -31,7 +31,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "scotch/box"
   config.vm.network :private_network, id: "wp_primary", ip: localip
   config.vm.hostname = siteurl
-  config.vm.synced_folder ".", "/var/www/public", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
+  config.vm.synced_folder ".", "/var/www/public", :mount_options => ["dmode=777","fmode=666"]
   config.vm.provider :virtualbox do |v|
     v.customize ["modifyvm", :id, "--memory", 1024]
     v.customize ["modifyvm", :id, "--cpus", 1]
@@ -44,6 +44,9 @@ Vagrant.configure("2") do |config|
   end
 
   config.ssh.forward_agent = true
+
+  # Mailcatcher
+  config.vm.provision "shell", inline: "/home/vagrant/.rbenv/shims/mailcatcher --http-ip=0.0.0.0", run: "always"
 
   config.vm.provision "shell", inline: $script, privileged: false, env: {
     "DBNAME" => dbname,
