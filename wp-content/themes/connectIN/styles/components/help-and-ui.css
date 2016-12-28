@@ -58,6 +58,10 @@
   }
 }
 
+.no-border {
+  border-bottom: 0;
+}
+
 .make__number{
   border: 2px solid var(--color-ltblue);
   border-radius: 50px;
@@ -75,6 +79,7 @@
   display: initial;
   padding: 18px 15px;
   margin-top: 15px;
+  border-bottom: 0;
 }
 
 .button__plain:after{
