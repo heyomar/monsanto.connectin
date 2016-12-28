@@ -38,14 +38,14 @@
   & label {position:relative}
   & label:after {
       content:'>';
-      font:35px "Consolas", monospace;
+      font:40px;
       color:#aaa;
       -webkit-transform:rotate(90deg);
       -moz-transform:rotate(90deg);
       -ms-transform:rotate(90deg);
       transform:rotate(90deg);
       right:11px;
-      top:-26px;
+      top:-16px;
       padding:14px;
       border-bottom: 1px solid #c9c9c4;
       position:absolute;
