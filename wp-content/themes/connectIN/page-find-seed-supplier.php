@@ -90,6 +90,9 @@
   </div>
 </div>
 <div class="suppliers__ctn">
+  <div class="suppliers__ctn__anchor">
+    WestBred wheat seed suppliers are available across the country. Select your state to find a seed supplier in your area or see <a href="#westbred-reps">your WestBred Representatives</a> below.
+  </div>
   <?php $suppliers = new WP_Query( array(
                                     'post_type' => 'suppliers',
                                     'posts_per_page' => -1,
@@ -117,7 +120,7 @@
     <?php endif ?>
 </div>
 
-<div class="rep__ctn">
+<div class="rep__ctn" id="westbred-reps">
 <?php $reps = new WP_Query( array('post_type' => 'reps',
                                   'posts_per_page' => -1,
                                   'orderby' => 'title',

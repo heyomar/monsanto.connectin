@@ -129,3 +129,8 @@
 .remove__margin {
   margin: 0;
 }
+
+.suppliers__ctn__anchor {
+  display: none;
+  margin-bottom: 2em;
+}

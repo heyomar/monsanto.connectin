@@ -8,22 +8,23 @@ if( $('body').hasClass('find-seed-supplier') ) {
       $('#results').removeClass('hidden')
     }
     var selectedstate = $('#stateselect option:selected').val()
-    $('.supplier').hide()
+    $('.supplier, .rep').hide()
     $('.' + selectedstate).show()
 
     if (!$('.' + selectedstate)[0]) {
       if ($('#stateselect option:selected').text() === 'Select a state') {
         $('#results').hide()
-      }else {
+      } else {
         $('#results').show()
         $('.failure__nosuppliers').show()
         var stateChosen = $('#stateselect option:selected').text()
         $('.failureSpan').text(stateChosen || "your state")
-        // $('.rep__ctn').hide()
+        $('.rep__ctn').hide()
       }
     } else {
         $('.failure__nosuppliers').hide()
-        // $('.rep__ctn').show()
+        $('.rep__ctn').show()
+        $('.suppliers__ctn__anchor').show()
     }
   }
 
