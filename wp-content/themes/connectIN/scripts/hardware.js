@@ -1,4 +1,4 @@
-$('#slick-reporting').slick({
+$('#slick-reporting, #slick-training').slick({
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 3,
