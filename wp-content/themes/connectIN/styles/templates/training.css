@@ -131,9 +131,42 @@
 /*[–––
 			↓ QUICK TRAINING TIP ↓
 ––––––––––––––––––––––––––––––––––––––//]*/
+.email-field {
+	display: none;
+	padding: 10px;
+	height: 100%;
+	width: 100%;
+	background-color: var(--color-gray);
 
+	& label {
+		width: 100%;
+		text-align: left;
+		font-size: 12px;
+		font-weight: bold;
+	}
 
+	& input[type=text] {
+		display: inline-block;
+		background-color: var(--color-white);
+		padding: 5px;
+		width: 100%;
+		color: var(--color-gray);
+	}
+	& input[type=submit] {
+		display: inline-block;
+		padding: 9px 15px;
+		width: 100%;
+	}
+}
 
+.email-button {
+	&:hover {
+		cursor:pointer;
+	}
+}
+.pdf-submit {
+	background-color: none;
+}
 
 /*[–––
 			↓ DOWNLOAD TRAINING MANUALS ↓
@@ -158,5 +191,14 @@
 	}
 	.player {
 		display: block;
+	}
+
+	.email-field {
+		& input[type=text] {
+			width: 50%;
+		}
+		& input[type=submit] {
+			width: 15%;
+		}
 	}
 }

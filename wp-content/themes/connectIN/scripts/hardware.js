@@ -35,4 +35,13 @@ $('.list .item').on('click', function () {
 	if ($('#frame').attr('src') === chosenVideoURL) {
 
 	}
+});
+
+
+$('.email-button').on('click', function () {
+	if ($('.email-active')[0]) {
+		$(this).parent().parent().next().removeClass('email-active').slideUp();
+	} else {
+		$(this).parent().parent().next().slideDown().addClass('email-active');
+	}
 })
