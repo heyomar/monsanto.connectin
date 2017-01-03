@@ -56,10 +56,13 @@
     <?php include_once('components/symbol-defs.php'); ?>
     <header class="site-header">
 
-      <section id="mailbar" class="mailbar">
-        <!-- NOTE: mailbar code inserted here if no cookie -->
-      </section>
-
+		<?php if (is_page_template('Hardware 2017' || 'How to Order 2017' || 'Training 2017')) { ?>
+      <!-- <section id="mailbar" class="mailbar"></section> -->
+			<?php }else { ?>
+				<section id="mailbar" class="mailbar">
+					<!-- NOTE: mailbar code inserted here if no cookie -->
+				</section>
+				<?php } ?>
       <nav id="menu" class="main-nav" role="navigation">
         <div id="menu-header" class="main-nav-header">
           <a href="/"><svg class="icon icon-connectin"><use xlink:href="#icon-connectin"></use></svg></a>
@@ -75,43 +78,80 @@
         wp_nav_menu( $headargs ); ?>
       </nav>
 
-      <div class="menu__ctn">
-          <div class="menu__items-ctn row">
-              <div class="menu__item-logo col-sm-3">
-                  <div class="menu__logo box">
-                      <a href="/">
-                          <svg class="icon icon-connectin">
-                              <use xlink:href="#icon-connectin-color"></use>
-                          </svg>
-                      </a>
-                  </div>
-              </div>
-              <div class="col-sm-9">
-                <div class="box">
-                  <?php $headargs = array(
-                        'theme_location' => 'desktop-navigation',
-                        'container_id' => 'desktopmenu__ctn'
-                        );
-                        wp_nav_menu( $headargs ); ?>
-                </div>
-              </div>
+			<?php if (is_page_template('Hardware 2017' || 'How to Order 2017' || 'Training 2017')) { ?>
+				<div id="hardware-menu" class="menu__ctn">
+	 				 <div class="menu__items-ctn row">
+	 						 <div class="menu__item-logo col-sm-5">
+	 								 <div class="menu__logo box">
+	 										 <a href="/hardware">
+													 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hardware/hardware-logo.png" alt="">
+	 										 </a>
+	 								 </div>
+	 						 </div>
+	 						 <div class="col-sm-7">
+	 							 <div class="box">
+	 								 <?php $headargs = array(
+	 											 'theme_location' => 'hardware-navigation',
+	 											 'container_id' => 'hardware-desktop-navigation'
+	 											 );
+	 											 wp_nav_menu( $headargs ); ?>
+	 							 </div>
+	 						 </div>
 
 
-              <div class="menu__contact-bar">
-                  <span class="menu__find-seed">
-                    <a href="/find-seed-supplier"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu__mappin-icon.png" alt="" />Find a Seed Supplier</a>
-                  </span>
-                  <span class="menu__contact-us">
-                    <a href="/contact-us"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu__mail-icon.png" alt="" />Contact Us</a>
-                  </span>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-sm-12">
-                  <div class="box">
-                  </div>
-              </div>
-          </div>
-      </div>
+	 						 <div class="menu__contact-bar">
+	 								 <span class="menu__find-seed">
+	 									 <a href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hardware/hardware__icon-home.png" alt="" />Connectin System Home</a>
+	 								 </span>
+	 								 <span class="menu__contact-us">
+	 									 <a href="/contact-us"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hardware/hardware__icon-email.png" alt="" />Contact Us</a>
+	 								 </span>
+	 						 </div>
+	 				 </div>
+
+	 		 </div>
+			<?php }else { ?>
+
+			<div class="menu__ctn">
+ 				 <div class="menu__items-ctn row">
+ 						 <div class="menu__item-logo col-sm-3">
+ 								 <div class="menu__logo box">
+ 										 <a href="/">
+ 												 <svg class="icon icon-connectin">
+ 														 <use xlink:href="#icon-connectin-color"></use>
+ 												 </svg>
+ 										 </a>
+ 								 </div>
+ 						 </div>
+ 						 <div class="col-sm-9">
+ 							 <div class="box">
+ 								 <?php $headargs = array(
+ 											 'theme_location' => 'desktop-navigation',
+ 											 'container_id' => 'desktopmenu__ctn'
+ 											 );
+ 											 wp_nav_menu( $headargs ); ?>
+ 							 </div>
+ 						 </div>
+
+
+ 						 <div class="menu__contact-bar">
+ 								 <span class="menu__find-seed">
+ 									 <a href="/find-seed-supplier"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu__mappin-icon.png" alt="" />Find a Seed Supplier</a>
+ 								 </span>
+ 								 <span class="menu__contact-us">
+ 									 <a href="/contact-us"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu__mail-icon.png" alt="" />Contact Us</a>
+ 								 </span>
+ 						 </div>
+ 				 </div>
+ 				 <div class="row">
+ 						 <div class="col-sm-12">
+ 								 <div class="box">
+ 								 </div>
+ 						 </div>
+ 				 </div>
+ 		 </div>
+		<?php } ?>
+
+
     </header>
     <main>

@@ -26,6 +26,7 @@
 <!--[––––
 			↓ REPORTING ↓
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
+	<div class="beige">
 		<div class="reporting">
 			<div class="inner mxw-1000-center">
 				<div class="row">
@@ -124,6 +125,7 @@
 												<div class="col-xs-1 col-sm-3 nopad">
 													<div class="email"><a href="#">EMAIL</a></div>
 												</div>
+
 											</div>
 										</div>
 									</div>
@@ -135,12 +137,20 @@
 						<?php endif; ?>
 
 
+						<form action="/email.php" method="post">
+						    <input name="email_address"/>
+
+						    <input type="submit" name="my_form_submit_button"
+						           value="Click here for penguins"/>
+
+						    </form>
+
 
 					</div>
 				</div>
 			</div>
 		</div>
-
+</div>
 <!--[––––
 			↓ QUICK TRAINING TIPS ↓
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
@@ -164,7 +174,7 @@
 					<div class="inner nopad">
 						<div class="row">
 							<div class="col-xs-12">
-								<div id="slick-reporting" class="content">
+								<div id="slick-training" class="content">
 
 								<?php if( have_rows('quick_tip_videos') ): ?>
 									<?php while ( have_rows('quick_tip_videos') ) : the_row(); ?>
@@ -240,11 +250,11 @@
 									<div class="action">
 										<div class="mxw-600-center">
 											<div class="row">
-												<div class="col-xs-11 col-sm-9 nopad">
+												<div class="col-xs-9 col-sm-9 nopad">
 													<div class="download"><a href="<?php the_sub_field('file') ?>"><?php the_sub_field('file_name'); ?></a></div>
 												</div>
 
-												<div class="col-xs-1 col-sm-3 nopad">
+												<div class="col-xs-3 col-sm-3 nopad">
 													<div class="email"><a href="#">EMAIL</a></div>
 												</div>
 											</div>

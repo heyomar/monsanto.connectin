@@ -6,6 +6,7 @@
 	background-position: bottom;
 	background-size: cover;
 	padding: 50px 20px;
+	color: var(--color-white);
 
 	& .title {
 		color: var(--color-white);
@@ -126,6 +127,51 @@
 .mxw-600-center {
 	max-width: 600px;
 	margin: 0 auto;
+}
+
+
+/*[–––
+			↓ Navigation ↓
+––––––––––––––––––––––––––––––––––––––//]*/
+#hardware-desktop-navigation {
+	& ul {
+		text-align: right;
+		padding-top: 15px;
+	}
+
+	& li {
+		text-decoration: none;
+		display: inline-block;
+		font-weight: bold;
+		color: var(--color-white);
+		padding-right: 30px;
+
+		& a {
+			text-decoration: none;
+			color: var(--color-white);
+		}
+	}
+}
+
+#hardware-menu {
+	& .menu__items-ctn {
+		background-color: var(--color-gray);
+	}
+
+	& .menu__contact-bar {
+		background-color: var(--color-dkgray);
+	}
+
+	& .menu__item-logo {
+		background-color: var(--color-white);
+		padding: 0;
+
+
+		& .menu__logo {
+			padding: 10px 20px;
+			width: 100%;
+		}
+	}
 }
 
 
