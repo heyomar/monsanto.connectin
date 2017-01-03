@@ -119,7 +119,7 @@
 										<div class="mxw-600-center">
 											<div class="row">
 												<div class="col-xs-11 col-sm-9 nopad">
-													<div class="download"><a href="<?php the_sub_field('file') ?>"><?php the_sub_field('file_name'); ?></a></div>
+													<div class="download"><a target="_blank" href="<?php the_sub_field('file') ?>"><?php the_sub_field('file_name'); ?></a></div>
 												</div>
 
 												<div class="col-xs-1 col-sm-3 nopad">
@@ -137,13 +137,13 @@
 						<?php endif; ?>
 
 
-						<form action="/email.php" method="post">
+						<!-- <form action="/email.php" method="post">
 						    <input name="email_address"/>
 
 						    <input type="submit" name="my_form_submit_button"
 						           value="Click here for penguins"/>
 
-						    </form>
+						    </form> -->
 
 
 					</div>
@@ -251,11 +251,25 @@
 										<div class="mxw-600-center">
 											<div class="row">
 												<div class="col-xs-9 col-sm-9 nopad">
-													<div class="download"><a href="<?php the_sub_field('file') ?>"><?php the_sub_field('file_name'); ?></a></div>
+													<div class="download"><a target="_blank" href="<?php the_sub_field('file') ?>"><?php the_sub_field('file_name'); ?></a></div>
 												</div>
 
 												<div class="col-xs-3 col-sm-3 nopad">
-													<div class="email"><a href="#">EMAIL</a></div>
+													<div class="email">
+														<div class="email-button">
+															<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hardware/icon-email.png" alt="">
+															EMAIL</div>
+													</div>
+
+												</div>
+												<div class="email-field" id="box-one">
+													<form class="" action="/email.php" method="post">
+														<input type="hidden" name="pdfURL" value="<?php the_sub_field('file') ?>">
+														<label for="email-address">Email Address</label>
+														<input type="text" name="email-address" value="">
+														<input class="pdf-submit" type="submit" name="email-submit-button"
+																	value="Submit"/>
+													</form>
 												</div>
 											</div>
 										</div>
