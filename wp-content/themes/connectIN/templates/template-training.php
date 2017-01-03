@@ -123,7 +123,22 @@
 												</div>
 
 												<div class="col-xs-1 col-sm-3 nopad">
-													<div class="email"><a href="#">EMAIL</a></div>
+													<div class="email">
+														<div class="email-button">
+															<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hardware/icon-email.png" alt="">
+															<span class="email-text">EMAIL</span></div>
+													</div>
+
+												</div>
+
+												<div class="email-field" id="box-one">
+													<form class="" action="/email.php" method="post">
+														<input type="hidden" name="pdfURL" value="<?php the_sub_field('file') ?>">
+														<label for="email-address">Email Address</label>
+														<input type="text" name="email-address" value="">
+														<input class="pdf-submit" type="submit" name="email-submit-button"
+																	value="Submit"/>
+													</form>
 												</div>
 
 											</div>
@@ -135,16 +150,6 @@
 						<?php else : ?>
 
 						<?php endif; ?>
-
-
-						<!-- <form action="/email.php" method="post">
-						    <input name="email_address"/>
-
-						    <input type="submit" name="my_form_submit_button"
-						           value="Click here for penguins"/>
-
-						    </form> -->
-
 
 					</div>
 				</div>
