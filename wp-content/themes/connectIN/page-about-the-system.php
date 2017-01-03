@@ -99,7 +99,7 @@
     <div class="col-sm-12">
       <div class="box center__text add__bottom-pad-35">
         <h3>Seed Suppliers, contact your WestBred representative to bring<br>the benefits of the ConnectIN System to your customers.</h3><br>
-        <a class="button__plain" href="/find-seed-supplier">Find a Seed Supplier</a>
+        <a class="button__plain" href="/find-seed-supplier">Find Your Representative</a>
       </div>
     </div>
   </div>
