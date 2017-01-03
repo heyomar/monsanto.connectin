@@ -1,12 +1,20 @@
     </main>
     <footer class="site-footer">
 
-  <div class="make__wide">    <?php
+  <div class="make__wide">
+		<?php if (is_page_template('Hardware 2017' || 'How to Order 2017' || 'Training 2017')) { ?>
+			<?php
+				$footargs = array(
+					'theme_location' => 'hardware-footer-navigation'
+				);
+				wp_nav_menu( $footargs ); ?>
+		<?php }else { ?>
+		<?php
       $footargs = array(
         'theme_location' => 'footer-navigation'
       );
       wp_nav_menu( $footargs ); ?>
-
+			<?php } ?>
       <div class="footer-logos">
         <a target="_blank" href="http://www.westbred.com"><svg class="icon icon-westbred"><use xlink:href="#icon-westbred"></use></svg></a>
         <span class="seperator"></span>
