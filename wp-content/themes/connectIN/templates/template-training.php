@@ -99,7 +99,7 @@
 					<div class="col-xs-12 col-sm-8 col-md-8 nopad">
 						<div class="content">
 							<div class="video">
-								<iframe id="frame" width="560" height="315" src="https://www.youtube.com/embed/6DBi41reeF0" frameborder="0" allowfullscreen></iframe>
+								<iframe id="frame" width="560" height="315" src="<?php the_field('tr_starting_video'); ?>" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
 					</div>
@@ -232,7 +232,7 @@
 							<div class="col-xs-12 col-sm-8 col-md-8 nopad">
 								<div class="content">
 									<div class="video">
-										<iframe id="frame" width="560" height="315" src="https://www.youtube.com/embed/6DBi41reeF0" frameborder="0" allowfullscreen></iframe>
+										<iframe id="frame" width="560" height="315" src=<?php the_field('qt_starting_video'); ?> frameborder="0" allowfullscreen></iframe>
 									</div>
 								</div>
 							</div>
@@ -248,7 +248,8 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="content">
-						<h2 class="title">Download Full Training Manuals</h2>
+						<h2 class="title">Download the Full Training Manuals</h2>
+						<?php the_field('ftm_copy'); ?><br>
 						<?php if( have_rows('full_training_manual') ): ?>
 
 						    <?php while ( have_rows('full_training_manual') ) : the_row(); ?>

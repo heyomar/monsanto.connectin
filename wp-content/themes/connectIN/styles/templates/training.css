@@ -82,12 +82,15 @@
 			↓ REPORTING GUIDES ↓
 ––––––––––––––––––––––––––––––––––––––//]*/
 .reporting-guides {
+	padding: 20px;
 	& .title {
 		text-align: center;
 	}
-	padding: 20px;
 }
 
+.download:hover {
+	cursor: pointer;
+}
 
 /*[–––
 			↓ QUICK TRAINING TIPS ↓
