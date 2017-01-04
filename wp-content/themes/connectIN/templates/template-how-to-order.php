@@ -27,7 +27,7 @@
 			↓ STEPS ↓
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
 		<div class="step step-one">
-			<div class="inner mxw-1000-center">
+			<div class="inner mxw-765-center">
 				<span class="number">1</span>
 				<h3 class="title"><?php the_field('step_1_title'); ?></h3>
 				<div class="content">
@@ -38,7 +38,7 @@
 		</div>
 
 		<div class="step step-two">
-			<div class="inner mxw-1000-center">
+			<div class="inner mxw-765-center">
 				<div class="number">2</div>
 				<h3 class="title"><?php the_field('step_2_title'); ?></h3>
 				<div class="content">
@@ -135,6 +135,7 @@
 						<h3 class="title"><?php the_field('zones_title'); ?></h3>
 						<div class="instructions">
 							<img src="<?php the_field('zones_logo') ?>" alt="">
+							<br><br>
 							<?php the_field('zones_copy') ?>
 						</div>
 					</div>
@@ -144,8 +145,10 @@
 					<div class="content amazon">
 						<h3 class="title"><?php the_field('amazon_title'); ?></h3>
 						<div class="instructions">
+							<img src="<?php the_field('amazon_logo'); ?>" alt="">
+							<br><br>
 							<?php the_field('amazon_copy'); ?>
-						<a class="button" href="<?php the_field('button_link'); ?>"><?php the_field('button_copy'); ?></a>
+						<a target="_blank" class="button" href="<?php the_field('button_link'); ?>"><?php the_field('button_copy'); ?></a>
 						</div>
 					</div>
 				</div>
@@ -181,7 +184,7 @@
 					<div class="content">
 						<h3 class="title"><?php the_field('pi_title'); ?></h3>
 						<?php the_field('pi_copy'); ?>
-						<a class="button" href="<?php the_field('pi_button_link');?>"><?php the_field('pi_button_copy'); ?></a>
+						<a target="_blank" class="button" href="<?php the_field('pi_button_link');?>"><?php the_field('pi_button_copy'); ?></a>
 					</div>
 				</div>
 			</div>
