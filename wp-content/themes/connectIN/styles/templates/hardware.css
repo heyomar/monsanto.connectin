@@ -159,6 +159,14 @@
 	}
 }
 
+.hardware-menu-header {
+	background-color: var(--color-gray);
+}
+
+.hardware-menu-activate {
+	background-color: var(--color-dkgray);
+}
+
 #hardware-menu {
 	& .menu__items-ctn {
 		background-color: var(--color-gray);
@@ -179,7 +187,9 @@
 		}
 	}
 }
-
+.email-text {
+	display: none;
+}
 
 /*[–––
 			↓ MEDIA ↓
@@ -187,5 +197,11 @@
 @media screen and (min-width:1020px) {
 	.reasons .hide-image {
 		display: block;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.email-text {
+		display: inline;
 	}
 }

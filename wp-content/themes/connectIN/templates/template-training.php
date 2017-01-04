@@ -118,11 +118,11 @@
 									<div class="action">
 										<div class="mxw-600-center">
 											<div class="row">
-												<div class="col-xs-11 col-sm-9 nopad">
+												<div class="col-xs-9 col-sm-9 nopad">
 													<div class="download"><a target="_blank" href="<?php the_sub_field('file') ?>"><?php the_sub_field('file_name'); ?></a></div>
 												</div>
 
-												<div class="col-xs-1 col-sm-3 nopad">
+												<div class="col-xs-3 col-sm-3 nopad">
 													<div class="email">
 														<div class="email-button">
 															<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hardware/icon-email.png" alt="">
@@ -264,7 +264,7 @@
 													<div class="email">
 														<div class="email-button">
 															<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hardware/icon-email.png" alt="">
-															EMAIL</div>
+															<span class="email-text">EMAIL</span></div>
 													</div>
 
 												</div>
