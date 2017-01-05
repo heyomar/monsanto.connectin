@@ -249,7 +249,7 @@
 				<div class="col-xs-12">
 					<div class="content">
 						<h2 class="title">Download the Full Training Manual</h2>
-						<?php the_field('ftm_copy'); ?><br>
+						<span class="center-text"><?php the_field('ftm_copy'); ?></span><br>
 						<?php if( have_rows('full_training_manual') ): ?>
 
 						    <?php while ( have_rows('full_training_manual') ) : the_row(); ?>

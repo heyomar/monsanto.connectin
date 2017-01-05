@@ -140,6 +140,27 @@
 	margin: 0 auto;
 }
 
+.email-text {
+	display: none;
+}
+
+.pdf-email-error {
+	display: none;
+	color: var(--color-beige);
+	text-align: center;
+	padding: 10px;
+}
+
+.mini-thanks {
+	display: none;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.center-text {
+	text-align: center;
+}
 
 
 /*[–––
@@ -186,30 +207,15 @@
 		background-color: var(--color-white);
 		padding: 0;
 
-
 		& .menu__logo {
 			padding: 10px 20px;
 			width: 100%;
+			text-align: left;
+			padding-left: 45px;
 		}
 	}
 }
-.email-text {
-	display: none;
-}
 
-.pdf-email-error {
-	display: none;
-	color: var(--color-beige);
-	text-align: center;
-	padding: 10px;
-}
-
-.mini-thanks {
-	display: none;
-	text-align: center;
-	padding: 10px;
-	font-weight: bold;
-}
 
 /*[–––
 			↓ MEDIA ↓
