@@ -17,6 +17,7 @@
 	& .subtitle {
 		font-size: 26px;
 		text-transform: uppercase;
+		color: var(--color-gray);
 	}
 
 	& .copy {
@@ -33,6 +34,7 @@
 .callouts {
 	& .order {
 		min-height: 270px;
+		max-height: 270px;
 		background-image: url('assets/images/hardware/hardware__callouts-grains.jpg');
 		background-position: center;
 		background-size: cover;
@@ -41,7 +43,7 @@
 
 	& .training {
 		min-height: 270px;
-		max-height: 275px;
+		max-height: 270px;
 		background-color: var(--color-gray);
 		color: var(--color-white);
 		padding: 50px;

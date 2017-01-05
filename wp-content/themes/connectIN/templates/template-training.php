@@ -111,7 +111,7 @@
 			<div class="inner">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
-						<h3 class="title">Transactionl Reporting Guides</h3>
+						<h3 class="title">Transactional Reporting Guides</h3>
 						<?php if( have_rows('transactional_reporting_guides') ): ?>
 
 						    <?php while ( have_rows('transactional_reporting_guides') ) : the_row(); ?>
@@ -248,7 +248,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="content">
-						<h2 class="title">Download the Full Training Manuals</h2>
+						<h2 class="title">Download the Full Training Manual</h2>
 						<?php the_field('ftm_copy'); ?><br>
 						<?php if( have_rows('full_training_manual') ): ?>
 

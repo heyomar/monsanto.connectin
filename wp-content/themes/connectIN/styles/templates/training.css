@@ -7,7 +7,7 @@
 }
 
 .beige {
-	background-color: var(--color-beige);
+	background-color: var(--color-offwhite);
 }
 
 
@@ -97,6 +97,8 @@
 ––––––––––––––––––––––––––––––––––––––//]*/
 .quick-training-tips {
 	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 25px;
 }
 
 .action {
@@ -130,6 +132,9 @@
 	}
 }
 
+.player {
+	padding-bottom: 50px;
+}
 
 /*[–––
 			↓ QUICK TRAINING TIP ↓
@@ -175,7 +180,7 @@
 			↓ DOWNLOAD TRAINING MANUALS ↓
 ––––––––––––––––––––––––––––––––––––––//]*/
 .download-manuals {
-	background-color: var(--color-beige);
+	background-color: var(--color-offwhite);
 	padding-top: 30px;
 	padding-bottom: 35px;
 	& .title {

@@ -4799,6 +4799,9 @@ if ($('body').hasClass('contact-us')) {
     };
 
 }));
+//[–––
+//			↓ MOBILE SLICK VIDEO SLIDER ↓
+//––––––––––––––––––––––––––––––––––––––//]
 $('#slick-reporting, #slick-training').slick({
   centerMode: true,
   centerPadding: '60px',
@@ -4826,6 +4829,9 @@ $('#slick-reporting, #slick-training').slick({
 });
 
 
+//[–––
+//			↓ SEND PDFS ↓
+//––––––––––––––––––––––––––––––––––––––//]
 $(document).ready(function() {
 	$('form').on('submit', function(e){
 		e.preventDefault();
@@ -4857,26 +4863,16 @@ $(document).ready(function() {
 				$('.mini-thanks').show();
 			})
 
-
 		}
-
-
-
 
 	})
 
 });
 
 
-
-
-
-
-
-
-
-
-
+//[–––
+//			↓ SWAP VIDEOS  ↓
+//––––––––––––––––––––––––––––––––––––––//]
 $('.list .item').on('click', function () {
 	$(this).addClass('active');
 
@@ -4890,8 +4886,9 @@ $('.list .item').on('click', function () {
 });
 
 
-
-
+//[–––
+//			↓ SHOW AND HIDE EMAIL FORMS ↓
+//––––––––––––––––––––––––––––––––––––––//]
 $('.email-button').on('click', function () {
 	if ($('.email-active')[0]) {
 		$(this).parent().parent().next().removeClass('email-active').slideUp();
