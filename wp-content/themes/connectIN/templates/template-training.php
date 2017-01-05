@@ -269,13 +269,15 @@
 
 												</div>
 												<div class="email-field" id="box-one">
-													<form class="" action="/email.php" method="post">
+													<form class="pdf-mini-form" action="/email.php" method="post">
 														<input type="hidden" name="pdfURL" value="<?php the_sub_field('file') ?>">
 														<label for="email-address">Email Address</label>
-														<input type="text" name="email-address" value="">
+														<input class="email-address-field" type="text" name="email-address">
 														<input class="pdf-submit" type="submit" name="email-submit-button"
 																	value="Submit"/>
+														<div class="pdf-email-error">Please enter a valid email address.</div>
 													</form>
+														<div class="mini-thanks">Your PDF has been sent! Thank You!</div>
 												</div>
 											</div>
 										</div>

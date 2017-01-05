@@ -94,6 +94,9 @@
 	padding: 20px;
 }
 
+.red-border{
+	border: 1px solid red !important;
+}
 
 
 /*[–––
@@ -134,6 +137,7 @@
 	max-width: 600px;
 	margin: 0 auto;
 }
+
 
 
 /*[–––
@@ -189,6 +193,20 @@
 }
 .email-text {
 	display: none;
+}
+
+.pdf-email-error {
+	display: none;
+	color: var(--color-beige);
+	text-align: center;
+	padding: 10px;
+}
+
+.mini-thanks {
+	display: none;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
 }
 
 /*[–––

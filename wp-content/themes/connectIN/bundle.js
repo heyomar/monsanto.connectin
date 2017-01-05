@@ -4826,6 +4826,57 @@ $('#slick-reporting, #slick-training').slick({
 });
 
 
+$(document).ready(function() {
+	$('form').on('submit', function(e){
+		e.preventDefault();
+
+		const theForm = $(this);
+
+		const emailField = $(this['email-address']).val();
+		if ($('.pdf-email-error')[0]) {
+			$('pdf-email-error').hide();
+		}
+		if(!emailField){
+			$('.pdf-email-error').show();
+		}
+
+		if(emailField) {
+
+			$('.pdf-email-error').hide();
+
+			const serialData = $(this).serialize();
+
+			$.ajax({
+				url: '/email.php',
+				type: 'POST',
+				data: serialData
+			})
+			.done(function() {
+				console.log("success");
+				$(theForm).hide();
+				$('.mini-thanks').show();
+			})
+
+
+		}
+
+
+
+
+	})
+
+});
+
+
+
+
+
+
+
+
+
+
+
 $('.list .item').on('click', function () {
 	$(this).addClass('active');
 
@@ -4837,6 +4888,8 @@ $('.list .item').on('click', function () {
 
 	}
 });
+
+
 
 
 $('.email-button').on('click', function () {
