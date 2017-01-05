@@ -58,25 +58,40 @@
 
 		<?php if (is_page_template('Hardware 2017' || 'How to Order 2017' || 'Training 2017')) { ?>
       <!-- <section id="mailbar" class="mailbar"></section> -->
-			<?php }else { ?>
-				<section id="mailbar" class="mailbar">
-					<!-- NOTE: mailbar code inserted here if no cookie -->
-				</section>
-				<?php } ?>
-      <nav id="menu" class="main-nav" role="navigation">
-        <div id="menu-header" class="main-nav-header">
+			<nav id="menu" class="main-nav" role="navigation">
+        <div id="menu-header" class="main-nav-header hardware-menu-header">
           <a href="/"><svg class="icon icon-connectin"><use xlink:href="#icon-connectin"></use></svg></a>
-          <span id="menu-activate" class="main-nav-header-menu-button">
+          <span id="menu-activate" class="main-nav-header-menu-button hardware-menu-activate">
             <svg class="icon"><use xlink:href="#icon-menu"></use></svg>
           </span>
         </div>
         <?php
         $headargs = array(
-          'theme_location' => 'main-navigation',
+          'theme_location' => 'hardware-navigation',
           'container_id' => 'menu-header-menu-container'
         );
         wp_nav_menu( $headargs ); ?>
       </nav>
+			<?php }else { ?>
+				<section id="mailbar" class="mailbar">
+					<!-- NOTE: mailbar code inserted here if no cookie -->
+				</section>
+				<nav id="menu" class="main-nav" role="navigation">
+	        <div id="menu-header" class="main-nav-header">
+	          <a href="/"><svg class="icon icon-connectin"><use xlink:href="#icon-connectin"></use></svg></a>
+	          <span id="menu-activate" class="main-nav-header-menu-button">
+	            <svg class="icon"><use xlink:href="#icon-menu"></use></svg>
+	          </span>
+	        </div>
+	        <?php
+	        $headargs = array(
+	          'theme_location' => 'main-navigation',
+	          'container_id' => 'menu-header-menu-container'
+	        );
+	        wp_nav_menu( $headargs ); ?>
+	      </nav>
+				<?php } ?>
+
 
 			<?php if (is_page_template('Hardware 2017' || 'How to Order 2017' || 'Training 2017')) { ?>
 				<div id="hardware-menu" class="menu__ctn">

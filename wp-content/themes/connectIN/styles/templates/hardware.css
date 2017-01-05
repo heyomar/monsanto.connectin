@@ -17,6 +17,7 @@
 	& .subtitle {
 		font-size: 26px;
 		text-transform: uppercase;
+		color: var(--color-gray);
 	}
 
 	& .copy {
@@ -33,6 +34,7 @@
 .callouts {
 	& .order {
 		min-height: 270px;
+		max-height: 270px;
 		background-image: url('assets/images/hardware/hardware__callouts-grains.jpg');
 		background-position: center;
 		background-size: cover;
@@ -41,7 +43,7 @@
 
 	& .training {
 		min-height: 270px;
-		max-height: 275px;
+		max-height: 270px;
 		background-color: var(--color-gray);
 		color: var(--color-white);
 		padding: 50px;
@@ -94,6 +96,9 @@
 	padding: 20px;
 }
 
+.red-border{
+	border: 1px solid red !important;
+}
 
 
 /*[–––
@@ -136,6 +141,7 @@
 }
 
 
+
 /*[–––
 			↓ Navigation ↓
 ––––––––––––––––––––––––––––––––––––––//]*/
@@ -159,6 +165,14 @@
 	}
 }
 
+.hardware-menu-header {
+	background-color: var(--color-gray);
+}
+
+.hardware-menu-activate {
+	background-color: var(--color-dkgray);
+}
+
 #hardware-menu {
 	& .menu__items-ctn {
 		background-color: var(--color-gray);
@@ -179,7 +193,23 @@
 		}
 	}
 }
+.email-text {
+	display: none;
+}
 
+.pdf-email-error {
+	display: none;
+	color: var(--color-beige);
+	text-align: center;
+	padding: 10px;
+}
+
+.mini-thanks {
+	display: none;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+}
 
 /*[–––
 			↓ MEDIA ↓
@@ -187,5 +217,11 @@
 @media screen and (min-width:1020px) {
 	.reasons .hide-image {
 		display: block;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.email-text {
+		display: inline;
 	}
 }

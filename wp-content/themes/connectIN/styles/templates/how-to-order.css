@@ -134,6 +134,11 @@
 	padding: 20px;
 	text-align: center;
 	background-color: var(--color-offwhite);
+
+	& .title {
+		text-transform: uppercase;
+		color: var(--color-ltblue);
+	}
 }
 
 
@@ -146,7 +151,7 @@
 		font-size: 36px;
 	}
 	.step .content {
-		margin-left: 75px;
+		margin-left: 71px;
 	}
 	.tablets {
 		border-right: 2px dotted var(--color-ltgray);

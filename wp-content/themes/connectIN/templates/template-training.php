@@ -111,18 +111,18 @@
 			<div class="inner">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
-						<h3 class="title">Transactionl Reporting Guides</h3>
+						<h3 class="title">Transactional Reporting Guides</h3>
 						<?php if( have_rows('transactional_reporting_guides') ): ?>
 
 						    <?php while ( have_rows('transactional_reporting_guides') ) : the_row(); ?>
 									<div class="action">
 										<div class="mxw-600-center">
 											<div class="row">
-												<div class="col-xs-11 col-sm-9 nopad">
+												<div class="col-xs-9 col-sm-9 nopad">
 													<div class="download"><a target="_blank" href="<?php the_sub_field('file') ?>"><?php the_sub_field('file_name'); ?></a></div>
 												</div>
 
-												<div class="col-xs-1 col-sm-3 nopad">
+												<div class="col-xs-3 col-sm-3 nopad">
 													<div class="email">
 														<div class="email-button">
 															<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hardware/icon-email.png" alt="">
@@ -248,7 +248,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="content">
-						<h2 class="title">Download the Full Training Manuals</h2>
+						<h2 class="title">Download the Full Training Manual</h2>
 						<?php the_field('ftm_copy'); ?><br>
 						<?php if( have_rows('full_training_manual') ): ?>
 
@@ -264,18 +264,20 @@
 													<div class="email">
 														<div class="email-button">
 															<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hardware/icon-email.png" alt="">
-															EMAIL</div>
+															<span class="email-text">EMAIL</span></div>
 													</div>
 
 												</div>
 												<div class="email-field" id="box-one">
-													<form class="" action="/email.php" method="post">
+													<form class="pdf-mini-form" action="/email.php" method="post">
 														<input type="hidden" name="pdfURL" value="<?php the_sub_field('file') ?>">
 														<label for="email-address">Email Address</label>
-														<input type="text" name="email-address" value="">
+														<input class="email-address-field" type="text" name="email-address">
 														<input class="pdf-submit" type="submit" name="email-submit-button"
 																	value="Submit"/>
+														<div class="pdf-email-error">Please enter a valid email address.</div>
 													</form>
+														<div class="mini-thanks">Your PDF has been sent! Thank You!</div>
 												</div>
 											</div>
 										</div>
