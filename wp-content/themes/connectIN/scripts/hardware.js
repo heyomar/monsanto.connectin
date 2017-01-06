@@ -83,9 +83,12 @@ $('.list .item').on('click', function () {
 //			↓ SHOW AND HIDE EMAIL FORMS ↓
 //––––––––––––––––––––––––––––––––––––––//]
 $('.email-button').on('click', function () {
-	if ($('.email-active')[0]) {
+	if ($(this).parents('row').children('.email-field').hasClass('email-active')) {
 		$(this).parent().parent().next().removeClass('email-active').slideUp();
 	} else {
-		$(this).parent().parent().next().slideDown().addClass('email-active');
+		$('.email-active').slideUp();
+		$(this).parent().parent().next().addClass('email-active').slideDown();
 	}
+
+
 })
