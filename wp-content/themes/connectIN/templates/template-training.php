@@ -99,7 +99,7 @@
 					<div class="col-xs-12 col-sm-8 col-md-8 nopad">
 						<div class="content">
 							<div class="video">
-								<iframe id="frame" width="560" height="315" src="<?php the_field('tr_starting_video'); ?>" frameborder="0" allowfullscreen></iframe>
+								<iframe class="ReportingFrame TheFrame" width="560" height="315" src="<?php the_field('tr_starting_video'); ?>" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
 					</div>
@@ -119,7 +119,7 @@
 										<div class="mxw-600-center">
 											<div class="row">
 												<div class="col-xs-9 col-sm-9 nopad">
-													<div class="download"><a target="_blank" href="<?php the_sub_field('file') ?>"><?php the_sub_field('file_name'); ?></a></div>
+													<a target="_blank" href="<?php the_sub_field('file') ?>"><div class="download"><?php the_sub_field('file_name'); ?></div></a>
 												</div>
 
 												<div class="col-xs-3 col-sm-3 nopad">
@@ -228,7 +228,7 @@
 							<div class="col-xs-12 col-sm-8 col-md-8 nopad">
 								<div class="content">
 									<div class="video">
-										<iframe id="frame" width="560" height="315" src=<?php the_field('qt_starting_video'); ?> frameborder="0" allowfullscreen></iframe>
+										<iframe class="QuickTipsFrame TheFrame" width="560" height="315" src=<?php the_field('qt_starting_video'); ?> frameborder="0" allowfullscreen></iframe>
 									</div>
 								</div>
 							</div>
@@ -253,7 +253,7 @@
 										<div class="mxw-600-center">
 											<div class="row">
 												<div class="col-xs-9 col-sm-9 nopad">
-													<div class="download"><a target="_blank" href="<?php the_sub_field('file') ?>"><?php the_sub_field('file_name'); ?></a></div>
+													<a target="_blank" href="<?php the_sub_field('file') ?>"><div class="download"><?php the_sub_field('file_name'); ?></div></a>
 												</div>
 
 												<div class="col-xs-3 col-sm-3 nopad">

@@ -74,14 +74,8 @@ $(document).ready(function() {
 //––––––––––––––––––––––––––––––––––––––//]
 $('.list .item').on('click', function () {
 	$(this).addClass('active');
-
 	const chosenVideoURL = $(this).attr('data-video');
-	console.log(chosenVideoURL);
-	$('#frame').attr('src', chosenVideoURL);
-
-	if ($('#frame').attr('src') === chosenVideoURL) {
-
-	}
+	$(this).parents('.col-xs-12').next().find('iframe').attr('src', chosenVideoURL);
 });
 
 
