@@ -4892,6 +4892,4 @@ $('.email-button').on('click', function () {
 		$('.email-active').slideUp();
 		$(this).parent().parent().next().addClass('email-active').slideDown();
 	}
-
-
 })

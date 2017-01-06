@@ -25,7 +25,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
 		<div class="step step-one">
 			<div class="inner mxw-765-center">
-				<span class="number">1</span>
+				<div class="number-ctn"><span class="number">1</span></div>
 				<h3 class="title"><?php the_field('step_1_title'); ?></h3>
 				<div class="content">
 
@@ -46,6 +46,9 @@
 <!--[––––
 			↓ SUPPORTED DEVICES ↓
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
+
+
+
 		<div class="supported-devices deskpad">
 			<div class="inner mxw-1000-center">
 				<div class="row">
