@@ -33,7 +33,7 @@
 					<div class="col-xs-12 col-sm-12">
 						<div class="content">
 							<h2 class="title"><?php the_field('tr_title'); ?></h2>
-							<?php the_field('tr_copy'); ?>
+							<div class="responsive-text-align"><?php the_field('tr_copy'); ?></div>
 						</div>
 					</div>
 				</div>
@@ -161,14 +161,10 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
 		<div class="quick-training-tips">
 			<div class="inner mxw-1000-center">
-				<div class="row">
-					<div class="col-xs-12">
 						<div class="content">
 							<h2 class="title">Quick Training Tips</h2>
-							<?php the_field('qtt_copy'); ?>
+							<div class="responsive-text-align"><?php the_field('qtt_copy'); ?></div>
 						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 
@@ -249,7 +245,7 @@
 				<div class="col-xs-12">
 					<div class="content">
 						<h2 class="title">Download the Full Training Manual</h2>
-						<span class="center-text"><?php the_field('ftm_copy'); ?></span><br>
+						<div class="responsive-text-align"><?php the_field('ftm_copy'); ?></div><br>
 						<?php if( have_rows('full_training_manual') ): ?>
 
 						    <?php while ( have_rows('full_training_manual') ) : the_row(); ?>

@@ -13,16 +13,13 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
 		<div class="hero">
 			<div class="inner mxw-1000-center">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<div class="content">
 							<h2 class="title"><?php the_field('hero_title') ?></h2>
 							<div class="copy"><?php the_field('hero_copy') ?></div>
 						</div>
-					</div>
-				</div>
 			</div>
 		</div>
+
 <!--[––––
 			↓ STEPS ↓
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
@@ -98,14 +95,11 @@
 														<?php endwhile; ?>
 
 												<?php else : ?>
-
 												<?php endif; ?>
 											</ul>
-
 								    <?php endwhile; ?>
 
 								<?php else : ?>
-
 								<?php endif; ?>
 
 							</div>
@@ -121,7 +115,7 @@
 			<div class="inner mxw-1000-center">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="content">
-						<?php the_field('wtb_intro_copy'); ?>
+						<div class="responsive-text-align"><?php the_field('wtb_intro_copy'); ?></div>
 					</div>
 				</div>
 			</div>
@@ -136,7 +130,7 @@
 						<div class="instructions">
 							<img src="<?php the_field('zones_logo') ?>" alt="">
 							<br><br>
-							<?php the_field('zones_copy') ?>
+							<div class="responsive-text-align"><?php the_field('zones_copy') ?></div>
 						</div>
 					</div>
 				</div>
@@ -147,7 +141,7 @@
 						<div class="instructions">
 							<img src="<?php the_field('amazon_logo'); ?>" alt="">
 							<br><br>
-							<?php the_field('amazon_copy'); ?>
+							<div class="responsive-text-align"><?php the_field('amazon_copy'); ?></div>
 						<a target="_blank" class="button" href="<?php the_field('button_link'); ?>"><?php the_field('button_copy'); ?></a>
 						</div>
 					</div>
@@ -183,7 +177,7 @@
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="content">
 						<h3 class="title"><?php the_field('pi_title'); ?></h3>
-						<?php the_field('pi_copy'); ?>
+						<div class="responsive-text-align"><?php the_field('pi_copy'); ?></div>
 						<a target="_blank" class="button" href="<?php the_field('pi_button_link');?>"><?php the_field('pi_button_copy'); ?></a>
 					</div>
 				</div>

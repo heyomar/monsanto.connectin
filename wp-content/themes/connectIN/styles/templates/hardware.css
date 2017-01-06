@@ -33,8 +33,8 @@
 ––––––––––––––––––––––––––––––––––––––//]*/
 .callouts {
 	& .order {
-		min-height: 270px;
-		max-height: 270px;
+		min-height: 300px;
+		max-height: 300px;
 		background-image: url('assets/images/hardware/hardware__callouts-grains.jpg');
 		background-position: center;
 		background-size: cover;
@@ -42,8 +42,8 @@
 	}
 
 	& .training {
-		min-height: 270px;
-		max-height: 270px;
+		min-height: 300px;
+		max-height: 300px;
 		background-color: var(--color-gray);
 		color: var(--color-white);
 		padding: 50px;

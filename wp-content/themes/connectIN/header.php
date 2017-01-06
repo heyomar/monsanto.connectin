@@ -60,7 +60,7 @@
       <!-- <section id="mailbar" class="mailbar"></section> -->
 			<nav id="menu" class="main-nav" role="navigation">
         <div id="menu-header" class="main-nav-header hardware-menu-header">
-          <a href="/"><svg class="icon icon-connectin"><use xlink:href="#icon-connectin"></use></svg></a>
+          <a href="/hardware"><svg class="icon icon-connectin"><use xlink:href="#icon-connectin"></use></svg></a>
           <span id="menu-activate" class="main-nav-header-menu-button hardware-menu-activate">
             <svg class="icon"><use xlink:href="#icon-menu"></use></svg>
           </span>

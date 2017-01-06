@@ -8,17 +8,16 @@
 	background-position: center;
 
 	& .inner {
-		min-height: 350px;
+		min-height: 375px;
 		background-position: center;
 		background-size: cover;
-		position: relative;
+		display: flex;
 	}
 
 	& .content {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		padding: 0 20px;
+		padding: 20px 20px;
+		align-self: center;
+
 	}
 
 	& .title {
@@ -147,8 +146,14 @@
 			↓ MEDIA ↓
 ––––––––––––––––––––––––––––––––––––––//]*/
 @media screen and (min-width:768px) {
-	.hero .title {
-		font-size: 36px;
+	.hero {
+	 	& .title {
+			font-size: 36px;
+		}
+/*
+		& .copy {
+			font-size: 18px;
+		}*/
 	}
 	.step .content {
 		margin-left: 71px;

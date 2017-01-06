@@ -1,4 +1,12 @@
 /*[–––
+			↓ GENERAL ↓
+––––––––––––––––––––––––––––––––––––––//]*/
+.responsive-text-align{
+	text-align: left;
+}
+
+
+/*[–––
 			↓ REPORTING ↓
 ––––––––––––––––––––––––––––––––––––––//]*/
 .reporting {
@@ -194,6 +202,9 @@
 			↓ MEDIA ↓
 ––––––––––––––––––––––––––––––––––––––//]*/
 @media screen and (min-width:768px) {
+	.responsive-text-align{
+		text-align: center;
+	}
 	.carousel {
 		display: none;
 	}
