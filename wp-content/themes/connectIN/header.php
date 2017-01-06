@@ -67,7 +67,7 @@
         </div>
         <?php
         $headargs = array(
-          'theme_location' => 'hardware-navigation',
+          'theme_location' => 'hardware-mobile-navigation',
           'container_id' => 'menu-header-menu-container'
         );
         wp_nav_menu( $headargs ); ?>

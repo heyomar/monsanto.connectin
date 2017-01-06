@@ -5,7 +5,8 @@ function offset_menu_init () {
     'footer-navigation' => 'Footer Navigation',
     'desktop-navigation' => 'Desktop Navigation',
 		'hardware-navigation' => 'Hardware Navigation',
-		'hardware-footer-navigation' => 'Hardware Footer Navigation'
+		'hardware-footer-navigation' => 'Hardware Footer Navigation',
+		'hardware-mobile-navigation' => 'Hardware Mobile Navigation'
   ) );
 }
 add_action( 'init', 'offset_menu_init' );
