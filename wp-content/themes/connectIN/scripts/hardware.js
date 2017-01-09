@@ -73,6 +73,10 @@ $(document).ready(function() {
 //			↓ SWAP VIDEOS  ↓
 //––––––––––––––––––––––––––––––––––––––//]
 $('.list .item').on('click', function () {
+	if ($(this).parents('.list').children('.item').hasClass('active')) {
+		$(this).parents('.list').children('.item').removeClass('active');
+	}
+	
 	$(this).addClass('active');
 	const chosenVideoURL = $(this).attr('data-video');
 	$(this).parents('.col-xs-12').next().find('iframe').attr('src', chosenVideoURL);
