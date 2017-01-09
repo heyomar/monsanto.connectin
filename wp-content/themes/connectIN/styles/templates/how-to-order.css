@@ -134,6 +134,19 @@
 
 
 /*[–––
+			↓ RETAILER ↓
+––––––––––––––––––––––––––––––––––––––//]*/
+.retailer {
+	& .retailer-logo {
+		padding-bottom: 20px;
+	}
+}
+.help-text {
+	font-size: 11.5px;
+}
+
+
+/*[–––
 			↓ INCENTIVES ↓
 ––––––––––––––––––––––––––––––––––––––//]*/
 .incentives {
@@ -183,7 +196,7 @@
 		border-right: 2px dotted var(--color-ltgray);
 
 		&.content {
-			min-height: 550px;
+			min-height: 575px;
 		}
 	}
 }

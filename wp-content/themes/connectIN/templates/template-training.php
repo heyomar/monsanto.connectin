@@ -71,7 +71,7 @@
 <!--[––––
 			↓ DESKTOP VIDEO PLAYER ↓
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
-		<div class="player">
+		<div class="player mxw-1000-center">
 			<div class="inner">
 				<div class="row">
 					<div class="col-xs-12 col-sm-4 col-md-4 nopad">
@@ -200,7 +200,7 @@
 		<!--[––––
 					↓ QUICK TIP - DESKTOP VIDEO PLAYER ↓
 		–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
-				<div class="player">
+				<div class="player mxw-1000-center">
 					<div class="inner">
 						<div class="row">
 							<div class="col-xs-12 col-sm-4 col-md-4 nopad">

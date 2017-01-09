@@ -157,13 +157,13 @@
 							<?php if( have_rows('retailer_logos') ): ?>
 
 							    <?php while ( have_rows('retailer_logos') ) : the_row(); ?>
-										<img src="<?php the_sub_field('logo'); ?>" alt=""><br>
+										<img class="retailer-logo" src="<?php the_sub_field('logo'); ?>" alt=""><br>
 							    <?php endwhile; ?>
 
 							<?php else : ?>
 
 							<?php endif; ?>
-							<?php the_field('help_text'); ?>
+							<div class="help-text"><?php the_field('help_text'); ?></div>
 						</div>
 					</div>
 				</div>
