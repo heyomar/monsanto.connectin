@@ -132,7 +132,7 @@
 												</div>
 
 												<div class="email-field" id="box-one">
-													<form class="" action="/email.php" method="post">
+													<form class="pdf-mini-form" action="/email.php" method="post">
 														<input type="hidden" name="pdfURL" value="<?php the_sub_field('file') ?>">
 														<label for="email-address">Email Address</label>
 														<input type="text" name="email-address" value="">
