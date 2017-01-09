@@ -57,7 +57,7 @@
 								$iframe = get_sub_field('video');
 								preg_match('/src="(.+?)"/', $iframe, $matches);
 								$src = $matches[1];
-								echo $src;?>" data-lity> <div style="background-image:url('<?php echo get_sub_field('video_thumbnail'); ?>');" class="thumbnail"></div> </a>
+								echo $src;?>" data-lity> <div class="thumbnail"> <img src="<?php echo get_sub_field('video_thumbnail'); ?>" alt=""></div> </a>
 							</div>
 
 							<?php endwhile; ?>
@@ -186,7 +186,7 @@
 										$iframe = get_sub_field('video');
 										preg_match('/src="(.+?)"/', $iframe, $matches);
 										$src = $matches[1];
-										echo $src;?>" data-lity> <div style="background-image:url('<?php echo get_sub_field('video_thumbnail'); ?>');" class="thumbnail"></div> </a>
+										echo $src;?>" data-lity>  <div class="thumbnail"> <img src="<?php echo get_sub_field('video_thumbnail'); ?>" alt=""></div> </a>
 									</div>
 
 									<?php endwhile; ?>

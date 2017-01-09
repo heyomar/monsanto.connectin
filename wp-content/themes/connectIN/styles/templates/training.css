@@ -26,13 +26,22 @@
 .block {
 	margin: 5px;
 	text-align: center;
+	position: relative;
+
+
+
+	& h4 {
+		position: absolute;
+		margin: 0;
+		left: 0;
+		right: 0;
+	}
 }
 
 .thumbnail {
-	background-size: contain;
-	background-position: center;
+	padding-top: 50px;
 	width: 100%;
-	min-height: 300px;
+	min-height: 200px;
 }
 
 
