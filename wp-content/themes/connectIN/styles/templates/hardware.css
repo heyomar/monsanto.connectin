@@ -96,8 +96,8 @@
 	padding: 20px;
 }
 
-.red-border{
-	border: 1px solid red !important;
+.single-video {
+	padding: 20px;
 }
 
 
@@ -123,6 +123,11 @@
 		content: "→";
     padding-left: 10px;
 	}
+}
+
+.mxw-1250-center {
+	max-width: 1250px;
+	margin: 0 auto;
 }
 
 .mxw-1000-center {
@@ -178,7 +183,7 @@
 		font-weight: bold;
 		color: var(--color-white);
 		padding-right: 30px;
-		
+
 		& a {
 			text-decoration: none;
 			color: var(--color-white);

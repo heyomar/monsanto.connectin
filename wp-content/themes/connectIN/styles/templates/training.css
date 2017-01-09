@@ -31,8 +31,8 @@
 .thumbnail {
 	background-size: contain;
 	background-position: center;
-	min-height: 300px;
 	width: 100%;
+	min-height: 300px;
 }
 
 
@@ -178,6 +178,8 @@
 }
 
 .email-button {
+	text-align: center;
+	padding-right: 10px;
 	&:hover {
 		cursor:pointer;
 	}
@@ -221,5 +223,10 @@
 		& input[type=submit] {
 			width: 15%;
 		}
+	}
+
+	.pdf-mini-form {
+		text-align: center;
+		padding-top: 10px;
 	}
 }
