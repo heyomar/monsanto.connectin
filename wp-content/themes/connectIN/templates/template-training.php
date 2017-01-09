@@ -139,6 +139,7 @@
 														<input class="pdf-submit" type="submit" name="email-submit-button"
 																	value="Submit"/>
 													</form>
+													<div class="mini-thanks">Thank you. Your PDF has been sent successfully.</div>
 												</div>
 
 											</div>
@@ -277,7 +278,7 @@
 																	value="Submit"/>
 														<div class="pdf-email-error">Please enter a valid email address.</div>
 													</form>
-														<div class="mini-thanks">Your PDF has been sent! Thank You!</div>
+														<div class="mini-thanks">Thank you. Your PDF has been sent successfully.</div>
 												</div>
 											</div>
 										</div>

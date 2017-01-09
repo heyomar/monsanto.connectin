@@ -4862,7 +4862,7 @@ $(document).ready(function() {
 			.done(function() {
 				console.log("success");
 				$(theForm).hide();
-				$('.mini-thanks').show();
+				$(theForm).next().show();
 			})
 
 		}
@@ -4879,10 +4879,9 @@ $('.list .item').on('click', function () {
 	if ($(this).parents('.list').children('.item').hasClass('active')) {
 		$(this).parents('.list').children('.item').removeClass('active');
 	}
-	
 	$(this).addClass('active');
 	const chosenVideoURL = $(this).attr('data-video');
-	$(this).parents('.col-xs-12').next().find('iframe').attr('src', chosenVideoURL);
+	$(this).parents('.col-xs-12').next().find('iframe').attr('src', chosenVideoURL + '?rel=0&amp;showinfo=0');
 });
 
 
