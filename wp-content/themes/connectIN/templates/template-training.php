@@ -244,7 +244,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="content">
-						<h2 class="title">Download the Full Training Manual</h2>
+						<h2 class="title">Training Manual</h2>
 						<div class="responsive-text-align"><?php the_field('ftm_copy'); ?></div><br>
 						<?php if( have_rows('full_training_manual') ): ?>
 
