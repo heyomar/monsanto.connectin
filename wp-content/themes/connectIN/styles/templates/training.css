@@ -67,6 +67,7 @@
 		list-style-type: none;
 		padding: 0;
 		overflow: scroll;
+		-ms-overflow-style: none;
 		height: 400px;
 		margin: 0;
 
