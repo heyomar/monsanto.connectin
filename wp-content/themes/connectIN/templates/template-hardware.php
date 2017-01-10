@@ -67,7 +67,7 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12">
 							<div class="content">
-								<h2 class="title responsive-text-align"><?php the_field('sb_title'); ?></h2>
+								<h2 class="title center-text"><?php the_field('sb_title'); ?></h2>
 								<div class="copy responsive-text-align"><?php the_field('sb_copy'); ?></div>
 							</div>
 						</div>

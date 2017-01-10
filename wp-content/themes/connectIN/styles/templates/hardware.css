@@ -174,6 +174,10 @@
 	text-align: center;
 }
 
+.center-text-mobile {
+	text-align: center;
+}
+
 
 /*[–––
 			↓ Navigation ↓
@@ -230,6 +234,10 @@
 	}
 }
 
+#menu-header img {
+	height: 100%;
+	width: auto;
+}
 
 
 /*[–––
@@ -257,5 +265,8 @@
 	}
 	.email-text {
 		display: inline;
+	}
+	.center-text-mobile {
+		text-align: left;
 	}
 }
