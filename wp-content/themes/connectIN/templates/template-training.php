@@ -13,14 +13,12 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
 		<div class="hero">
 			<div class="inner mxw-1000-center">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
 						<div class="content">
 							<h2 class="title"><?php the_field('hero_title'); ?></h2>
 							<div class="copy"><?php the_field('hero_copy'); ?></div>
 						</div>
-					</div>
-				</div>
+
 			</div>
 		</div>
 <!--[––––
