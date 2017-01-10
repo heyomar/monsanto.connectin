@@ -170,8 +170,8 @@
 	text-align: center;
 }
 
-.center-text-mobile {
-	text-align: center;
+.left-text-mobile {
+	text-align: left !important;
 }
 
 
@@ -262,7 +262,7 @@
 	.email-text {
 		display: inline;
 	}
-	.center-text-mobile {
-		text-align: left;
+	.left-text-mobile {
+		text-align: center !important;
 	}
 }

@@ -55,7 +55,7 @@
 
 					<div class="col-xs-12 col-sm-6 col-md-6 nopad">
 						<div class="content tablets">
-							<h3 class="title"><?php the_field('mt_section_title'); ?></h3>
+							<h3 class="title left-text-mobile"><?php the_field('mt_section_title'); ?></h3>
 							<div class="list">
 								<?php if( have_rows('mobile_device') ): ?>
 
@@ -84,7 +84,7 @@
 
 					<div class="col-xs-12 col-sm-6 col-md-6 nopad">
 						<div class="content printers">
-							<h3 class="title"><?php the_field('p_section_title'); ?></h3>
+							<h3 class="title left-text-mobile"><?php the_field('p_section_title'); ?></h3>
 							<div class="list">
 								<?php if( have_rows('printer_device') ): ?>
 
@@ -179,7 +179,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="content">
-						<h3 class="title"><?php the_field('pi_title'); ?></h3>
+						<h3 class="title left-text-mobile"><?php the_field('pi_title'); ?></h3>
 						<div class="responsive-text-align"><?php the_field('pi_copy'); ?></div>
 						<a target="_blank" class="button" href="<?php the_field('pi_button_link');?>"><?php the_field('pi_button_copy'); ?></a>
 					</div>
