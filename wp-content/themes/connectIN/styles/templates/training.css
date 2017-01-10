@@ -136,7 +136,8 @@
 	& .download {
 		background-color: var(--color-ltblue);
 		position: relative;
-		padding: 9px 0 9px 20px;
+		padding-left: 20px;
+		line-height: 2.8;
 
 		&::after {
 			content:'\2193';
