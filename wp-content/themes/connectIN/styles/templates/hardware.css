@@ -126,6 +126,12 @@
 	}
 }
 
+
+.mxw-1440-center {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
 .mxw-1250-center {
 	max-width: 1250px;
 	margin: 0 auto;
@@ -229,6 +235,16 @@
 /*[–––
 			↓ MEDIA ↓
 ––––––––––––––––––––––––––––––––––––––//]*/
+
+@media screen and (min-width:1280px) {
+	.callouts .order {
+		padding: 50px 100px;
+	}
+	.callouts .training {
+		padding: 50px 100px;
+	}
+}
+
 @media screen and (min-width:1020px) {
 	.reasons .hide-image {
 		display: block;

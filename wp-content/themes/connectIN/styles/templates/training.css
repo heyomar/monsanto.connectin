@@ -28,8 +28,6 @@
 	text-align: center;
 	position: relative;
 
-
-
 	& h4 {
 		position: absolute;
 		margin: 0;
@@ -122,6 +120,10 @@
 	color: var(--color-white);
 	margin-bottom: 6px;
 
+	& .content {
+		position: relative;
+	}
+
 	& a {
 		border: 0;
 	}
@@ -133,7 +135,7 @@
 	& .download {
 		background-color: var(--color-ltblue);
 		position: relative;
-		padding: 8px 0 8px 20px;
+		padding: 9px 0 9px 20px;
 
 		&::after {
 			content:'\2193';
@@ -150,9 +152,12 @@
 }
 
 .player {
-	padding-bottom: 50px;
+max-height: 350px;
 }
 
+.player-two {
+	margin-bottom:60px;
+}
 /*[–––
 			↓ QUICK TRAINING TIP ↓
 ––––––––––––––––––––––––––––––––––––––//]*/
@@ -186,6 +191,8 @@
 	}
 }
 
+
+
 .email-button {
 	text-align: center;
 	padding-right: 10px;
@@ -195,6 +202,13 @@
 }
 .pdf-submit {
 	background-color: none;
+}
+
+.email-icon {
+	position: absolute;
+	top: 48%;
+  transform: translateY(-50%);
+	right: 20px;
 }
 
 /*[–––

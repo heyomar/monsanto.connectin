@@ -40,7 +40,7 @@
 <!--[––––
 			↓ CALLOUTS ↓
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//]-->
-			<section class="callouts mxw-1250-center">
+			<section class="callouts">
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 nopad order">
 							<div class="content ">
