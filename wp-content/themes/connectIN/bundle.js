@@ -4827,7 +4827,7 @@ $('#slick-reporting, #slick-training').slick({
     {
       breakpoint: 768,
       settings: {
-				arrows: false,
+				arrows: true,
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 1
@@ -4836,7 +4836,7 @@ $('#slick-reporting, #slick-training').slick({
     {
       breakpoint: 400,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 1

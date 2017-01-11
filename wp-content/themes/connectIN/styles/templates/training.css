@@ -132,7 +132,10 @@
 	& .download-ctn {
 		min-height: 39px;
 		background-color: var(--color-ltblue);
+    display: flex;
+    align-items: center;
 	}
+  
 	& .download {
 		background-color: var(--color-ltblue);
 		position: relative;
@@ -148,16 +151,11 @@
 	& .email {
 		border-left: 1px solid var(--color-white);
 		background-color: var(--color-ltblue);
-		padding-left: 20px;
     height: 100%;
     /* center in new jquery driven heights */
     display: flex;
     align-items: center;
     justify-content: center;
-	}
-
-	& .row > div {
-
 	}
 }
 
@@ -205,7 +203,6 @@ max-height: 350px;
 
 .email-button {
 	text-align: center;
-	padding-right: 10px;
 	&:hover {
 		cursor:pointer;
 	}
