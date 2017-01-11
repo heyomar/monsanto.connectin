@@ -86,10 +86,14 @@ $('.list .item').on('click', function () {
 //			↓ SHOW AND HIDE EMAIL FORMS ↓
 //––––––––––––––––––––––––––––––––––––––//]
 $('.email-button').on('click', function () {
+
 	if ($(this).parents('.row').children('.email-field').hasClass('email-active')) {
+		$(this).parent().parent().next().removeClass('email-active').slideUp();
 		return
 	} else {
 		$('.email-active').slideUp();
+		$('.email-active').removeClass('email-active');
 		$(this).parent().parent().next().addClass('email-active').slideDown();
 	}
+
 })
