@@ -55,7 +55,7 @@
 
 					<div class="col-xs-12 col-sm-6 col-md-6 nopad">
 						<div class="content tablets">
-							<h3 class="title left-text-mobile"><?php the_field('mt_section_title'); ?></h3>
+							<h3 class="title"><?php the_field('mt_section_title'); ?></h3>
 							<div class="list">
 								<?php if( have_rows('mobile_device') ): ?>
 
@@ -84,7 +84,7 @@
 
 					<div class="col-xs-12 col-sm-6 col-md-6 nopad">
 						<div class="content printers">
-							<h3 class="title left-text-mobile"><?php the_field('p_section_title'); ?></h3>
+							<h3 class="title"><?php the_field('p_section_title'); ?></h3>
 							<div class="list">
 								<?php if( have_rows('printer_device') ): ?>
 
@@ -129,7 +129,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4 nopad">
 					<div class="content phone">
-						<h3 class="title left-text-mobile"><?php the_field('zones_title'); ?></h3>
+						<h3 class="title"><?php the_field('zones_title'); ?></h3>
 						<div class="instructions">
 							<img src="<?php the_field('zones_logo') ?>" alt="">
 							<br><br>
@@ -140,7 +140,7 @@
 
 				<div class="col-xs-12 col-sm-12 col-md-4 nopad">
 					<div class="content amazon">
-						<h3 class="title left-text-mobile"><?php the_field('amazon_title'); ?></h3>
+						<h3 class="title"><?php the_field('amazon_title'); ?></h3>
 						<div class="instructions">
 							<img src="<?php the_field('amazon_logo'); ?>" alt="">
 							<br><br>
@@ -152,7 +152,7 @@
 
 				<div class="col-xs-12 col-sm-12 col-md-4 nopad">
 					<div class="content retailer">
-						<h3 class="title left-text-mobile"><?php the_field('retailer_title') ?></h3>
+						<h3 class="title "><?php the_field('retailer_title') ?></h3>
 						<div class="instructions">
 							<?php if( have_rows('retailer_logos') ): ?>
 
