@@ -117,7 +117,9 @@
 										<div class="mxw-600-center">
 											<div class="row">
 												<div class="col-xs-9 col-sm-9 nopad">
-													<a target="_blank" href="<?php the_sub_field('file') ?>"><div class="download"><?php the_sub_field('file_name'); ?></div></a>
+													<a target="_blank" href="<?php the_sub_field('file') ?>">
+														<div class="download-ctn"><div class="download"><?php the_sub_field('file_name'); ?></div></div>
+													</a>
 												</div>
 
 												<div class="col-xs-3 col-sm-3 nopad">
