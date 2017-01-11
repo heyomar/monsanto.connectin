@@ -37,9 +37,9 @@
 }
 
 .thumbnail {
-	padding-top: 50px;
 	width: 100%;
-	min-height: 200px;
+
+
 }
 
 
@@ -53,6 +53,37 @@
 
 	& .inner {
 		padding: 0;
+	}
+}
+
+#slick-reporting, #slick-training {
+	position: relative;
+	margin-bottom: 50px;
+	& .slick-arrow {
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.85);
+		color: transparent;
+		position: absolute;
+		top: 50%;
+		height: 98%;
+  	transform: translateY(-50%);
+		width: 36px;
+		z-index: 500;
+	}
+
+	& .slick-prev {
+		left: 0;
+		&::after {
+			content:url('assets/images/hardware/arrow-left.png');
+		}
+	}
+
+	& .slick-next {
+		right: 0;
+		&::after {
+			content:url('assets/images/hardware/arrow-right.png');
+			padding-right: 6spx;
+		}
 	}
 }
 

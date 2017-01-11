@@ -50,7 +50,7 @@
 							<?php while ( have_rows('reporting_videos') ) : the_row(); ?>
 
 							<div class="block">
-								<h4><?php the_sub_field('video_title') ?></h4>
+								<!-- <h4><?php the_sub_field('video_title') ?></h4> -->
 								<a href="<?php
 								$iframe = get_sub_field('video');
 								preg_match('/src="(.+?)"/', $iframe, $matches);
@@ -182,7 +182,7 @@
 									<?php while ( have_rows('quick_tip_videos') ) : the_row(); ?>
 
 									<div class="block">
-										<h4><?php the_sub_field('video_title') ?></h4>
+										<!-- <h4><?php the_sub_field('video_title') ?></h4> -->
 										<a href="<?php
 										$iframe = get_sub_field('video');
 										preg_match('/src="(.+?)"/', $iframe, $matches);
