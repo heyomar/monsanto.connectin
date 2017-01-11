@@ -57,11 +57,9 @@
     <header class="site-header">
 
 		<?php if (is_page_template('Hardware 2017' || 'How to Order 2017' || 'Training 2017')) { ?>
-      <!-- <section id="mailbar" class="mailbar"></section> -->
 			<nav id="menu" class="main-nav" role="navigation">
         <div id="menu-header" class="main-nav-header hardware-menu-header">
           <a href="/hardware">
-						<!-- <svg class="icon icon-connectin"><use xlink:href="#icon-connectin"></use></svg> -->
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hardware/hardware-logo-white.png" alt="">
 					</a>
           <span id="menu-activate" class="main-nav-header-menu-button hardware-menu-activate">

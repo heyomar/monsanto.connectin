@@ -64,11 +64,8 @@ $(document).ready(function() {
 				$(theForm).hide();
 				$(theForm).next().show();
 			})
-
 		}
-
 	})
-
 });
 
 
@@ -89,8 +86,8 @@ $('.list .item').on('click', function () {
 //			↓ SHOW AND HIDE EMAIL FORMS ↓
 //––––––––––––––––––––––––––––––––––––––//]
 $('.email-button').on('click', function () {
-	if ($(this).parents('row').children('.email-field').hasClass('email-active')) {
-		$(this).parent().parent().next().removeClass('email-active').slideUp();
+	if ($(this).parents('.row').children('.email-field').hasClass('email-active')) {
+		return
 	} else {
 		$('.email-active').slideUp();
 		$(this).parent().parent().next().addClass('email-active').slideDown();
