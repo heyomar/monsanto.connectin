@@ -129,7 +129,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4 nopad">
 					<div class="content phone">
-						<h3 class="title"><?php the_field('zones_title'); ?></h3>
+						<h3 class="title left-text-mobile"><?php the_field('zones_title'); ?></h3>
 						<div class="instructions">
 							<img src="<?php the_field('zones_logo') ?>" alt="">
 							<br><br>
@@ -140,7 +140,7 @@
 
 				<div class="col-xs-12 col-sm-12 col-md-4 nopad">
 					<div class="content amazon">
-						<h3 class="title"><?php the_field('amazon_title'); ?></h3>
+						<h3 class="title left-text-mobile"><?php the_field('amazon_title'); ?></h3>
 						<div class="instructions">
 							<img src="<?php the_field('amazon_logo'); ?>" alt="">
 							<br><br>
@@ -152,7 +152,7 @@
 
 				<div class="col-xs-12 col-sm-12 col-md-4 nopad">
 					<div class="content retailer">
-						<h3 class="title"><?php the_field('retailer_title') ?></h3>
+						<h3 class="title left-text-mobile"><?php the_field('retailer_title') ?></h3>
 						<div class="instructions">
 							<?php if( have_rows('retailer_logos') ): ?>
 

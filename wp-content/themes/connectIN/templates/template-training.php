@@ -109,7 +109,7 @@
 			<div class="inner">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
-						<h3 class="title">Transactional Reporting Guides</h3>
+						<h3 class="title left-text-mobile">Transactional Reporting Guides</h3>
 						<?php if( have_rows('transactional_reporting_guides') ): ?>
 
 						    <?php while ( have_rows('transactional_reporting_guides') ) : the_row(); ?>
