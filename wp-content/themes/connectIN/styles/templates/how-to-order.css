@@ -149,13 +149,14 @@
 ––––––––––––––––––––––––––––––––––––––//]*/
 .incentives {
 	padding: 20px;
-	text-align: center;
+	text-align: left;
 	background-color: var(--color-offwhite);
 
 	& .title {
 		text-transform: uppercase;
 		color: var(--color-ltblue);
 	}
+
 }
 
 
@@ -181,6 +182,9 @@
 	.deskpad {
 		padding-left: 40px;
 		padding-right: 40px;
+	}
+	.incentives {
+		text-align: center;
 	}
 }
 
