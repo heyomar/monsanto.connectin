@@ -9,6 +9,10 @@
 	color: var(--color-white);
 	text-align: center;
 
+	& p {
+		margin-top: 0;
+	}
+
 	& .title {
 		color: var(--color-white);
 		font-weight: bold;

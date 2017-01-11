@@ -15,11 +15,17 @@
 			<section class="intro">
 				<div class="inner mxw-1250-center">
 					<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12">
+								<div class="content">
+									<h2 class="title center-text"><?php the_field('hero_title'); ?></h2>
+									<h3 class="subtitle center-text"><?php the_field('hero_sub_title'); ?></h3>
+								</div>
+							</div>
+
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<div class="content">
-									<h2 class="title"><?php the_field('hero_title'); ?></h2>
-									<h3 class="subtitle"><?php the_field('hero_sub_title'); ?></h3>
 									<?php the_field('hero_copy'); ?>
+									<?php the_field('hero_under_video_copy'); ?>
 								</div>
 							</div>
 
@@ -27,12 +33,6 @@
 								<div class="content">
 									<iframe width="560" height="315" src="<?php the_field('hero_video_link'); ?>" frameborder="0" allowfullscreen></iframe>
 								</div>
-						</div>
-
-						<div class="col-xs-12 col-sm-12">
-							<div class="content">
-								<?php the_field('hero_under_video_copy'); ?>
-							</div>
 						</div>
 					</div>
 				</div>
