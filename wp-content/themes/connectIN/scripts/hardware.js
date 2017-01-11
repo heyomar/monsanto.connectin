@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  $('.action .row .nopad').matchHeight();
+})
+
 //[–––
 //			↓ MOBILE SLICK VIDEO SLIDER ↓
 //––––––––––––––––––––––––––––––––––––––//]
@@ -26,7 +30,6 @@ $('#slick-reporting, #slick-training').slick({
     }
   ]
 });
-
 
 //[–––
 //			↓ SEND PDFS ↓
