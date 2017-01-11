@@ -12,6 +12,8 @@ ehthumbs.db
 
 # Ignore everything in the root except the "wp-content" directory
 /*
+!/mandrill-api-php
+!email.php
 !.gitignore
 !wp-content/
 !/Vagrantfile
