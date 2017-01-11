@@ -130,12 +130,12 @@
 	}
 
 	& .download-ctn {
-		min-height: 39px;
+		min-height: 40px;
 		background-color: var(--color-ltblue);
     display: flex;
     align-items: center;
 	}
-  
+
 	& .download {
 		background-color: var(--color-ltblue);
 		position: relative;
