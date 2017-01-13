@@ -5,8 +5,8 @@ get_template_part('components/inner-hero'); ?>
 <div class="risks center__grid row">
   <div class="col-xs-12">
     <div class="box center__text">
-      <h2><?php the_field('risks_headline'); ?></h2>
-      <div class="risks-copy"><?php the_field('risks_copy'); ?></div>
+      <h2 class="left-text-mobile"><?php the_field('risks_headline'); ?></h2>
+      <div class="risks-copy left-text-mobile"><?php the_field('risks_copy'); ?></div>
     </div>
   </div>
 </div>
@@ -16,7 +16,7 @@ get_template_part('components/inner-hero'); ?>
     <div class="box underseed__box">
       <div class="risks-underseed">
         <img src="<?php the_field('underseed_image'); ?>">
-        <div class="risks-underseed-copy"><?php the_field('underseed_copy'); ?></div>
+        <div class="risks-underseed-copy left-text-mobile"><?php the_field('underseed_copy'); ?></div>
       </div>
     </div>
   </div>
@@ -24,7 +24,7 @@ get_template_part('components/inner-hero'); ?>
   <div class="col-sm-6">
     <div class="box overseed__box">
       <img src="<?php the_field('overseed_image'); ?>">
-      <div class="risks-underseed-copy"><?php the_field('overseed_copy'); ?></div>
+      <div class="risks-underseed-copy left-text-mobile"><?php the_field('overseed_copy'); ?></div>
     </div>
   </div>
 </div>

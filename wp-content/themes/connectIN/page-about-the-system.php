@@ -5,8 +5,8 @@
   <div class="why__ctn row">
     <div class="col-sm-12">
       <div class="box give__room">
-        <h3 class="make__headline"><?php the_field('why_headline'); ?></h3>
-        <?php the_field('why_copy'); ?>
+        <h3 class="make__headline left-text-mobile"><?php the_field('why_headline'); ?></h3>
+        <div class="left-text-mobile"><?php the_field('why_copy'); ?></div>
         <div class="why__video center__grid"><?php the_field('why_video'); ?></div>
       </div>
     </div>
@@ -15,8 +15,8 @@
   <div class="benefits__ctn row">
     <div class="col-xs-12">
       <div class="box">
-        <h3 class="make__headline"><?php the_field('benefits_headline'); ?></h3>
-        <?php the_field('benefits_copy'); ?>
+        <h3 class="make__headline left-text-mobile"><?php the_field('benefits_headline'); ?></h3>
+        <div class="left-text-mobile"><?php the_field('benefits_copy'); ?></div>
       </div>
     </div>
   </div>
@@ -52,8 +52,8 @@
     <div class="row center__grid give__room">
       <div class="col-sm-12">
         <div class="box center__text">
-          <h3 class="make__headline"><?php the_field('how_headline') ?></h3>
-          <?php the_field('how_copy') ?>
+          <h3 class="make__headline left-text-mobile"><?php the_field('how_headline') ?></h3>
+          <div class="left-text-mobile"><?php the_field('how_copy') ?></div>
         </div>
       </div>
     </div>

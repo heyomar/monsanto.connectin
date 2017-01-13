@@ -7,8 +7,8 @@
 			<div class="row performance__ctn">
 			  <div class="col-sm-12">
 			    <div class="box">
-			      <h3 class="calcpage__h3"><?php the_field('performance_headline'); ?></h3>
-			      <?php the_field('performance_copy'); ?>
+			      <div class="pad30"><h3 class="calcpage__h3 left-text-mobile"><?php the_field('performance_headline'); ?></h3>
+			      <div class="left-text-mobile"><?php the_field('performance_copy'); ?></div></div>
 			    </div>
 			  </div>
 			</div>
