@@ -9,6 +9,7 @@ if( $('body').hasClass('find-seed-supplier') ) {
     }
     var selectedstate = $('#stateselect option:selected').val()
     $('.supplier, .rep').hide()
+    $('.suppliers__ctn__anchor').hide()
     $('.' + selectedstate).show()
 
     if (!$('.' + selectedstate)[0]) {
@@ -28,7 +29,7 @@ if( $('body').hasClass('find-seed-supplier') ) {
     }
   }
 
-  navigator.geolocation.getCurrentPosition(success, error)
+  // navigator.geolocation.getCurrentPosition(success, error)
 
   function success (position) {
     console.log(position.coords.latitude)
